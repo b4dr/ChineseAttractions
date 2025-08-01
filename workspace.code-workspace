@@ -1,0 +1,36 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "css.customData": ["./css.config.json"],
+    "tailwindCSS.includeLanguages": {
+      "typescript": "typescript",
+      "javascript": "javascript",
+      "typescriptreact": "typescriptreact",
+      "javascriptreact": "javascriptreact"
+    },
+    "tailwindCSS.experimental.classRegex": [
+      "tw`([^`]*)",
+      "tw=\"([^\"]*)",
+      "tw={\"([^\"}]*)",
+      "tw\\.\\w+`([^`]*)",
+      "tw\\(.*?\\)`([^`]*)"
+    ],
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "css.lint.unknownAtRules": "ignore"
+  },
+  "extensions": {
+    "recommendations": [
+      "bradlc.vscode-tailwindcss",
+      "stylelint.vscode-stylelint"
+    ]
+  }
+}

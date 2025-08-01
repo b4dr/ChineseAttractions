@@ -82,12 +82,12 @@ const featuredAttractions = [
 ]
 
 const topDestinations = [
-  { name: 'Beijing', attractions: 45, image: 'https://images.unsplash.com/photo-1570193628474-b1dd0b6c5b1e?w=400&h=300&fit=crop', slug: 'beijing' },
-  { name: 'Shanghai', attractions: 38, image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=400&h=300&fit=crop', slug: 'shanghai' },
-  { name: 'Xi\'an', attractions: 22, image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop', slug: 'xian' },
-  { name: 'Guilin', attractions: 18, image: 'https://images.unsplash.com/photo-1519640760746-95d1211ebed6?w=400&h=300&fit=crop', slug: 'guilin' },
-  { name: 'Chengdu', attractions: 25, image: 'https://images.unsplash.com/photo-1589635760291-e5d2e1b5b4d7?w=400&h=300&fit=crop', slug: 'chengdu' },
-  { name: 'Hangzhou', attractions: 16, image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop', slug: 'hangzhou' }
+  { name: 'Beijing', chineseName: '北京', attractions: 45, gradient: 'from-red-500 via-orange-500 to-yellow-500', slug: 'beijing' },
+  { name: 'Shanghai', chineseName: '上海', attractions: 38, gradient: 'from-blue-500 via-purple-500 to-pink-500', slug: 'shanghai' },
+  { name: 'Xi\'an', chineseName: '西安', attractions: 22, gradient: 'from-amber-600 via-orange-600 to-red-600', slug: 'xian' },
+  { name: 'Guilin', chineseName: '桂林', attractions: 18, gradient: 'from-emerald-500 via-teal-500 to-cyan-500', slug: 'guilin' },
+  { name: 'Chengdu', chineseName: '成都', attractions: 25, gradient: 'from-green-500 via-lime-500 to-yellow-500', slug: 'chengdu' },
+  { name: 'Hangzhou', chineseName: '杭州', attractions: 16, gradient: 'from-indigo-500 via-blue-500 to-cyan-500', slug: 'hangzhou' }
 ]
 
 export default function HomePage() {
@@ -116,9 +116,9 @@ export default function HomePage() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              <Link href="/attractions" className="btn-primary text-lg px-8 py-4">
+              <Link href="/attractions" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center">
                 Explore All Attractions
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-2 flex-shrink-0" />
               </Link>
               <Link href="/cities" className="btn-secondary bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-4">
                 Browse by City
@@ -211,17 +211,28 @@ export default function HomePage() {
                 className="group block animate-fade-in-up"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="relative overflow-hidden rounded-xl aspect-square">
-                  <img 
-                    src={destination.image} 
-                    alt={destination.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3 text-white">
-                    <h3 className="font-semibold text-lg">{destination.name}</h3>
-                    <p className="text-sm text-gray-200">{destination.attractions} attractions</p>
+                <div className={`relative overflow-hidden rounded-xl aspect-square bg-gradient-to-br ${destination.gradient} flex flex-col items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
+                  {/* Decorative Pattern */}
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-2 left-2 w-4 h-4 border border-white/30 rounded-full"></div>
+                    <div className="absolute top-3 right-3 w-3 h-3 border border-white/20 rounded-full"></div>
+                    <div className="absolute bottom-2 left-3 w-2 h-2 border border-white/25 rounded-full"></div>
+                    <div className="absolute bottom-2 right-2 w-5 h-5 border border-white/15 rounded-full"></div>
                   </div>
+                  
+                  {/* City Names */}
+                  <div className="text-center z-10 px-2">
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 font-serif tracking-wide">
+                      {destination.chineseName}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-white font-light tracking-widest opacity-90">
+                      {destination.name.toUpperCase()}
+                    </p>
+                    <p className="text-xs text-white/80 mt-1">{destination.attractions} attractions</p>
+                  </div>
+                  
+                  {/* Subtle Glow Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
                 </div>
               </Link>
             ))}

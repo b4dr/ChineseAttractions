@@ -207,9 +207,9 @@ export default function BeijingPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              <a href="#attractions" className="btn-primary text-lg px-8 py-4">
+              <a href="#tours" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center">
                 Explore Beijing Attractions
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-2 flex-shrink-0" />
               </a>
               <a href="#tours" className="btn-secondary bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-4">
                 Book Tours & Activities
