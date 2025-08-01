@@ -9,7 +9,7 @@ interface GetYourGuideWidgetProps {
   className?: string
   title?: string
   description?: string
-  tourIds?: string // Specific tour IDs for targeted experiences (e.g., "165345,123456")
+  tourIds?: string | string[] // Specific tour IDs for targeted experiences (e.g., "165345,123456" or ["165345", "123456"])
 }
 
 export default function GetYourGuideWidget({ 
@@ -86,7 +86,7 @@ export default function GetYourGuideWidget({
         data-gyg-href={tourIds ? "https://widget.getyourguide.com/default/activities.frame" : "https://widget.getyourguide.com/default/city.frame"}
         data-gyg-locale-code={locale}
         data-gyg-widget={tourIds ? "activities" : "city"}
-        {...(tourIds ? { 'data-gyg-tour-ids': tourIds, 'data-gyg-number-of-items': '1' } : { 'data-gyg-location-id': locationId })}
+        {...(tourIds ? { 'data-gyg-tour-ids': Array.isArray(tourIds) ? tourIds.join(',') : tourIds, 'data-gyg-number-of-items': '1' } : { 'data-gyg-location-id': locationId })}
         data-gyg-partner-id={partnerId}
         className="min-h-[400px] bg-gray-100 rounded-lg flex items-center justify-center"
       >

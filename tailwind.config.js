@@ -8,18 +8,31 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Chinese-inspired color palette
+        // Chinese flag-inspired color palette
         primary: {
           50: '#fef2f2',
           100: '#fee2e2',
           200: '#fecaca',
           300: '#fca5a5',
           400: '#f87171',
-          500: '#ef4444', // Main red
-          600: '#dc2626',
-          700: '#b91c1c',
-          800: '#991b1b',
-          900: '#7f1d1d',
+          500: '#dc2626', // Chinese flag red
+          600: '#b91c1c',
+          700: '#991b1b',
+          800: '#7f1d1d',
+          900: '#6b1d1d',
+        },
+        // Chinese flag red (more authentic)
+        chinese: {
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#de2910', // Authentic Chinese flag red
+          600: '#c41e3a',
+          700: '#a01729',
+          800: '#7d1220',
+          900: '#5a0d17',
         },
         gold: {
           50: '#fffbeb',

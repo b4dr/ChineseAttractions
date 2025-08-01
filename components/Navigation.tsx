@@ -7,7 +7,22 @@ import { Menu, X, Search, MapPin, BookOpen, Home } from 'lucide-react'
 
 const navigationItems = [
   { name: 'Home', href: '/', icon: Home },
-  { name: 'Attractions', href: '/attractions', icon: MapPin },
+  { 
+    name: 'Attractions', 
+    href: '/attractions', 
+    icon: MapPin,
+    dropdown: [
+      { name: 'Great Wall of China', href: '/attractions#attraction-1' },
+      { name: 'Forbidden City', href: '/attractions#attraction-2' },
+      { name: 'Terracotta Army', href: '/attractions#attraction-3' },
+      { name: 'Temple of Heaven', href: '/attractions#attraction-4' },
+      { name: 'Summer Palace', href: '/attractions#attraction-5' },
+      { name: 'Li River Cruise', href: '/attractions#attraction-6' },
+      { name: 'Zhangjiajie National Park', href: '/attractions#attraction-7' },
+      { name: 'Giant Panda Base', href: '/attractions#attraction-8' },
+      { name: 'All Attractions', href: '/attractions', divider: true }
+    ]
+  },
   { 
     name: 'Cities', 
     href: '/cities', 

@@ -254,7 +254,7 @@ export default function ShanghaiPage() {
       </section>
 
       {/* Travel Tips */}
-      <section className="section-padding bg-gradient-to-br from-primary-50 to-gold-50">
+      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="heading-lg mb-4">

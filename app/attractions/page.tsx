@@ -419,18 +419,18 @@ export default function AttractionsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-600 via-red-700 to-orange-600 text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative bg-gradient-to-br from-chinese-500 to-gold-500 text-white py-20">
+        <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <Sparkles className="w-8 h-8 text-gold-400 mr-3" />
-              <span className="text-gold-400 font-medium text-lg">Ultimate China Travel Guide</span>
+              <Sparkles className="w-8 h-8 text-gold-200 mr-3" />
+              <span className="text-gold-200 font-medium text-lg">Ultimate China Travel Guide</span>
             </div>
             
             <h1 className="heading-xl text-white mb-8 animate-fade-in-up">
               Top 10 Must-Visit
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient bg-gradient-to-r from-gold-200 to-yellow-200 bg-clip-text text-transparent">
                 Attractions in China
               </span>
             </h1>
@@ -665,13 +665,13 @@ export default function AttractionsPage() {
       </section>
 
       {/* Planning Your Visit Section */}
-      <section className="py-16 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+      <section className="py-16 bg-gradient-to-br from-chinese-50 via-gold-50 to-yellow-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Planning Your China Adventure</h2>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-chinese-50 to-gold-50 rounded-xl p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Best Time to Visit</h3>
                 <p className="text-gray-700 mb-4">
                   Spring (April-May) and autumn (September-November) offer the most comfortable weather for sightseeing. 
@@ -685,7 +685,7 @@ export default function AttractionsPage() {
                 </ul>
               </div>
               
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-gold-50 to-yellow-50 rounded-xl p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Travel Tips</h3>
                 <p className="text-gray-700 mb-4">
                   Most attractions require advance booking, especially during peak seasons. Consider purchasing skip-the-line 

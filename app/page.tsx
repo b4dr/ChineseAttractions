@@ -82,12 +82,14 @@ const featuredAttractions = [
 ]
 
 const topDestinations = [
-  { name: 'Beijing', chineseName: '北京', attractions: 45, gradient: 'from-red-500 via-orange-500 to-yellow-500', slug: 'beijing' },
-  { name: 'Shanghai', chineseName: '上海', attractions: 38, gradient: 'from-blue-500 via-purple-500 to-pink-500', slug: 'shanghai' },
-  { name: 'Xi\'an', chineseName: '西安', attractions: 22, gradient: 'from-amber-600 via-orange-600 to-red-600', slug: 'xian' },
-  { name: 'Guilin', chineseName: '桂林', attractions: 18, gradient: 'from-emerald-500 via-teal-500 to-cyan-500', slug: 'guilin' },
-  { name: 'Chengdu', chineseName: '成都', attractions: 25, gradient: 'from-green-500 via-lime-500 to-yellow-500', slug: 'chengdu' },
-  { name: 'Hangzhou', chineseName: '杭州', attractions: 16, gradient: 'from-indigo-500 via-blue-500 to-cyan-500', slug: 'hangzhou' }
+  { name: 'Beijing', chineseName: '北京', attractions: 22, gradient: 'from-red-500 via-orange-500 to-yellow-500', slug: 'beijing' },
+  { name: 'Shanghai', chineseName: '上海', attractions: 18, gradient: 'from-blue-500 via-purple-500 to-pink-500', slug: 'shanghai' },
+  { name: 'Xi\'an', chineseName: '西安', attractions: 15, gradient: 'from-orange-500 via-red-500 to-pink-500', slug: 'xian' },
+  { name: 'Guilin', chineseName: '桂林', attractions: 12, gradient: 'from-green-500 via-teal-500 to-blue-500', slug: 'guilin' },
+  { name: 'Chengdu', chineseName: '成都', attractions: 14, gradient: 'from-purple-500 via-pink-500 to-red-500', slug: 'chengdu' },
+  { name: 'Hangzhou', chineseName: '杭州', attractions: 16, gradient: 'from-teal-500 via-green-500 to-emerald-500', slug: 'hangzhou' },
+  { name: 'Suzhou', chineseName: '苏州', attractions: 11, gradient: 'from-indigo-500 via-blue-500 to-cyan-500', slug: 'suzhou' },
+  { name: 'Nanjing', chineseName: '南京', attractions: 13, gradient: 'from-rose-500 via-pink-500 to-purple-500', slug: 'nanjing' }
 ]
 
 export default function HomePage() {
@@ -160,7 +162,7 @@ export default function HomePage() {
           <div className="max-w-5xl mx-auto">
             {/* High-Converting GetYourGuide Widget */}
             <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
-              <div className="p-6 bg-gradient-to-r from-primary-500 to-gold-500 text-white text-center">
+              <div className="p-6 bg-gradient-to-r from-chinese-500 to-gold-500 text-white text-center">
                 <h3 className="text-2xl font-bold mb-2">Book Amazing China Experiences</h3>
                 <p className="text-primary-100">Discover and book the best tours, activities, and attractions across China</p>
               </div>
@@ -239,16 +241,16 @@ export default function HomePage() {
           </div>
           
           <div className="text-center mt-8">
-            <Link href="/cities" className="btn-outline">
+            <Link href="/cities" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center">
               Explore All Cities
-              <ArrowRight className="w-4 h-4 ml-2" />
+              <ArrowRight className="w-5 h-5 ml-2 flex-shrink-0" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="section-padding bg-gradient-to-br from-primary-50 to-gold-50">
+      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="heading-lg mb-4">

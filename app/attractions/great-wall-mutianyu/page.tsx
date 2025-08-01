@@ -191,7 +191,7 @@ export default function GreatWallMutianyuPage() {
               const IconComponent = item.icon
               return (
                 <div key={index} className="flex items-center p-4 bg-gray-50 rounded-xl">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-chinese-500 to-chinese-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <span className="text-gray-700 font-medium">{item.text}</span>

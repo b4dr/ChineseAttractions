@@ -21,7 +21,7 @@ const footerLinks = {
     { name: 'Travel Tips', href: '/blog/travel-tips' },
     { name: 'Best Time to Visit', href: '/blog/best-time-to-visit' },
     { name: 'Cultural Guide', href: '/blog/cultural-guide' },
-    { name: 'Food & Dining', href: '/blog/food-guide' },
+    { name: 'Food & Dining', href: '/blog/food-dining' },
   ],
   company: [
     { name: 'About Us', href: '/about' },
