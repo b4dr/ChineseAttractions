@@ -16,7 +16,7 @@ const nextConfig = {
   
   // SEO and performance optimizations
   experimental: {
-    optimizeCss: true,
+    // Removed optimizeCss to avoid critters dependency issue
   },
   
   // Compression and optimization
