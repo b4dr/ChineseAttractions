@@ -1,0 +1,292 @@
+import Link from 'next/link'
+import { MapPin, Star, Users, Clock, ArrowRight, Sparkles } from 'lucide-react'
+import GetYourGuideWidget from '@/components/GetYourGuideWidget'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Chinese Attractions | Discover Amazing Places in China',
+  description: 'Explore the most spectacular tourist attractions in China. From the Great Wall to the Forbidden City, discover and book unforgettable experiences with our comprehensive travel guide.',
+  keywords: [
+    'China attractions',
+    'Chinese tourism',
+    'Great Wall tours',
+    'Forbidden City tickets',
+    'Beijing attractions',
+    'Shanghai tours',
+    'China travel guide',
+    'Chinese landmarks',
+    'China sightseeing',
+    'China vacation packages'
+  ],
+  openGraph: {
+    title: 'Chinese Attractions | Discover Amazing Places in China',
+    description: 'Explore the most spectacular tourist attractions in China. From the Great Wall to the Forbidden City, discover and book unforgettable experiences.',
+    images: ['/og-home.jpg'],
+  },
+}
+
+// Featured attractions data
+const featuredAttractions = [
+  {
+    id: 'great-wall',
+    name: 'Great Wall of China',
+    city: 'Beijing',
+    image: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&h=600&fit=crop',
+    rating: 4.8,
+    reviews: 12543,
+    price: 'From $45',
+    duration: '8 hours',
+    highlights: ['UNESCO World Heritage', 'Ancient Wonder', 'Breathtaking Views'],
+    locationId: '189', // Beijing location ID for GetYourGuide
+    slug: 'great-wall'
+  },
+  {
+    id: 'forbidden-city',
+    name: 'Forbidden City',
+    city: 'Beijing',
+    image: 'https://images.unsplash.com/photo-1537819191377-d3305ffddce4?w=800&h=600&fit=crop',
+    rating: 4.7,
+    reviews: 8932,
+    price: 'From $35',
+    duration: '4 hours',
+    highlights: ['Imperial Palace', 'Ming Dynasty', 'Cultural Heritage'],
+    locationId: '189',
+    slug: 'forbidden-city'
+  },
+  {
+    id: 'terracotta-army',
+    name: 'Terracotta Army',
+    city: 'Xi\'an',
+    image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop',
+    rating: 4.9,
+    reviews: 6754,
+    price: 'From $55',
+    duration: '6 hours',
+    highlights: ['Archaeological Wonder', 'Qin Dynasty', '8,000 Warriors'],
+    locationId: '303', // Xi'an location ID
+    slug: 'terracotta-army'
+  },
+  {
+    id: 'li-river',
+    name: 'Li River Cruise',
+    city: 'Guilin',
+    image: 'https://images.unsplash.com/photo-1519640760746-95d1211ebed6?w=800&h=600&fit=crop',
+    rating: 4.6,
+    reviews: 4321,
+    price: 'From $65',
+    duration: '5 hours',
+    highlights: ['Scenic Cruise', 'Karst Mountains', 'Natural Beauty'],
+    locationId: '224', // Guilin location ID
+    slug: 'li-river'
+  }
+]
+
+const topDestinations = [
+  { name: 'Beijing', attractions: 45, image: 'https://images.unsplash.com/photo-1570193628474-b1dd0b6c5b1e?w=400&h=300&fit=crop', slug: 'beijing' },
+  { name: 'Shanghai', attractions: 38, image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=400&h=300&fit=crop', slug: 'shanghai' },
+  { name: 'Xi\'an', attractions: 22, image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop', slug: 'xian' },
+  { name: 'Guilin', attractions: 18, image: 'https://images.unsplash.com/photo-1519640760746-95d1211ebed6?w=400&h=300&fit=crop', slug: 'guilin' },
+  { name: 'Chengdu', attractions: 25, image: 'https://images.unsplash.com/photo-1589635760291-e5d2e1b5b4d7?w=400&h=300&fit=crop', slug: 'chengdu' },
+  { name: 'Hangzhou', attractions: 16, image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop', slug: 'hangzhou' }
+]
+
+export default function HomePage() {
+  return (
+    <div className="pt-16 md:pt-20">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
+        <div className="relative container-custom section-padding">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex items-center justify-center mb-6">
+              <Sparkles className="w-8 h-8 text-gold-400 mr-3" />
+              <span className="text-gold-400 font-medium text-lg">Discover Amazing China</span>
+            </div>
+            
+            <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
+              Explore China's Most
+              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+                Spectacular Attractions
+              </span>
+            </h1>
+            
+            <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              From ancient wonders like the Great Wall to modern marvels in Shanghai, 
+              discover and book unforgettable experiences across China with our comprehensive travel guide.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+              <Link href="/attractions" className="btn-primary text-lg px-8 py-4">
+                Explore All Attractions
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+              <Link href="/cities" className="btn-secondary bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-4">
+                Browse by City
+              </Link>
+            </div>
+            
+            <div className="flex items-center justify-center space-x-8 mt-12 text-gray-200">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-gold-400">500+</div>
+                <div className="text-sm">Attractions</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-gold-400">50+</div>
+                <div className="text-sm">Cities</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-gold-400">1M+</div>
+                <div className="text-sm">Happy Travelers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* GetYourGuide Widget Section - Revenue Driver */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="heading-lg mb-4">
+              Book Your China Adventure
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover and book amazing experiences across China with our trusted travel partner
+            </p>
+          </div>
+          
+          <div className="max-w-5xl mx-auto">
+            {/* High-Converting GetYourGuide Widget */}
+            <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
+              <div className="p-6 bg-gradient-to-r from-primary-500 to-gold-500 text-white text-center">
+                <h3 className="text-2xl font-bold mb-2">Book Amazing China Experiences</h3>
+                <p className="text-primary-100">Discover and book the best tours, activities, and attractions across China</p>
+              </div>
+              <div 
+                data-gyg-href="https://widget.getyourguide.com/default/activities.frame" 
+                data-gyg-locale-code="en-US" 
+                data-gyg-widget="activities" 
+                data-gyg-number-of-items="8" 
+                data-gyg-partner-id="UENNPLZ" 
+                data-gyg-q="china"
+                className="min-h-[600px] bg-gray-50 flex items-center justify-center"
+              >
+                <div className="text-center p-8">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-3 border-primary-500 mx-auto mb-6"></div>
+                  <p className="text-gray-600 text-lg">Loading amazing China experiences...</p>
+                  <p className="text-gray-500 text-sm mt-2">Discover tours, activities, and attractions</p>
+                </div>
+              </div>
+              <div className="p-4 bg-gray-50 text-center">
+                <span className="text-sm text-gray-500">
+                  Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/china-l186/" className="text-primary-600 hover:underline font-medium">GetYourGuide</a> | 
+                  <span className="text-emerald-600 font-medium">Free Cancellation</span> | 
+                  <span className="text-blue-600 font-medium">Instant Confirmation</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Top Destinations */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="heading-lg mb-4">
+              Explore Top Destinations
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From bustling metropolises to ancient cities, discover China's most captivating destinations
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {topDestinations.map((destination, index) => (
+              <Link 
+                key={destination.name}
+                href={`/cities/${destination.slug}`}
+                className="group block animate-fade-in-up"
+                style={{animationDelay: `${index * 0.1}s`}}
+              >
+                <div className="relative overflow-hidden rounded-xl aspect-square">
+                  <img 
+                    src={destination.image} 
+                    alt={destination.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3 text-white">
+                    <h3 className="font-semibold text-lg">{destination.name}</h3>
+                    <p className="text-sm text-gray-200">{destination.attractions} attractions</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link href="/cities" className="btn-outline">
+              Explore All Cities
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="section-padding bg-gradient-to-br from-primary-50 to-gold-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="heading-lg mb-4">
+              Why Choose Chinese Attractions?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Your trusted guide to exploring the wonders of China
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Comprehensive Coverage
+              </h3>
+              <p className="text-gray-600">
+                500+ attractions across 50+ cities with detailed information and insider tips
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Trusted by Millions
+              </h3>
+              <p className="text-gray-600">
+                Over 1 million travelers have used our guides to explore China's amazing attractions
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Best Experiences
+              </h3>
+              <p className="text-gray-600">
+                Curated selection of the highest-rated tours and activities from trusted partners
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}

@@ -1,0 +1,200 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Menu, X, Search, MapPin, BookOpen, Home } from 'lucide-react'
+
+const navigationItems = [
+  { name: 'Home', href: '/', icon: Home },
+  { name: 'Attractions', href: '/attractions', icon: MapPin },
+  { 
+    name: 'Cities', 
+    href: '/cities', 
+    icon: MapPin,
+    dropdown: [
+      { name: 'Beijing', href: '/cities/beijing' },
+      { name: 'Shanghai', href: '/cities/shanghai' },
+      { name: 'Xi\'an', href: '/cities/xian' },
+      { name: 'Guilin', href: '/cities/guilin' },
+      { name: 'Chengdu', href: '/cities/chengdu' },
+      { name: 'Hangzhou', href: '/cities/hangzhou' },
+      { name: 'Suzhou', href: '/cities/suzhou' },
+      { name: 'Nanjing', href: '/cities/nanjing' },
+      { name: 'All Cities', href: '/cities', divider: true }
+    ]
+  },
+  { name: 'Blog', href: '/blog', icon: BookOpen },
+]
+
+export default function Navigation() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const closeMenu = () => setIsOpen(false)
+
+  return (
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-white/95 backdrop-blur-md shadow-lg' 
+        : 'bg-white/90 backdrop-blur-sm'
+    }`}>
+      <div className="container-custom">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          {/* Logo */}
+          <Link 
+            href="/" 
+            className="flex items-center space-x-2 group"
+            onClick={closeMenu}
+          >
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 to-gold-500 rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform duration-200">
+              <span className="text-white font-bold text-lg md:text-xl">中</span>
+            </div>
+            <div className="hidden sm:block">
+              <h1 className="text-xl md:text-2xl font-bold text-gradient">
+                Chinese Attractions
+              </h1>
+              <p className="text-xs text-gray-600 -mt-1">
+                Discover Amazing China
+              </p>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navigationItems.map((item) => {
+              const Icon = item.icon
+              const isActive = pathname === item.href || 
+                (item.href !== '/' && pathname.startsWith(item.href))
+              
+              // Handle dropdown items
+              if (item.dropdown) {
+                return (
+                  <div key={item.name} className="relative group">
+                    <Link
+                      href={item.href}
+                      className={`flex items-center space-x-2 px-3 py-2 rounded-lg font-medium transition-all duration-200 ${
+                        isActive
+                          ? 'text-primary-600 bg-primary-50'
+                          : 'text-gray-700 hover:text-primary-600 hover:bg-primary-50'
+                      }`}
+                    >
+                      <Icon className="w-4 h-4" />
+                      <span>{item.name}</span>
+                    </Link>
+                    
+                    {/* Dropdown Menu */}
+                    <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                      <div className="py-2">
+                        {item.dropdown.map((dropdownItem, index) => (
+                          <div key={dropdownItem.name}>
+                            {dropdownItem.divider && index > 0 && (
+                              <div className="border-t border-gray-200 my-2"></div>
+                            )}
+                            <Link
+                              href={dropdownItem.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
+                            >
+                              {dropdownItem.name}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )
+              }
+              
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`flex items-center space-x-2 px-3 py-2 rounded-lg font-medium transition-all duration-200 ${
+                    isActive
+                      ? 'text-primary-600 bg-primary-50'
+                      : 'text-gray-700 hover:text-primary-600 hover:bg-primary-50'
+                  }`}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span>{item.name}</span>
+                </Link>
+              )
+            })}
+          </div>
+
+          {/* Search and Mobile Menu Button */}
+          <div className="flex items-center space-x-4">
+            {/* Search Button */}
+            <Link
+              href="/search"
+              className="p-2 text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200"
+              aria-label="Search attractions"
+            >
+              <Search className="w-5 h-5" />
+            </Link>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden p-2 text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <div className={`md:hidden transition-all duration-300 ease-in-out ${
+          isOpen 
+            ? 'max-h-96 opacity-100' 
+            : 'max-h-0 opacity-0 overflow-hidden'
+        }`}>
+          <div className="py-4 space-y-2 border-t border-gray-200">
+            {navigationItems.map((item) => {
+              const Icon = item.icon
+              const isActive = pathname === item.href || 
+                (item.href !== '/' && pathname.startsWith(item.href))
+              
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={closeMenu}
+                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                    isActive
+                      ? 'text-primary-600 bg-primary-50'
+                      : 'text-gray-700 hover:text-primary-600 hover:bg-primary-50'
+                  }`}
+                >
+                  <Icon className="w-5 h-5" />
+                  <span>{item.name}</span>
+                </Link>
+              )
+            })}
+            
+            {/* Mobile Search */}
+            <Link
+              href="/search"
+              onClick={closeMenu}
+              className="flex items-center space-x-3 px-4 py-3 rounded-lg font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-200"
+            >
+              <Search className="w-5 h-5" />
+              <span>Search</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
