@@ -267,7 +267,7 @@ export default function TravelTipsPage() {
                         {tip.affiliate && (
                           <div className="mt-4 pt-4 border-t border-gray-200">
                             <a 
-                              href="https://www.getyourguide.com/activity/beijing-l186/beijing-private-custom-tour-with-a-local-guide-t469001/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-middle&cmp=tips"
+                              href="https://www.getyourguide.com/activity/beijing-l189/beijing-private-custom-tour-with-a-local-guide-t469001/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-middle&cmp=tips"
                               target="_blank"
                               rel="noopener noreferrer sponsored"
                               className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm"

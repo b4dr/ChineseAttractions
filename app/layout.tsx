@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
+import './mobile-optimizations.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { Analytics } from '@/components/Analytics'
+import StickyAffiliateBar from '@/components/StickyAffiliateBar'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -99,6 +101,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <StickyAffiliateBar />
         <Analytics />
       </body>
     </html>

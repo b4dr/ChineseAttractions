@@ -474,7 +474,7 @@ export default function FoodDiningPage() {
                 </div>
                 
                 <a 
-                  href={`https://www.getyourguide.com/activity/${tour.city.toLowerCase() === 'beijing' ? 'beijing-l186/beijing-private-custom-tour-with-a-local-guide-t469001' : tour.city.toLowerCase() === 'shanghai' ? 'shanghai-l178/shanghai-evening-walking-food-tour-t260112' : tour.city.toLowerCase() === 'chengdu' ? 'shanghai-l178/tea-tour-wet-market-visit-and-home-cooking-class-t41916' : 'shanghai-l178/shanghai-3-hour-authentic-downtown-local-food-tasting-t68420'}/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-middle&cmp=food-tours`}
+                  href={`https://www.getyourguide.com/activity/${tour.city.toLowerCase() === 'beijing' ? 'beijing-l189/beijing-private-custom-tour-with-a-local-guide-t469001' : tour.city.toLowerCase() === 'shanghai' ? 'shanghai-l18/shanghai-evening-walking-food-tour-t260112' : tour.city.toLowerCase() === 'chengdu' ? 'shanghai-l18/tea-tour-wet-market-visit-and-home-cooking-class-t41916' : 'shanghai-l18/shanghai-3-hour-authentic-downtown-local-food-tasting-t68420'}/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-middle&cmp=food-tours`}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 inline-flex items-center justify-center"
@@ -560,7 +560,7 @@ export default function FoodDiningPage() {
                 Explore Food Destinations
               </Link>
               <a 
-                href="https://www.getyourguide.com/activity/shanghai-l178/shanghai-evening-walking-food-tour-t260112/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-end&cmp=food-dining"
+                href="https://www.getyourguide.com/activity/shanghai-l18/shanghai-evening-walking-food-tour-t260112/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-end&cmp=food-dining"
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 inline-flex items-center justify-center"

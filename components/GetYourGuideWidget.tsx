@@ -88,7 +88,7 @@ export default function GetYourGuideWidget({
         data-gyg-widget={tourIds ? "activities" : "city"}
         {...(tourIds ? { 'data-gyg-tour-ids': Array.isArray(tourIds) ? tourIds.join(',') : tourIds, 'data-gyg-number-of-items': '1' } : { 'data-gyg-location-id': locationId })}
         data-gyg-partner-id={partnerId}
-        className="min-h-[400px] bg-gray-100 rounded-lg flex items-center justify-center"
+        className={`gyg-widget getyourguide-widget-mobile min-h-[300px] sm:min-h-[400px] bg-gray-100 rounded-lg flex items-center justify-center w-full overflow-x-auto scrollbar-mobile ${className || ''}`}
       >
         <div className="text-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500 mx-auto mb-4"></div>

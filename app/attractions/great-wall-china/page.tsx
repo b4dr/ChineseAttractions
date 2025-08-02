@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Shield, Mountain, Calendar, ArrowRight, Sparkles } from 'lucide-react'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
+import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Great Wall of China - Complete Travel Guide 2024 | Chinese Attractions',
-  description: 'Discover the Great Wall of China with our comprehensive guide. Book tours, learn history, get insider tips, and explore the world\'s most iconic fortification.',
+  title: 'Great Wall of China - Complete Travel Guide 2025 | Chinese Attractions',
+  description: 'Great Wall of China 2025 Guide: Book skip-the-line tours, insider tips, best sections to visit. Save 2+ hours with cable car access. Expert local guides included!',
   keywords: [
     'Great Wall of China',
     'Great Wall tours',
@@ -329,6 +330,62 @@ export default function GreatWallPage() {
           </div>
         </div>
       </section>
+
+      {/* Schema Markup for SEO */}
+      <SchemaMarkup 
+        type="attraction"
+        data={{
+          name: attractionData.name,
+          description: "Discover the Great Wall of China with our comprehensive guide. Book tours, learn history, get insider tips, and explore the world's most iconic fortification.",
+          image: "/great-wall-og.jpg",
+          location: attractionData.location,
+          coordinates: {
+            lat: 40.4319,
+            lng: 116.5704
+          },
+          rating: attractionData.rating,
+          reviewCount: attractionData.reviews,
+          openingHours: "Mo-Su 08:00-17:30",
+          priceRange: "$$",
+          url: "/attractions/great-wall-china",
+          amenities: [
+            { "@type": "LocationFeatureSpecification", "name": "Cable Car Access" },
+            { "@type": "LocationFeatureSpecification", "name": "Guided Tours Available" },
+            { "@type": "LocationFeatureSpecification", "name": "Photography Allowed" },
+            { "@type": "LocationFeatureSpecification", "name": "Souvenir Shop" },
+            { "@type": "LocationFeatureSpecification", "name": "Restrooms Available" }
+          ]
+        }}
+      />
+      
+      <SchemaMarkup 
+        type="article"
+        data={{
+          title: "Great Wall of China - Complete Travel Guide 2025",
+          description: "Discover the Great Wall of China with our comprehensive guide. Book tours, learn history, get insider tips, and explore the world's most iconic fortification.",
+          image: "/great-wall-og.jpg",
+          author: "Travel Expert Team",
+          authorTitle: "China Travel Specialists",
+          datePublished: "2025-01-20",
+          dateModified: "2025-01-20",
+          url: "/attractions/great-wall-china",
+          category: "Travel Guide",
+          keywords: ["Great Wall of China", "Great Wall tours", "Mutianyu Great Wall", "Beijing attractions", "China UNESCO sites", "Great Wall tickets", "Great Wall history", "China travel guide"],
+          wordCount: 2500,
+          readTime: "PT15M"
+        }}
+      />
+      
+      <SchemaMarkup 
+        type="breadcrumb"
+        data={{
+          breadcrumbs: [
+            { name: "Home", url: "/" },
+            { name: "Attractions", url: "/attractions" },
+            { name: "Great Wall of China", url: "/attractions/great-wall-china" }
+          ]
+        }}
+      />
     </div>
   )
 }

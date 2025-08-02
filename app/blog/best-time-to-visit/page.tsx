@@ -465,7 +465,7 @@ export default function BestTimeToVisitPage() {
                 Browse Top Attractions
               </Link>
               <a 
-                href="https://www.getyourguide.com/activity/beijing-l186/beijing-lama-temple-entry-ticket-and-optional-guided-tour-t798721/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-end&cmp=best-time"
+                href="https://www.getyourguide.com/activity/beijing-l189/beijing-lama-temple-entry-ticket-and-optional-guided-tour-t798721/?partner_id=UENNPLZ&utm_medium=online_publisher&utm_source=chineseattractions&placement=content-end&cmp=best-time"
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 inline-flex items-center justify-center"

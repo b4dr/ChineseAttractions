@@ -96,34 +96,38 @@ export default function HomePage() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
-        <div className="relative container-custom section-padding">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center mb-6">
-              <Sparkles className="w-8 h-8 text-gold-400 mr-3" />
-              <span className="text-gold-400 font-medium text-lg">Discover Amazing China</span>
-            </div>
-            
-            <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
-              Explore China's Most
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
-                Spectacular Attractions
+      <section className="hero-mobile relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-chinese-900 via-chinese-800 to-chinese-700">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }} />
+        </div>
+        
+        <div className="container mx-auto px-3 sm:px-4 text-center z-10">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="heading-mobile-xl text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 font-serif leading-tight">
+              Discover
+              <span className="block bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+                China's Wonders
               </span>
             </h1>
             
-            <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              From ancient wonders like the Great Wall to modern marvels in Shanghai, 
-              discover and book unforgettable experiences across China with our comprehensive travel guide.
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed px-2">
+              Explore ancient temples, majestic palaces, and breathtaking landscapes.
+              <span className="block mt-2 text-gold-300 font-medium">
+                Your ultimate guide to China's most spectacular attractions.
+              </span>
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              <Link href="/attractions" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center">
-                Explore All Attractions
-                <ArrowRight className="w-5 h-5 ml-2 flex-shrink-0" />
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4">
+              <Link href="/attractions" className="btn-mobile-optimized bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-chinese-900 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center w-full sm:w-auto">
+                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                Explore Attractions
               </Link>
-              <Link href="/cities" className="btn-secondary bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-4">
-                Browse by City
+              <Link href="/cities" className="btn-mobile-optimized bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 font-bold rounded-lg transition-all duration-300 inline-flex items-center justify-center w-full sm:w-auto">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                Browse Cities
               </Link>
             </div>
             
@@ -148,23 +152,23 @@ export default function HomePage() {
 
 
       {/* GetYourGuide Widget Section - Revenue Driver */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="heading-lg mb-4">
+      <section className="section-mobile bg-gray-50">
+        <div className="container mx-auto px-3 sm:px-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="heading-mobile-lg text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
               Book Your China Adventure
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
               Discover and book amazing experiences across China with our trusted travel partner
             </p>
           </div>
           
           <div className="max-w-5xl mx-auto">
             {/* High-Converting GetYourGuide Widget */}
-            <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
-              <div className="p-6 bg-gradient-to-r from-chinese-500 to-gold-500 text-white text-center">
-                <h3 className="text-2xl font-bold mb-2">Book Amazing China Experiences</h3>
-                <p className="text-primary-100">Discover and book the best tours, activities, and attractions across China</p>
+            <div className="getyourguide-widget-mobile shadow-xl rounded-xl overflow-hidden bg-white">
+              <div className="p-4 sm:p-6 bg-gradient-to-r from-chinese-500 to-gold-500 text-white text-center">
+                <h3 className="text-lg sm:text-2xl font-bold mb-2">Book Amazing China Experiences</h3>
+                <p className="text-sm sm:text-base text-primary-100">Discover and book the best tours, activities, and attractions across China</p>
               </div>
               <div 
                 data-gyg-href="https://widget.getyourguide.com/default/activities.frame" 
@@ -173,7 +177,7 @@ export default function HomePage() {
                 data-gyg-number-of-items="8" 
                 data-gyg-partner-id="UENNPLZ" 
                 data-gyg-q="china"
-                className="min-h-[600px] bg-gray-50 flex items-center justify-center"
+                className="min-h-[400px] sm:min-h-[600px] bg-gray-50 flex items-center justify-center"
               >
                 <div className="text-center p-8">
                   <div className="animate-spin rounded-full h-12 w-12 border-b-3 border-primary-500 mx-auto mb-6"></div>
@@ -194,18 +198,18 @@ export default function HomePage() {
       </section>
 
       {/* Top Destinations */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="heading-lg mb-4">
+      <section className="section-mobile bg-white">
+        <div className="container mx-auto px-3 sm:px-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="heading-mobile-lg text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
               Explore Top Destinations
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
               From bustling metropolises to ancient cities, discover China's most captivating destinations
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
             {topDestinations.map((destination, index) => (
               <Link 
                 key={destination.name}
@@ -213,18 +217,18 @@ export default function HomePage() {
                 className="group block animate-fade-in-up"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className={`relative overflow-hidden rounded-xl aspect-square bg-gradient-to-br ${destination.gradient} flex flex-col items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
+                <div className={`card-mobile relative overflow-hidden rounded-xl aspect-square bg-gradient-to-br ${destination.gradient} flex flex-col items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
                   {/* Decorative Pattern */}
                   <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-2 left-2 w-4 h-4 border border-white/30 rounded-full"></div>
-                    <div className="absolute top-3 right-3 w-3 h-3 border border-white/20 rounded-full"></div>
-                    <div className="absolute bottom-2 left-3 w-2 h-2 border border-white/25 rounded-full"></div>
-                    <div className="absolute bottom-2 right-2 w-5 h-5 border border-white/15 rounded-full"></div>
+                    <div className="absolute top-1 sm:top-2 left-1 sm:left-2 w-2 h-2 sm:w-4 sm:h-4 border border-white/30 rounded-full"></div>
+                    <div className="absolute top-2 sm:top-3 right-2 sm:right-3 w-2 h-2 sm:w-3 sm:h-3 border border-white/20 rounded-full"></div>
+                    <div className="absolute bottom-1 sm:bottom-2 left-2 sm:left-3 w-1 h-1 sm:w-2 sm:h-2 border border-white/25 rounded-full"></div>
+                    <div className="absolute bottom-1 sm:bottom-2 right-1 sm:right-2 w-3 h-3 sm:w-5 sm:h-5 border border-white/15 rounded-full"></div>
                   </div>
                   
                   {/* City Names */}
-                  <div className="text-center z-10 px-2">
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 font-serif tracking-wide">
+                  <div className="text-center z-10 px-1 sm:px-2">
+                    <h3 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-1 font-serif tracking-wide">
                       {destination.chineseName}
                     </h3>
                     <p className="text-xs sm:text-sm text-white font-light tracking-widest opacity-90">

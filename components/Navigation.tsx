@@ -147,16 +147,28 @@ export default function Navigation() {
             })}
           </div>
 
-          {/* Search and Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            {/* Search Button */}
-            <Link
-              href="/search"
-              className="p-2 text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200"
-              aria-label="Search attractions"
+          {/* Book Tours CTA and Mobile Menu Button */}
+          <div className="flex items-center space-x-3">
+            {/* Book Tours CTA Button */}
+            <a
+              href="https://www.getyourguide.com/beijing-l189/?partner_id=YOUR_PARTNER_ID&utm_source=affiliate&utm_medium=header_cta&utm_campaign=china_attractions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-chinese-900 font-bold px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
+              onClick={() => {
+                // Track affiliate click
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'click', {
+                    event_category: 'affiliate',
+                    event_label: 'header_book_tours',
+                    value: 1
+                  });
+                }
+              }}
             >
-              <Search className="w-5 h-5" />
-            </Link>
+              <span>🎫</span>
+              <span>Book Tours</span>
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -197,16 +209,7 @@ export default function Navigation() {
                 </Link>
               )
             })}
-            
-            {/* Mobile Search */}
-            <Link
-              href="/search"
-              onClick={closeMenu}
-              className="flex items-center space-x-3 px-4 py-3 rounded-lg font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-200"
-            >
-              <Search className="w-5 h-5" />
-              <span>Search</span>
-            </Link>
+
           </div>
         </div>
       </div>
