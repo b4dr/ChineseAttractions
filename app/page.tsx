@@ -106,9 +106,9 @@ export default function HomePage() {
         
         <div className="container mx-auto px-3 sm:px-4 text-center z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="heading-mobile-xl text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 font-serif leading-tight">
+            <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
               Discover
-              <span className="block bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
                 China's Wonders
               </span>
             </h1>
