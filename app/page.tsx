@@ -106,14 +106,14 @@ export default function HomePage() {
         
         <div className="container mx-auto px-3 sm:px-4 text-center z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
+            <h1 className="heading-xl text-white mb-4 animate-fade-in-up">
               Discover
               <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
                 China's Wonders
               </span>
             </h1>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed px-2">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-4 sm:mb-6 leading-relaxed px-2">
               Explore ancient temples, majestic palaces, and breathtaking landscapes.
               <span className="block mt-2 text-gold-300 font-medium">
                 Your ultimate guide to China's most spectacular attractions.
