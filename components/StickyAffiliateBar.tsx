@@ -83,7 +83,7 @@ export default function StickyAffiliateBar({ show = true, delay = 3000 }: Sticky
             {/* Center - Call to action */}
             <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
               <Link 
-                href="https://www.getyourguide.com/beijing-l189/?partner_id=UENNPLZ&utm_source=affiliate&utm_medium=sticky_bar&utm_campaign=china_attractions"
+                href="https://www.getyourguide.com/s/?et=783639&psrc=widget&partner_id=UENNPLZ&utm_medium=online_publisher&currency=EUR&q=china&queryMatch=all&widget=activities&wid=ab1660d8-9b99-54a5-aca0-795d5c8f4cf9&page_id=0b370c63-1a14-540c-b2c3-b717ab0de411&visitor_id=42XXGCZ2JPC706732CS99U7Q8BXUFZZ7"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleClick}
@@ -96,7 +96,7 @@ export default function StickyAffiliateBar({ show = true, delay = 3000 }: Sticky
               </Link>
               
               <Link 
-                href="https://www.getyourguide.com/shanghai-l18/?partner_id=UENNPLZ&utm_source=affiliate&utm_medium=sticky_bar&utm_campaign=china_attractions"
+                href="https://www.getyourguide.com/s/?et=783639&psrc=widget&partner_id=UENNPLZ&utm_medium=online_publisher&currency=EUR&q=china&queryMatch=all&widget=activities&wid=ab1660d8-9b99-54a5-aca0-795d5c8f4cf9&page_id=0b370c63-1a14-540c-b2c3-b717ab0de411&visitor_id=42XXGCZ2JPC706732CS99U7Q8BXUFZZ7"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleClick}
@@ -170,7 +170,7 @@ export function StickyAffiliateBarAttraction({ attractionName, locationId }: { a
             </div>
             
             <Link 
-              href={`https://www.getyourguide.com/s/?q=${encodeURIComponent(attractionName)}&partner_id=UENNPLZ&utm_source=affiliate&utm_medium=sticky_bar&utm_campaign=${attractionName.toLowerCase().replace(/\s+/g, '_')}`}
+              href="https://www.getyourguide.com/s/?et=783639&psrc=widget&partner_id=UENNPLZ&utm_medium=online_publisher&currency=EUR&q=china&queryMatch=all&widget=activities&wid=ab1660d8-9b99-54a5-aca0-795d5c8f4cf9&page_id=0b370c63-1a14-540c-b2c3-b717ab0de411&visitor_id=42XXGCZ2JPC706732CS99U7Q8BXUFZZ7"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleClick}

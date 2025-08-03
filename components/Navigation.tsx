@@ -151,7 +151,7 @@ export default function Navigation() {
           <div className="flex items-center space-x-3">
             {/* Book Tours CTA Button */}
             <a
-              href="https://www.getyourguide.com/beijing-l189/?partner_id=UENNPLZ&utm_source=affiliate&utm_medium=header_cta&utm_campaign=china_attractions"
+              href="https://www.getyourguide.com/s/?et=783639&psrc=widget&partner_id=UENNPLZ&utm_medium=online_publisher&currency=EUR&q=china&queryMatch=all&widget=activities&wid=ab1660d8-9b99-54a5-aca0-795d5c8f4cf9&page_id=0b370c63-1a14-540c-b2c3-b717ab0de411&visitor_id=42XXGCZ2JPC706732CS99U7Q8BXUFZZ7"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-chinese-900 font-bold px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
