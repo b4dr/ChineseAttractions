@@ -96,7 +96,7 @@ export default function HomePage() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className="hero-mobile relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-chinese-900 via-chinese-800 to-chinese-700">
+      <section className="hero-mobile relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-chinese-900 via-chinese-800 to-chinese-700">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -120,7 +120,7 @@ export default function HomePage() {
               </span>
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8 px-4">
               <Link href="/attractions" className="btn-mobile-optimized bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-chinese-900 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center w-full sm:w-auto">
                 <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Explore Attractions
@@ -131,7 +131,7 @@ export default function HomePage() {
               </Link>
             </div>
             
-            <div className="flex items-center justify-center space-x-8 mt-12 text-gray-200">
+            <div className="flex items-center justify-center space-x-8 mt-6 sm:mt-8 text-gray-200">
               <div className="text-center">
                 <div className="text-2xl font-bold text-gold-400">500+</div>
                 <div className="text-sm">Attractions</div>
@@ -148,8 +148,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-
 
       {/* GetYourGuide Widget Section - Revenue Driver */}
       <section className="section-mobile bg-gray-50">
