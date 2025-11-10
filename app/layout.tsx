@@ -6,6 +6,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { Analytics } from '@/components/Analytics'
 import StickyAffiliateBar from '@/components/StickyAffiliateBar'
+import SalesBanner from '@/components/SalesBanner'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -99,7 +100,8 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="min-h-screen bg-gray-50 font-sans antialiased">
-        <div className="flex flex-col min-h-screen">
+        <SalesBanner />
+        <div className="flex flex-col min-h-screen pt-10">
           <Navigation />
           <main className="flex-grow">
             {children}
