@@ -90,6 +90,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="linkavista" content="link-2130-3950" />
         <title>Chinese Attractions - Discover China&apos;s Wonders</title>
         <meta name="description" content="Explore the best attractions and destinations in China for 2025. Plan your trip with our expert travel guides and book tours with GetYourGuide." />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
