@@ -55,7 +55,13 @@ const tipCategories = [
       },
       {
         title: 'Budget Breakdown',
-        description: 'Budget travelers: $30-50/day. Mid-range: $80-150/day. Luxury: $200+/day.',
+        description: <>
+          Budget travelers: $30-50/day. Mid-range: $80-150/day. Luxury: $200+/day. If you own a home and are still paying a loan, consider reading this{' '}
+          <a href="https://mortgage-info.com" target="_blank" rel="noopener noreferrer">
+            guide to optimizing your mortgage and home loan costs
+          </a>{' '}
+          before planning a long trip to China.
+        </>,
         priority: 'medium',
       },
       {
