@@ -3,6 +3,21 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Lightbulb, Shield, Wallet, Smartphone, MapPin, Clock, Users, Star, ExternalLink, CheckCircle, AlertTriangle, Info } from 'lucide-react';
 
+type TravelTip = {
+  title: string;
+  description: React.ReactNode;
+  priority: 'high' | 'medium' | 'low';
+  affiliate?: boolean;
+};
+
+type TipCategory = {
+  id: string;
+  title: string;
+  icon: any;
+  color: string;
+  tips: TravelTip[];
+};
+
 export const metadata: Metadata = {
   title: 'China Travel Tips 2024 | Expert Advice & Essential Guide | Chinese Attractions',
   description: 'Essential China travel tips from experts. Money-saving advice, safety tips, cultural etiquette, visa requirements, and insider secrets for your perfect China trip.',
@@ -17,7 +32,7 @@ export const metadata: Metadata = {
   },
 };
 
-const tipCategories = [
+const tipCategories: TipCategory[] = [
   {
     id: 'planning',
     title: 'Trip Planning',
