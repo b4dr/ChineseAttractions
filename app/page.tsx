@@ -1,6 +1,9 @@
 import Link from 'next/link'
-import { MapPin, Star, Users, Clock, ArrowRight, Sparkles } from 'lucide-react'
+import { MapPin, Star, Users, Clock, ArrowRight, Sparkles, Plane, Shield, CheckCircle } from 'lucide-react'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
+import TravelInsuranceBanner from '@/components/TravelInsuranceBanner'
+import TripComBanner from '@/components/TripComBanner'
+import { AFFILIATE_LINKS } from '@/lib/affiliates'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -250,6 +253,12 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Trip.com Flights Section */}
+      <TripComBanner variant="full" />
+
+      {/* Travel Insurance Section */}
+      <TravelInsuranceBanner variant="full" />
 
       {/* Why Choose Us */}
       <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">

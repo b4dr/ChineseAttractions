@@ -28,7 +28,45 @@ export const metadata: Metadata = {
 // Featured Articles with links to actual site pages
 const featuredArticles = [
   {
+    id: 0,
+    title: 'Cheap Flights to China 2025: Best Deals & Booking Tips',
+    excerpt: 'Find the cheapest flights to China from €399! Compare airlines, discover the best booking times, and get exclusive deals. Save hundreds with our insider tips!',
+    image: '/images/blog/cheap-flights-china-2025.jpg',
+    author: 'Travel Deals Team',
+    authorTitle: 'Flight Booking Experts',
+    date: '2025-01-22',
+    readTime: '12 min read',
+    category: 'Travel Planning',
+    slug: '/blog/cheap-flights-china-2025',
+    tags: ['Flights', 'Budget Travel', 'Trip.com', 'Deals'],
+    featured: true,
+    views: '15.2K',
+    rating: 4.8,
+    bookingLink: true,
+    urgent: true,
+    practical: true
+  },
+  {
     id: 1,
+    title: 'China Travel Insurance Guide 2025: Essential Protection',
+    excerpt: 'Don\'t travel to China without insurance! Complete guide to coverage, medical costs, and the best policies. Get protected with AXA from just €2/day.',
+    image: '/images/blog/china-travel-insurance-2025.jpg',
+    author: 'Insurance Expert Team',
+    authorTitle: 'Travel Protection Specialists',
+    date: '2025-01-22',
+    readTime: '15 min read',
+    category: 'Essential Guides',
+    slug: '/blog/china-travel-insurance-guide-2025',
+    tags: ['Insurance', 'AXA', 'Medical Coverage', 'Protection'],
+    featured: true,
+    views: '12.8K',
+    rating: 4.9,
+    bookingLink: true,
+    urgent: true,
+    practical: true
+  },
+  {
+    id: 2,
     title: 'Chinese New Year 2025: Ultimate Travel Guide & Celebrations',
     excerpt: 'Experience the magic of Spring Festival in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours for February 10-17, 2025.',
     image: '/images/blog/chinese-new-year-2025.jpg',
@@ -47,7 +85,7 @@ const featuredArticles = [
     seasonal: 'February 2025'
   },
   {
-    id: 2,
+    id: 3,
     title: 'China Visa Requirements 2025: Complete Application Guide',
     excerpt: 'Everything you need to know to get your China visa approved quickly! Requirements, fees, processing time, and step-by-step application process updated for 2025.',
     image: '/images/blog/china-visa-2025.jpg',

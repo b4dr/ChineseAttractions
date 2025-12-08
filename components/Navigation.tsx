@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Search, MapPin, BookOpen, Home } from 'lucide-react'
+import { Menu, X, Search, MapPin, BookOpen, Home, Plane, Shield } from 'lucide-react'
+import { AFFILIATE_LINKS, trackAffiliateClick } from '@/lib/affiliates'
 
 const navigationItems = [
   { name: 'Home', href: '/', icon: Home },
@@ -151,23 +152,38 @@ export default function Navigation() {
           <div className="flex items-center space-x-3">
             {/* Book Tours CTA Button */}
             <a
-              href="https://www.getyourguide.com/s/?et=783639&psrc=widget&partner_id=UENNPLZ&utm_medium=online_publisher&currency=EUR&q=china&queryMatch=all&widget=activities&wid=ab1660d8-9b99-54a5-aca0-795d5c8f4cf9&page_id=0b370c63-1a14-540c-b2c3-b717ab0de411&visitor_id=42XXGCZ2JPC706732CS99U7Q8BXUFZZ7"
+              href={AFFILIATE_LINKS.getYourGuide.chinaSearch}
               target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-chinese-900 font-bold px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
-              onClick={() => {
-                // Track affiliate click
-                if (typeof window !== 'undefined' && (window as any).gtag) {
-                  (window as any).gtag('event', 'click', {
-                    event_category: 'affiliate',
-                    event_label: 'header_book_tours',
-                    value: 1
-                  });
-                }
-              }}
+              rel="noopener noreferrer sponsored"
+              className="hidden lg:inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-chinese-900 font-bold px-3 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-xs"
+              onClick={() => trackAffiliateClick('getYourGuide', 'header')}
             >
               <span>🎫</span>
-              <span>Book Tours</span>
+              <span>Tours</span>
+            </a>
+            
+            {/* Book Flights CTA Button - Trip.com */}
+            <a
+              href={AFFILIATE_LINKS.tripCom.affiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="hidden lg:inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-3 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-xs"
+              onClick={() => trackAffiliateClick('tripCom', 'header')}
+            >
+              <Plane className="w-3 h-3" />
+              <span>Flights</span>
+            </a>
+            
+            {/* Insurance CTA Button - AXA */}
+            <a
+              href={AFFILIATE_LINKS.axaInsurance.affiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="hidden xl:inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold px-3 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-xs"
+              onClick={() => trackAffiliateClick('axaInsurance', 'header')}
+            >
+              <Shield className="w-3 h-3" />
+              <span>Insurance</span>
             </a>
 
             {/* Mobile Menu Button */}

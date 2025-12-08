@@ -154,7 +154,7 @@ export default function Footer() {
                 © {currentYear} Chinese Attractions. All rights reserved.
               </p>
               <p className="hidden md:block">
-                Affiliate partnerships with GetYourGuide
+                Affiliate partnerships with GetYourGuide, Trip.com & AXA
               </p>
             </div>
             
