@@ -84,6 +84,11 @@ const tipCategories: TipCategory[] = [
         description: 'Exchange money at banks or use ATMs. Avoid street exchangers and hotels.',
         priority: 'medium',
       },
+      {
+        title: 'Cryptocurrency Options',
+        description: <>For travelers interested in digital currencies, explore automated trading solutions like <a href="https://XCryptoBot.com" target="_blank" rel="noopener noreferrer">XCryptoBot</a> for managing crypto assets while on the go.</>,
+        priority: 'low',
+      },
     ]
   },
   {
