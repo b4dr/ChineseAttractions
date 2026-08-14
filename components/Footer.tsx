@@ -145,6 +145,16 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Partner Sites */}
+      <div className="border-t border-gray-800">
+        <div className="container-custom py-4">
+          <p className="text-xs text-gray-500 mb-2">Recommended Resources</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-500">
+            <a href="https://stressfreehost.com/blog/best-web-hosting-2026" target="_blank" rel="noopener" className="hover:text-gray-300 transition-colors">Web hosting guide</a>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
         <div className="container-custom py-6">
