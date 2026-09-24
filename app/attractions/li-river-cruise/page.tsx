@@ -214,7 +214,7 @@ export default function LiRiverCruisePage() {
                     
                     <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Highlights Along the Way</h3>
                     <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                      <li>Elephant Trunk Hill - Guilin's most famous landmark</li>
+                      <li>Elephant Trunk Hill - <Link href="/cities/guilin" className="text-primary-600 font-semibold hover:underline">Guilin</Link>'s most famous landmark</li>
                       <li>Crown Cave - Stunning underground limestone formations</li>
                       <li>Xingping Ancient Town - Traditional fishing village</li>
                       <li>Nine Horses Fresco Hill - Natural rock formations</li>

@@ -465,18 +465,18 @@ export default function ChinaVisa2025Page() {
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/attractions/great-wall-china" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
                 <MapPin className="w-8 h-8 mx-auto mb-3 text-blue-200" />
-                <h3 className="font-bold mb-2">Great Wall Tours</h3>
+                <h3 className="font-bold mb-2"><Link href="/attractions/great-wall-china" className="text-primary-600 font-semibold hover:underline">Great Wall</Link> Tours</h3>
                 <p className="text-sm text-blue-100">Skip-the-line access</p>
               </Link>
               <Link href="/attractions/forbidden-city" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
                 <Users className="w-8 h-8 mx-auto mb-3 text-blue-200" />
-                <h3 className="font-bold mb-2">Beijing Highlights</h3>
+                <h3 className="font-bold mb-2"><Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> Highlights</h3>
                 <p className="text-sm text-blue-100">Expert local guides</p>
               </Link>
               <Link href="/cities/shanghai" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
                 <Plane className="w-8 h-8 mx-auto mb-3 text-blue-200" />
                 <h3 className="font-bold mb-2">Multi-City Tours</h3>
-                <p className="text-sm text-blue-100">Beijing to Shanghai</p>
+                <p className="text-sm text-blue-100">Beijing to <Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link></p>
               </Link>
             </div>
           </div>

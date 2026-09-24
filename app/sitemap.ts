@@ -83,7 +83,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'travel-tips',
     'best-time-to-visit',
     'cultural-guide',
-    'food-dining'
+    'food-dining',
+    'cheap-flights-china-2025',
+    'china-travel-insurance-guide-2025',
+    'china-visa-requirements-2025',
+    'china-payment-apps-guide-2026',
+    'china-esim-vpn-guide-2026',
+    'china-high-speed-rail-guide-2026',
+    'china-itinerary-2-weeks-2026',
+    'china-travel-cost-2026',
+    'china-safety-tips-2026'
   ].map(guide => ({
     url: `${baseUrl}/blog/${guide}`,
     lastModified: currentDate,

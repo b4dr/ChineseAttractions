@@ -131,7 +131,7 @@ export default function CheapFlightsChinaGuide() {
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
               <div className="text-5xl font-bold text-yellow-300 mb-2">From €399</div>
-              <div className="text-orange-100">Round trip flights to Beijing & Shanghai</div>
+              <div className="text-orange-100">Round trip flights to <Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> & <Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link></div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

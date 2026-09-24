@@ -312,31 +312,31 @@ export default function CitiesPage() {
             <div className="bg-white rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Northern China</h3>
               <p className="text-gray-600 text-sm mb-4">Imperial history, ancient architecture, and cultural heritage</p>
-              <div className="text-sm text-primary-600">Beijing, Tianjin, Harbin</div>
+              <div className="text-sm text-primary-600"><Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link>, Tianjin, Harbin</div>
             </div>
             
             <div className="bg-white rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Eastern China</h3>
               <p className="text-gray-600 text-sm mb-4">Modern cities, classical gardens, and economic powerhouses</p>
-              <div className="text-sm text-primary-600">Shanghai, Hangzhou, Nanjing, Suzhou</div>
+              <div className="text-sm text-primary-600"><Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link>, Hangzhou, Nanjing, Suzhou</div>
             </div>
             
             <div className="bg-white rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Southern China</h3>
               <p className="text-gray-600 text-sm mb-4">Stunning landscapes, karst formations, and natural wonders</p>
-              <div className="text-sm text-primary-600">Guilin, Guangzhou, Shenzhen</div>
+              <div className="text-sm text-primary-600"><Link href="/cities/guilin" className="text-primary-600 font-semibold hover:underline">Guilin</Link>, Guangzhou, Shenzhen</div>
             </div>
             
             <div className="bg-white rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Northwestern China</h3>
               <p className="text-gray-600 text-sm mb-4">Ancient Silk Road, diverse cultures, and historical treasures</p>
-              <div className="text-sm text-primary-600">Xi'an</div>
+              <div className="text-sm text-primary-600"><Link href="/cities/xian" className="text-primary-600 font-semibold hover:underline">Xi'an</Link></div>
             </div>
             
             <div className="bg-white rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Southwestern China</h3>
               <p className="text-gray-600 text-sm mb-4">Panda habitats, spicy cuisine, and laid-back lifestyle</p>
-              <div className="text-sm text-primary-600">Chengdu</div>
+              <div className="text-sm text-primary-600"><Link href="/cities/chengdu" className="text-primary-600 font-semibold hover:underline">Chengdu</Link></div>
             </div>
           </div>
         </div>

@@ -159,7 +159,7 @@ export default function GuilinPage() {
                 Guilin, renowned throughout China and the world for its extraordinary natural beauty, stands as the crown jewel of scenic destinations in the Middle Kingdom. This enchanting city in Guangxi Province has inspired poets, artists, and travelers for over 2,000 years with its otherworldly landscape of towering limestone karst peaks, crystal-clear rivers, and mystical caves. The famous Chinese saying <strong>"Guilin's scenery is the best under heaven"</strong> perfectly captures the city's legendary status as nature's masterpiece, where dramatic geological formations create a landscape so beautiful it seems almost surreal.
               </p>
               
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">The Li River: China's Most Beautiful Waterway</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">The <Link href="/attractions/li-river-cruise" className="text-primary-600 font-semibold hover:underline">Li River</Link>: China's Most Beautiful Waterway</h3>
               <p className="mb-6">
                 The <strong>Li River (Lijiang)</strong> represents the heart and soul of Guilin's natural splendor, winding gracefully through a landscape of towering karst peaks that rise like ancient sentinels from the emerald waters. This 83-kilometer stretch of river from Guilin to Yangshuo offers what many consider the most spectacular river cruise in the world, with every bend revealing new vistas of limestone pinnacles, bamboo groves, traditional fishing villages, and rice paddies that have remained virtually unchanged for centuries.
               </p>

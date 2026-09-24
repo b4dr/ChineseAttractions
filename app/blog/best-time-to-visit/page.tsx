@@ -303,19 +303,19 @@ export default function BestTimeToVisitPage() {
                   <h4 className="font-semibold text-gray-900 mb-3">City Conditions:</h4>
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="flex justify-between">
-                      <span>Beijing:</span>
+                      <span><Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link>:</span>
                       <span className="font-medium">{season.cities.beijing.condition}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Shanghai:</span>
+                      <span><Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link>:</span>
                       <span className="font-medium">{season.cities.shanghai.condition}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Xi'an:</span>
+                      <span><Link href="/cities/xian" className="text-primary-600 font-semibold hover:underline">Xi'an</Link>:</span>
                       <span className="font-medium">{season.cities.xian.condition}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Guilin:</span>
+                      <span><Link href="/cities/guilin" className="text-primary-600 font-semibold hover:underline">Guilin</Link>:</span>
                       <span className="font-medium">{season.cities.guilin.condition}</span>
                     </div>
                   </div>

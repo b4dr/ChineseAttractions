@@ -256,7 +256,7 @@ export default function ChengduPage() {
             <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
               <div className="p-6 bg-gradient-to-r from-orange-600 to-red-600 text-white text-center">
                 <h3 className="text-2xl font-bold mb-2">Explore Chengdu's Pandas & Culture</h3>
-                <p className="text-orange-100">From Giant Panda Base to Sichuan cuisine - experience China's most livable city</p>
+                <p className="text-orange-100">From <Link href="/attractions/giant-panda-base" className="text-primary-600 font-semibold hover:underline">Giant Panda Base</Link> to Sichuan cuisine - experience China's most livable city</p>
               </div>
               <div 
                 data-gyg-href="https://widget.getyourguide.com/default/activities.frame" 

@@ -104,7 +104,7 @@ export default function GreatWallMutianyuPage() {
               <span>/</span>
               <Link href="/attractions" className="hover:text-white">Attractions</Link>
               <span>/</span>
-              <span className="text-white">Great Wall - Mutianyu</span>
+              <span className="text-white"><Link href="/attractions/great-wall-china" className="text-primary-600 font-semibold hover:underline">Great Wall</Link> - Mutianyu</span>
             </nav>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -323,7 +323,7 @@ export default function GreatWallMutianyuPage() {
               <div className="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-3xl font-bold font-serif mb-2">紫禁城</h3>
-                  <p className="text-lg">Forbidden City</p>
+                  <p className="text-lg"><Link href="/attractions/forbidden-city" className="text-primary-600 font-semibold hover:underline">Forbidden City</Link></p>
                 </div>
               </div>
             </Link>
@@ -332,7 +332,7 @@ export default function GreatWallMutianyuPage() {
               <div className="bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-3xl font-bold font-serif mb-2">天坛</h3>
-                  <p className="text-lg">Temple of Heaven</p>
+                  <p className="text-lg"><Link href="/attractions/temple-of-heaven" className="text-primary-600 font-semibold hover:underline">Temple of Heaven</Link></p>
                 </div>
               </div>
             </Link>
@@ -341,7 +341,7 @@ export default function GreatWallMutianyuPage() {
               <div className="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-3xl font-bold font-serif mb-2">颐和园</h3>
-                  <p className="text-lg">Summer Palace</p>
+                  <p className="text-lg"><Link href="/attractions/summer-palace" className="text-primary-600 font-semibold hover:underline">Summer Palace</Link></p>
                 </div>
               </div>
             </Link>

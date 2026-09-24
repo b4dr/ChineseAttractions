@@ -272,7 +272,7 @@ export default function TerracottaArmyPage() {
                     <ul className="text-sm text-gray-600 space-y-1">
                       <li>✓ Skip-the-line entrance tickets</li>
                       <li>✓ Expert archaeological guide</li>
-                      <li>✓ Transportation from Xi'an included</li>
+                      <li>✓ Transportation from <Link href="/cities/xian" className="text-primary-600 font-semibold hover:underline">Xi'an</Link> included</li>
                       <li>✓ Free cancellation available</li>
                       <li>✓ Small group experiences</li>
                     </ul>

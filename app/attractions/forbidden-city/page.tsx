@@ -310,7 +310,7 @@ export default function ForbiddenCityPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore More Beijing Attractions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore More <Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> Attractions</h2>
             <p className="text-gray-600 mb-8">Discover other incredible destinations in Beijing</p>
             
             <div className="flex flex-wrap justify-center gap-4">
