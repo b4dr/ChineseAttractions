@@ -152,6 +152,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-4 text-xs text-gray-500">
             <a href="https://stressfreehost.com/blog/best-web-hosting-2026" target="_blank" rel="noopener" className="hover:text-gray-300 transition-colors">Web hosting guide</a>
             <a href="https://privatejetmonaco.com" target="_blank" rel="noopener" className="hover:text-gray-300 transition-colors">Private jet charter to Asia</a>
+            <a href="https://passportsusa.com" target="_blank" rel="noopener" className="hover:text-gray-300 transition-colors block">US passport &amp; visa guides</a>
             <a href="https://www.dream-yachts.com" target="_blank" rel="noopener" className="hover:text-gray-300 transition-colors">Luxury yacht charters</a>
           </div>
         </div>
