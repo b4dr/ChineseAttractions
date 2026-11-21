@@ -207,7 +207,38 @@ export default function AffiliateSection({
               </div>
             )}
           </div>
-          
+
+          {/* eSIM strip - stay connected in China */}
+          <div className="mt-6 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center space-x-3 text-white">
+              <span className="text-3xl">📱</span>
+              <div>
+                <p className="font-bold">Stay Connected in China</p>
+                <p className="text-sm text-white/80">Instant eSIM data — works the moment you land, no SIM swap</p>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+              <a
+                href={AFFILIATE_LINKS.saily.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                onClick={() => trackAffiliateClick('saily', 'affiliate_section_esim_strip')}
+                className="bg-white text-teal-700 font-bold py-2.5 px-5 rounded-lg text-center hover:bg-teal-50 transition-all"
+              >
+                Saily — from $3.99
+              </a>
+              <a
+                href={AFFILIATE_LINKS.esimx.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                onClick={() => trackAffiliateClick('esimx', 'affiliate_section_esim_strip')}
+                className="bg-teal-800/60 border border-white/30 text-white font-bold py-2.5 px-5 rounded-lg text-center hover:bg-teal-800 transition-all"
+              >
+                Compare eSIMX plans
+              </a>
+            </div>
+          </div>
+
           <div className="mt-8 text-center">
             <p className="text-sm text-gray-500">
               ⭐ Trusted by millions of travelers • Best prices guaranteed • 24/7 support

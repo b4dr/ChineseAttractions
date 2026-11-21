@@ -49,6 +49,70 @@ export const AFFILIATE_LINKS = {
       '24/7 emergency assistance',
     ],
   },
+
+  // Saily eSIM (Impact #25536) - 10% per purchase
+  saily: {
+    name: 'Saily eSIM',
+    affiliateUrl: 'https://saily.sjv.io/c/5414213/2044403/25536',
+    category: 'esim',
+    description: 'Instant travel eSIM data for China',
+    cta: 'Get eSIM Data',
+    icon: '📱',
+    features: [
+      'Works in China (built-in roaming)',
+      'Instant activation, no SIM swap',
+      'From $3.99 for 1GB',
+      'Keep your WhatsApp number',
+    ],
+  },
+
+  // eSIMX (Impact #27320) - 15% per sale
+  esimx: {
+    name: 'eSIMX',
+    affiliateUrl: 'https://skylarkconnectllc.pxf.io/c/5414213/2147759/27320',
+    category: 'esim',
+    description: 'Regional eSIM data plans for Asia',
+    cta: 'Compare eSIMs',
+    icon: '📶',
+    features: [
+      'China + Asia regional plans',
+      'Instant QR code delivery',
+      'Data-only, keep your number',
+      'Budget-friendly packs',
+    ],
+  },
+
+  // Hilton Honors via Points.com (Impact #4823) - 2.5% per sale
+  hilton: {
+    name: 'Hilton Honors',
+    affiliateUrl: 'https://hilton.ijrn.net/c/5414213/314255/4823',
+    category: 'hotels',
+    description: 'Buy Hilton Honors points for hotel stays',
+    cta: 'Get Hilton Points',
+    icon: '🏨',
+    features: [
+      'Conrad, Waldorf Astoria in China',
+      'Points often cheaper than cash rates',
+      'Instant points purchase',
+      'Free night redemptions',
+    ],
+  },
+
+  // Southwest Rapid Rewards via Points.com (Impact #4705) - 2.5% per sale
+  southwest: {
+    name: 'Southwest Rapid Rewards',
+    affiliateUrl: 'https://swa.eyjo.net/c/5414213/302888/4705',
+    category: 'flights',
+    description: 'Buy Southwest Rapid Rewards points',
+    cta: 'Get SW Points',
+    icon: '✈️',
+    features: [
+      'Domestic US positioning flights',
+      'Points never expire',
+      'No blackout dates',
+      'Companion pass qualifying',
+    ],
+  },
 } as const
 
 // Affiliate tracking helper
@@ -77,6 +141,6 @@ export const trackAffiliateClick = (partner: keyof typeof AFFILIATE_LINKS, locat
 export const getAllPartners = () => Object.values(AFFILIATE_LINKS)
 
 // Get partner by category
-export const getPartnersByCategory = (category: 'tours' | 'flights' | 'insurance') => {
+export const getPartnersByCategory = (category: 'tours' | 'flights' | 'insurance' | 'esim' | 'hotels') => {
   return Object.values(AFFILIATE_LINKS).filter(partner => partner.category === category)
 }
