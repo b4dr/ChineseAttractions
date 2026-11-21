@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { MapPin, Star, Users, Clock, ArrowRight, Sparkles, Plane, Shield, CheckCircle } from 'lucide-react'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import TravelInsuranceBanner from '@/components/TravelInsuranceBanner'
+import EsimBanner from '@/components/EsimBanner'
 import TripComBanner from '@/components/TripComBanner'
 import { AFFILIATE_LINKS } from '@/lib/affiliates'
 import { Metadata } from 'next'
@@ -256,6 +257,9 @@ export default function HomePage() {
 
       {/* Trip.com Flights Section */}
       <TripComBanner variant="full" />
+
+      {/* eSIM Data Section */}
+      <EsimBanner variant="full" />
 
       {/* Travel Insurance Section */}
       <TravelInsuranceBanner variant="full" />
