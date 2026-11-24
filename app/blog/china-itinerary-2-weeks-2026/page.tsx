@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Calendar, MapPin, CheckCircle, ArrowRight, Train, Camera, Clock, Star, Compass } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
@@ -85,29 +86,29 @@ const planningTips = [
 
 export default function ChinaItinerary2Weeks() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-red-600 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['zhangjiajie']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <Compass className="w-8 h-8 mr-3 text-blue-200" />
-              <span className="text-blue-200 font-semibold text-lg">Updated September 2026</span>
+              <Compass className="w-8 h-8 mr-3 text-jade-200" />
+              <span className="text-jade-200 font-semibold text-lg">Updated September 2026</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               2 Weeks in China
-              <span className="block text-blue-200">The Perfect 2026 Itinerary</span>
+              <span className="block text-jade-200">The Perfect 2026 Itinerary</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-jade-200">
               Beijing → Xi'an → Chengdu → Guilin → Shanghai. The classic route, optimized day by day.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="#itinerary" className="btn-primary bg-white text-blue-600 hover:bg-blue-50">
+              <Link href="#itinerary" className="btn-primary bg-white text-jade-700 hover:bg-jade-50">
                 Day-by-Day Plan
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="#tips" className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
+              <Link href="#tips" className="bg-yellow-500 text-jade-200 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
                 Planning Tips
               </Link>
             </div>
@@ -126,15 +127,15 @@ export default function ChinaItinerary2Weeks() {
               Five cities, two flights, two scenic train rides — covering imperial history, pandas, karst mountains, and modern China
             </p>
             <div className="flex flex-wrap justify-center items-center gap-3 text-lg font-semibold">
-              <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full"><Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> (4d)</span>
+              <span className="bg-jade-100 text-jade-600 px-4 py-2 rounded-full"><Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> (4d)</span>
               <Train className="w-5 h-5 text-gray-400" />
-              <span className="bg-red-100 text-red-800 px-4 py-2 rounded-full"><Link href="/cities/xian" className="text-primary-600 font-semibold hover:underline">Xi'an</Link> (2d)</span>
+              <span className="bg-red-100 text-jade-600 px-4 py-2 rounded-full"><Link href="/cities/xian" className="text-primary-600 font-semibold hover:underline">Xi'an</Link> (2d)</span>
               <Train className="w-5 h-5 text-gray-400" />
               <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full"><Link href="/cities/chengdu" className="text-primary-600 font-semibold hover:underline">Chengdu</Link> (2d)</span>
               <span className="text-gray-400">✈</span>
               <span className="bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full"><Link href="/cities/guilin" className="text-primary-600 font-semibold hover:underline">Guilin</Link> (3d)</span>
               <span className="text-gray-400">✈</span>
-              <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full"><Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link> (3d)</span>
+              <span className="bg-purple-100 text-jade-600 px-4 py-2 rounded-full"><Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link> (3d)</span>
             </div>
           </div>
         </div>
@@ -154,7 +155,7 @@ export default function ChinaItinerary2Weeks() {
                 <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <div>
-                      <span className="text-blue-600 font-bold text-sm uppercase tracking-wide">{stop.days}</span>
+                      <span className="text-jade-600 font-bold text-sm uppercase tracking-wide">{stop.days}</span>
                       <h3 className="text-2xl font-bold text-gray-900">{stop.city}</h3>
                     </div>
                     <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">{stop.transport}</span>
@@ -171,11 +172,11 @@ export default function ChinaItinerary2Weeks() {
                         ))}
                       </ul>
                     </div>
-                    <div className="bg-blue-50 rounded-xl p-4">
-                      <h4 className="font-semibold text-blue-900 mb-2 flex items-center">
+                    <div className="bg-jade-50 rounded-xl p-4">
+                      <h4 className="font-semibold text-jade-600 mb-2 flex items-center">
                         <Star className="w-4 h-4 mr-2" /> Insider tip
                       </h4>
-                      <p className="text-blue-800 text-sm">{stop.tip}</p>
+                      <p className="text-jade-600 text-sm">{stop.tip}</p>
                     </div>
                   </div>
                 </div>
@@ -196,8 +197,8 @@ export default function ChinaItinerary2Weeks() {
             </div>
             <div className="space-y-4">
               {planningTips.map((tip, index) => (
-                <div key={index} className="flex items-start bg-gradient-to-br from-blue-50 to-red-50 rounded-xl p-6">
-                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0 text-sm">
+                <div key={index} className="flex items-start bg-paper-100 rounded-xl p-6">
+                  <div className="bg-jade-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0 text-sm">
                     {index + 1}
                   </div>
                   <div>
@@ -207,7 +208,7 @@ export default function ChinaItinerary2Weeks() {
                 </div>
               ))}
             </div>
-            <div className="mt-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
+            <div className="mt-8 bg-amber-50 border-l-2 border-amber-500 p-6 rounded-r-xl">
               <div className="flex items-start">
                 <Clock className="w-6 h-6 text-amber-600 mr-3 mt-1 flex-shrink-0" />
                 <div>
@@ -223,13 +224,13 @@ export default function ChinaItinerary2Weeks() {
       </section>
 
       {/* Book Tours Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-red-600 text-white">
+      <section className="py-16 bg-jade-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Book Every Stop on This Route
             </h2>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-jade-200">
               Skip-the-line tickets and local guides for all five cities
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
@@ -243,19 +244,19 @@ export default function ChinaItinerary2Weeks() {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/attractions/great-wall-china" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <MapPin className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <MapPin className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/attractions/great-wall-china" className="text-primary-600 font-semibold hover:underline">Great Wall</Link> Tours</h3>
-                <p className="text-sm text-blue-100">Day 2 essential</p>
+                <p className="text-sm text-jade-200">Day 2 essential</p>
               </Link>
               <Link href="/attractions/terracotta-army" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Camera className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Camera className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/attractions/terracotta-army" className="text-primary-600 font-semibold hover:underline">Terracotta Army</Link></h3>
-                <p className="text-sm text-blue-100">Day 5 highlight</p>
+                <p className="text-sm text-jade-200">Day 5 highlight</p>
               </Link>
               <Link href="/blog/china-high-speed-rail-guide-2026" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Train className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Train className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2">Rail Guide</h3>
-                <p className="text-sm text-blue-100">Book your trains</p>
+                <p className="text-sm text-jade-200">Book your trains</p>
               </Link>
             </div>
           </div>

@@ -21,7 +21,7 @@ const categoryInfo = {
   name: 'Historical Sites',
   chineseName: '历史古迹',
   count: 150,
-  gradient: 'from-amber-600 via-orange-600 to-red-600',
+  gradient: 'from-jade-700 to-ink-800',
   description: 'Discover China\'s incredible historical heritage through ancient temples, imperial palaces, and UNESCO World Heritage sites that tell the story of 5,000 years of civilization.',
   longDescription: `China's historical sites represent one of the world's most remarkable collections of ancient architecture, art, and cultural heritage. From the iconic Great Wall that stretches across northern China to the magnificent Forbidden City in Beijing, these attractions offer visitors a chance to step back in time and experience the grandeur of Chinese civilization.
 
@@ -40,7 +40,7 @@ const historicalSites = [
     reviews: 15420,
     duration: '8 hours',
     price: 'From $45',
-    gradient: 'from-red-500 via-orange-500 to-yellow-500',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['UNESCO World Heritage', 'Cable Car Included', 'English Guide', 'Small Groups'],
     description: 'Experience the most spectacular and well-preserved section of the Great Wall with breathtaking mountain views.',
     slug: 'great-wall-mutianyu',
@@ -56,7 +56,7 @@ const historicalSites = [
     reviews: 18750,
     duration: '4 hours',
     price: 'From $38',
-    gradient: 'from-purple-600 via-red-600 to-pink-600',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['Imperial Palace', 'UNESCO Site', 'Audio Guide', 'Skip-the-Line'],
     description: 'Explore the world\'s largest palace complex and former home of Chinese emperors for nearly 500 years.',
     slug: 'forbidden-city',
@@ -72,7 +72,7 @@ const historicalSites = [
     reviews: 12350,
     duration: '4 hours',
     price: 'From $35',
-    gradient: 'from-amber-600 via-orange-600 to-red-600',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['UNESCO World Heritage', 'Expert Guide', 'Skip-the-Line', 'Audio Guide'],
     description: 'Discover the incredible army of life-sized terracotta soldiers guarding Emperor Qin Shi Huang.',
     slug: 'terracotta-army',
@@ -88,7 +88,7 @@ const historicalSites = [
     reviews: 9840,
     duration: '3 hours',
     price: 'From $28',
-    gradient: 'from-blue-600 via-indigo-600 to-purple-600',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['UNESCO Site', 'Imperial Temple', 'Traditional Architecture', 'Cultural Experience'],
     description: 'Visit the magnificent temple complex where emperors prayed for good harvests and divine favor.',
     slug: 'temple-of-heaven',
@@ -104,7 +104,7 @@ const historicalSites = [
     reviews: 8920,
     duration: '4 hours',
     price: 'From $32',
-    gradient: 'from-emerald-600 via-teal-600 to-cyan-600',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['UNESCO Site', 'Imperial Garden', 'Kunming Lake', 'Boat Cruise'],
     description: 'Explore the stunning imperial garden and summer retreat of the Qing Dynasty emperors.',
     slug: 'summer-palace',
@@ -120,7 +120,7 @@ const historicalSites = [
     reviews: 6750,
     duration: '3 hours',
     price: 'From $55',
-    gradient: 'from-red-600 via-orange-600 to-yellow-600',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['UNESCO Site', 'Tibetan Architecture', 'Sacred Site', 'Mountain Views'],
     description: 'Visit the iconic palace and spiritual center of Tibetan Buddhism, perched high above Lhasa.',
     slug: 'potala-palace',
@@ -136,7 +136,7 @@ const historicalSites = [
     reviews: 5420,
     duration: '3 hours',
     price: 'From $30',
-    gradient: 'from-stone-600 via-gray-600 to-slate-600',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['UNESCO Site', 'Buddhist Art', 'Ancient Carvings', 'Cultural Heritage'],
     description: 'Marvel at thousands of Buddhist statues and carvings in these ancient limestone caves.',
     slug: 'longmen-grottoes',
@@ -152,7 +152,7 @@ const historicalSites = [
     reviews: 4680,
     duration: '4 hours',
     price: 'From $40',
-    gradient: 'from-gray-700 via-slate-700 to-zinc-700',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['UNESCO Site', 'Imperial Tombs', 'Sacred Way', 'Underground Palace'],
     description: 'Explore the magnificent burial complex of 13 Ming Dynasty emperors in a sacred valley.',
     slug: 'ming-tombs',
@@ -168,7 +168,7 @@ const historicalSites = [
     reviews: 7230,
     duration: '5 hours',
     price: 'From $42',
-    gradient: 'from-orange-600 via-red-600 to-pink-600',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: ['Kung Fu Origin', 'Buddhist Temple', 'Martial Arts Show', 'Cultural Experience'],
     description: 'Visit the birthplace of Kung Fu and Zen Buddhism at this legendary mountain temple.',
     slug: 'shaolin-temple',
@@ -181,8 +181,7 @@ export default function HistoricalSitesPage() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className={`relative bg-gradient-to-br ${categoryInfo.gradient} text-white overflow-hidden`}>
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <section className="relative text-white overflow-hidden bg-ink-800">
         <div className="relative container-custom section-padding">
           <div className="max-w-4xl mx-auto text-center">
             {/* Breadcrumb */}
@@ -201,7 +200,7 @@ export default function HistoricalSitesPage() {
             
             <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
               China's Most Magnificent
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient text-jade-300">
                 Historical Sites
               </span>
             </h1>
@@ -224,7 +223,7 @@ export default function HistoricalSitesPage() {
                 <div className="text-sm">Years History</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gold-400">150+</div>
+                <div className="text-2xl font-bold text-gold-400">13</div>
                 <div className="text-sm">Historical Sites</div>
               </div>
             </div>
@@ -372,7 +371,7 @@ export default function HistoricalSitesPage() {
             <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
               <div className={`p-6 bg-gradient-to-r ${categoryInfo.gradient} text-white text-center`}>
                 <h3 className="text-2xl font-bold mb-2">China Historical Sites & Ancient Attractions</h3>
-                <p className="text-orange-100">Book guided tours to UNESCO World Heritage sites and ancient wonders</p>
+                <p className="text-jade-600">Book guided tours to UNESCO World Heritage sites and ancient wonders</p>
               </div>
               <div 
                 data-gyg-href="https://widget.getyourguide.com/default/activities.frame" 
@@ -388,7 +387,7 @@ export default function HistoricalSitesPage() {
                 <span className="text-sm text-gray-500">
                   Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/china-l186/" className="text-primary-600 hover:underline font-medium">GetYourGuide</a> | 
                   <span className="text-emerald-600 font-medium">Free Cancellation</span> | 
-                  <span className="text-blue-600 font-medium">Instant Confirmation</span>
+                  <span className="text-jade-600 font-medium">Instant Confirmation</span>
                 </span>
               </div>
             </div>
@@ -403,7 +402,7 @@ export default function HistoricalSitesPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="/attractions/category/natural" className="group">
-              <div className="bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 rounded-2xl p-6 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-jade-800 rounded-2xl p-6 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-2xl font-bold font-serif mb-1">自然奇观</h3>
                   <p className="text-sm">Natural Wonders</p>
@@ -412,7 +411,7 @@ export default function HistoricalSitesPage() {
             </Link>
             
             <Link href="/attractions/category/cultural" className="group">
-              <div className="bg-gradient-to-br from-purple-500 via-violet-500 to-indigo-500 rounded-2xl p-6 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-jade-800 rounded-2xl p-6 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-2xl font-bold font-serif mb-1">文化体验</h3>
                   <p className="text-sm">Cultural Experiences</p>
@@ -421,7 +420,7 @@ export default function HistoricalSitesPage() {
             </Link>
             
             <Link href="/attractions/category/modern" className="group">
-              <div className="bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 rounded-2xl p-6 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-jade-800 rounded-2xl p-6 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-2xl font-bold font-serif mb-1">现代景点</h3>
                   <p className="text-sm">Modern Attractions</p>

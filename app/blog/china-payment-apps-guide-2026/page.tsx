@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Smartphone, CreditCard, CheckCircle, AlertCircle, ArrowRight, MapPin, Shield, Wallet, QrCode, Globe } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
@@ -111,29 +112,29 @@ const scenarios = [
 
 export default function ChinaPaymentAppsGuide() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-red-600 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['hsr']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <Wallet className="w-8 h-8 mr-3 text-blue-200" />
-              <span className="text-blue-200 font-semibold text-lg">Updated September 2026</span>
+              <Wallet className="w-8 h-8 mr-3 text-jade-200" />
+              <span className="text-jade-200 font-semibold text-lg">Updated September 2026</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               China Payment Apps
-              <span className="block text-blue-200">2026 Tourist Guide</span>
+              <span className="block text-jade-200">2026 Tourist Guide</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-jade-200">
               China runs on QR codes, not cards. Set up Alipay and WeChat Pay before you land — here is exactly how.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="#setup" className="btn-primary bg-white text-blue-600 hover:bg-blue-50">
+              <Link href="#setup" className="btn-primary bg-white text-jade-700 hover:bg-jade-50">
                 Setup Steps
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="#apps" className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
+              <Link href="#apps" className="bg-yellow-500 text-jade-200 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
                 Compare Apps
               </Link>
             </div>
@@ -145,9 +146,9 @@ export default function ChinaPaymentAppsGuide() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl mb-8">
+            <div className="bg-red-50 border-l-2 border-red-500 p-6 rounded-r-xl mb-8">
               <div className="flex items-start">
-                <AlertCircle className="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" />
+                <AlertCircle className="w-6 h-6 text-jade-600 mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">The #1 Tourist Mistake in China</h3>
                   <p className="text-gray-700">
@@ -181,7 +182,7 @@ export default function ChinaPaymentAppsGuide() {
                 <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
                   <div className="text-center mb-6">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{app.app}</h3>
-                    <p className="text-blue-600 font-medium">{app.difficulty}</p>
+                    <p className="text-jade-600 font-medium">{app.difficulty}</p>
                   </div>
                   <div className="space-y-4 mb-6">
                     <div className="flex justify-between">
@@ -199,7 +200,7 @@ export default function ChinaPaymentAppsGuide() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-gray-600 mb-3"><strong>Best for:</strong> {app.bestFor}</p>
-                    <p className="text-sm text-blue-700 bg-blue-50 p-3 rounded-lg">{app.tips}</p>
+                    <p className="text-sm text-jade-600 bg-jade-50 p-3 rounded-lg">{app.tips}</p>
                   </div>
                 </div>
               ))}
@@ -225,13 +226,13 @@ export default function ChinaPaymentAppsGuide() {
               {setupSteps.map((item) => {
                 const IconComponent = item.icon
                 return (
-                  <div key={item.step} className="flex items-start bg-gradient-to-br from-blue-50 to-red-50 rounded-2xl p-6">
-                    <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-5 flex-shrink-0">
+                  <div key={item.step} className="flex items-start bg-paper-100 rounded-2xl p-6">
+                    <div className="bg-jade-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-5 flex-shrink-0">
                       {item.step}
                     </div>
                     <div>
                       <div className="flex items-center mb-2">
-                        <IconComponent className="w-5 h-5 text-blue-600 mr-2" />
+                        <IconComponent className="w-5 h-5 text-jade-600 mr-2" />
                         <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                       </div>
                       <p className="text-gray-700">{item.description}</p>
@@ -255,10 +256,10 @@ export default function ChinaPaymentAppsGuide() {
             </div>
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               {scenarios.map((item, index) => (
-                <div key={index} className={`p-6 ${index !== scenarios.length - 1 ? 'border-b border-gray-100' : ''} hover:bg-blue-50/50 transition-colors`}>
+                <div key={index} className={`p-6 ${index !== scenarios.length - 1 ? 'border-b border-gray-100' : ''} hover:bg-jade-50/50 transition-colors`}>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="font-bold text-gray-900">{item.scenario}</div>
-                    <div className="text-blue-600 font-medium">{item.method}</div>
+                    <div className="text-jade-600 font-medium">{item.method}</div>
                     <div className="text-gray-600 text-sm">{item.note}</div>
                   </div>
                 </div>
@@ -276,22 +277,22 @@ export default function ChinaPaymentAppsGuide() {
               Payment Pro Tips
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl p-6">
+              <div className="bg-paper-100 rounded-xl p-6">
                 <CheckCircle className="w-8 h-8 text-green-600 mb-3" />
                 <h3 className="font-bold text-gray-900 mb-2">Tell Your Bank First</h3>
                 <p className="text-gray-700 text-sm">Foreign transactions through Chinese apps trigger fraud blocks. Notify your bank of travel dates and enable international transactions before linking your card.</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl p-6">
+              <div className="bg-paper-100 rounded-xl p-6">
                 <CheckCircle className="w-8 h-8 text-green-600 mb-3" />
                 <h3 className="font-bold text-gray-900 mb-2">Carry ¥500-1000 Cash Backup</h3>
                 <p className="text-gray-700 text-sm">For dead phone batteries, rural vendors, and the rare merchant who cannot make change. ATMs at Bank of China and ICBC reliably accept foreign cards.</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl p-6">
+              <div className="bg-paper-100 rounded-xl p-6">
                 <CheckCircle className="w-8 h-8 text-green-600 mb-3" />
                 <h3 className="font-bold text-gray-900 mb-2">Screenshot Your Payment Code</h3>
                 <p className="text-gray-700 text-sm">Payment codes work offline once generated. Screenshot yours before heading underground on the metro or into areas with weak signal.</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-xl p-6">
+              <div className="bg-paper-100 rounded-xl p-6">
                 <CheckCircle className="w-8 h-8 text-green-600 mb-3" />
                 <h3 className="font-bold text-gray-900 mb-2">Watch the ¥200 Fee Threshold</h3>
                 <p className="text-gray-700 text-sm">Alipay charges ~3% on foreign-card transactions over ¥200. Split large purchases or use cash for big-ticket items to avoid the fee stacking up.</p>
@@ -302,13 +303,13 @@ export default function ChinaPaymentAppsGuide() {
       </section>
 
       {/* Book Tours Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-red-600 text-white">
+      <section className="py-16 bg-jade-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Payment Sorted? Book Your Experiences
             </h2>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-jade-200">
               Skip-the-line tickets and guided tours — bookable in advance with your home card
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
@@ -322,19 +323,19 @@ export default function ChinaPaymentAppsGuide() {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/attractions/great-wall-china" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <MapPin className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <MapPin className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/attractions/great-wall-china" className="text-primary-600 font-semibold hover:underline">Great Wall</Link> Tours</h3>
-                <p className="text-sm text-blue-100">Skip-the-line access</p>
+                <p className="text-sm text-jade-200">Skip-the-line access</p>
               </Link>
               <Link href="/attractions/forbidden-city" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Globe className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Globe className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/attractions/forbidden-city" className="text-primary-600 font-semibold hover:underline">Forbidden City</Link></h3>
-                <p className="text-sm text-blue-100">Timed entry tickets</p>
+                <p className="text-sm text-jade-200">Timed entry tickets</p>
               </Link>
               <Link href="/blog/china-esim-vpn-guide-2026" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Smartphone className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Smartphone className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2">Internet Guide</h3>
-                <p className="text-sm text-blue-100">eSIM & VPN setup</p>
+                <p className="text-sm text-jade-200">eSIM & VPN setup</p>
               </Link>
             </div>
           </div>

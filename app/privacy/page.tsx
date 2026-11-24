@@ -17,7 +17,7 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">

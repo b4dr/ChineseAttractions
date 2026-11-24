@@ -8,31 +8,66 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Chinese flag-inspired color palette
+        // Jade signature — action color (formerly flag red)
         primary: {
-          50: '#fef2f2',
-          100: '#fee2e2',
-          200: '#fecaca',
-          300: '#fca5a5',
-          400: '#f87171',
-          500: '#dc2626', // Chinese flag red
-          600: '#b91c1c',
-          700: '#991b1b',
-          800: '#7f1d1d',
-          900: '#6b1d1d',
+          50: '#f0faf7',
+          100: '#d9f0e8',
+          200: '#b3e0d1',
+          300: '#84c9b4',
+          400: '#50ab92',
+          500: '#2b8f78',
+          600: '#0f766e',
+          700: '#0d5e58',
+          800: '#0b4a46',
+          900: '#093a37',
         },
-        // Chinese flag red (more authentic)
+        // Deep jade — structure/heros (formerly chinese red)
         chinese: {
-          50: '#fef2f2',
-          100: '#fee2e2',
-          200: '#fecaca',
-          300: '#fca5a5',
-          400: '#f87171',
-          500: '#de2910', // Authentic Chinese flag red
-          600: '#c41e3a',
-          700: '#a01729',
-          800: '#7d1220',
-          900: '#5a0d17',
+          50: '#f0faf7',
+          100: '#d9f0e8',
+          200: '#b3e0d1',
+          300: '#84c9b4',
+          400: '#50ab92',
+          500: '#0d5e58',
+          600: '#0b4a46',
+          700: '#093a37',
+          800: '#072e2c',
+          900: '#052220',
+        },
+        // Jade scale (canonical name)
+        jade: {
+          50: '#f0faf7',
+          100: '#d9f0e8',
+          200: '#b3e0d1',
+          300: '#84c9b4',
+          400: '#50ab92',
+          500: '#2b8f78',
+          600: '#0f766e',
+          700: '#0d5e58',
+          800: '#0b4a46',
+          900: '#093a37',
+          950: '#052220',
+        },
+        // Rice paper ground + warm ink
+        paper: {
+          50: '#fdfbf7',
+          100: '#faf6ee',
+          200: '#f3ecdd',
+          300: '#e9dfc9',
+          400: '#d9cbb0',
+        },
+        ink: {
+          50: '#f6f5f4',
+          100: '#e7e5e4',
+          200: '#d6d3d1',
+          300: '#a8a29e',
+          400: '#78716c',
+          500: '#57534e',
+          600: '#44403c',
+          700: '#292524',
+          800: '#1c1917',
+          900: '#141210',
+          950: '#0c0a09',
         },
         gold: {
           50: '#fffbeb',
@@ -60,7 +95,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Lora', 'Georgia', 'serif'],
         serif: ['Playfair Display', 'serif'],
       },
       animation: {

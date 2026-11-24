@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { FileText, Clock, MapPin, AlertCircle, CheckCircle, Users, Calendar, ArrowRight, Shield, Plane } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'China Visa Requirements 2025 - Complete Guide & Application Process | Chinese Attractions',
-  description: 'China visa 2025 guide: Requirements, application process, fees, processing time. Get your China tourist visa approved fast! Updated January 2025.',
+  title: 'China Visa Requirements 2026 - Complete Guide & Application Process | Chinese Attractions',
+  description: 'China visa 2026 guide: Requirements, application process, fees, processing time. Get your China tourist visa approved fast! Updated January 2026.',
   keywords: [
     'China visa 2025',
     'China visa requirements',
@@ -22,16 +23,16 @@ export const metadata: Metadata = {
     'China travel visa'
   ],
   openGraph: {
-    title: 'China Visa Requirements 2025 - Complete Guide & Application Process',
-    description: 'China visa 2025 guide: Requirements, application process, fees, processing time. Get your China tourist visa approved fast!',
+    title: 'China Visa Requirements 2026 - Complete Guide & Application Process',
+    description: 'China visa 2026 guide: Requirements, application process, fees, processing time. Get your China tourist visa approved fast!',
     images: ['/china-visa-2025-og.jpg'],
     url: '/blog/china-visa-requirements-2025',
     type: 'article'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'China Visa Requirements 2025 - Complete Guide & Application Process',
-    description: 'China visa 2025 guide: Requirements, application process, fees, processing time. Get your China tourist visa approved fast!',
+    title: 'China Visa Requirements 2026 - Complete Guide & Application Process',
+    description: 'China visa 2026 guide: Requirements, application process, fees, processing time. Get your China tourist visa approved fast!',
     images: ['/china-visa-2025-og.jpg']
   },
   alternates: {
@@ -178,29 +179,29 @@ const timeline = [
 
 export default function ChinaVisa2025Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-red-600 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['flatlay']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <FileText className="w-8 h-8 mr-3 text-blue-200" />
-              <span className="text-blue-200 font-semibold text-lg">Updated January 2025</span>
+              <FileText className="w-8 h-8 mr-3 text-jade-200" />
+              <span className="text-jade-200 font-semibold text-lg">Updated January 2026</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               China Visa Requirements
-              <span className="block text-blue-200">2025 Complete Guide</span>
+              <span className="block text-jade-200">2026 Complete Guide</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-jade-200">
               Everything you need to know to get your China visa approved quickly and easily
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="#visa-types" className="btn-primary bg-white text-blue-600 hover:bg-blue-50">
+              <Link href="#visa-types" className="btn-primary bg-white text-jade-700 hover:bg-jade-50">
                 Check Visa Types
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="#requirements" className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
+              <Link href="#requirements" className="bg-yellow-500 text-jade-200 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
                 View Requirements
               </Link>
             </div>
@@ -214,7 +215,7 @@ export default function ChinaVisa2025Page() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                China Visa Quick Facts 2025
+                China Visa Quick Facts 2026
               </h2>
               <p className="text-xl text-gray-600">
                 Essential information at a glance
@@ -222,32 +223,32 @@ export default function ChinaVisa2025Page() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center bg-gradient-to-br from-blue-50 to-red-50 p-6 rounded-2xl">
-                <Clock className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <div className="text-center bg-paper-100 p-6 rounded-2xl">
+                <Clock className="w-12 h-12 text-jade-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Processing Time</h3>
                 <p className="text-gray-600">4-7 business days</p>
-                <p className="text-sm text-blue-600 mt-2">Express: 2-3 days</p>
+                <p className="text-sm text-jade-600 mt-2">Express: 2-3 days</p>
               </div>
               
-              <div className="text-center bg-gradient-to-br from-red-50 to-blue-50 p-6 rounded-2xl">
-                <FileText className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <div className="text-center bg-paper-100 p-6 rounded-2xl">
+                <FileText className="w-12 h-12 text-jade-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Visa Fee</h3>
                 <p className="text-gray-600">$140-200 USD</p>
-                <p className="text-sm text-red-600 mt-2">Varies by nationality</p>
+                <p className="text-sm text-jade-600 mt-2">Varies by nationality</p>
               </div>
               
-              <div className="text-center bg-gradient-to-br from-blue-50 to-red-50 p-6 rounded-2xl">
-                <Calendar className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <div className="text-center bg-paper-100 p-6 rounded-2xl">
+                <Calendar className="w-12 h-12 text-jade-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Validity</h3>
                 <p className="text-gray-600">30-90 days</p>
-                <p className="text-sm text-blue-600 mt-2">Single/Multiple entry</p>
+                <p className="text-sm text-jade-600 mt-2">Single/Multiple entry</p>
               </div>
               
-              <div className="text-center bg-gradient-to-br from-red-50 to-blue-50 p-6 rounded-2xl">
-                <Shield className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <div className="text-center bg-paper-100 p-6 rounded-2xl">
+                <Shield className="w-12 h-12 text-jade-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Success Rate</h3>
                 <p className="text-gray-600">95%+ approval</p>
-                <p className="text-sm text-red-600 mt-2">With complete docs</p>
+                <p className="text-sm text-jade-600 mt-2">With complete docs</p>
               </div>
             </div>
           </div>
@@ -260,7 +261,7 @@ export default function ChinaVisa2025Page() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Types of China Visas 2025
+                Types of China Visas 2026
               </h2>
               <p className="text-xl text-gray-600">
                 Choose the right visa type for your travel purpose
@@ -327,20 +328,20 @@ export default function ChinaVisa2025Page() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {documents.map((doc, index) => (
-                <div key={index} className="bg-gradient-to-br from-blue-50 to-red-50 rounded-2xl p-6">
+                <div key={index} className="bg-paper-100 rounded-2xl p-6">
                   <div className="flex items-start mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-red-500 rounded-lg flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-jade-700 rounded-lg flex items-center justify-center mr-4">
                       <doc.icon className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center mb-2">
                         <h3 className="text-lg font-bold text-gray-900">{doc.title}</h3>
                         {doc.required && (
-                          <span className="ml-2 px-2 py-1 bg-red-100 text-red-600 text-xs rounded-full">Required</span>
+                          <span className="ml-2 px-2 py-1 bg-red-100 text-jade-600 text-xs rounded-full">Required</span>
                         )}
                       </div>
                       <p className="text-gray-600 mb-3">{doc.description}</p>
-                      <p className="text-sm text-blue-600 font-medium">💡 {doc.tips}</p>
+                      <p className="text-sm text-jade-600 font-medium">💡 {doc.tips}</p>
                     </div>
                   </div>
                 </div>
@@ -351,7 +352,7 @@ export default function ChinaVisa2025Page() {
       </section>
 
       {/* Application Timeline */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-red-50">
+      <section className="py-16 bg-paper-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -366,13 +367,13 @@ export default function ChinaVisa2025Page() {
             <div className="space-y-8">
               {timeline.map((step, index) => (
                 <div key={index} className="flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-6 flex-shrink-0">
+                  <div className="w-12 h-12 bg-jade-700 rounded-full flex items-center justify-center text-white font-bold text-lg mr-6 flex-shrink-0">
                     {step.step}
                   </div>
                   <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
-                      <span className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">
+                      <span className="px-3 py-1 bg-jade-100 text-jade-600 rounded-full text-sm font-medium">
                         {step.duration}
                       </span>
                     </div>
@@ -408,7 +409,7 @@ export default function ChinaVisa2025Page() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {countryRequirements.map((country, index) => (
-                <div key={index} className="bg-gradient-to-br from-blue-50 to-red-50 rounded-2xl p-8">
+                <div key={index} className="bg-paper-100 rounded-2xl p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">{country.country}</h3>
                   <div className="space-y-3 mb-6">
                     <div className="flex justify-between">
@@ -421,7 +422,7 @@ export default function ChinaVisa2025Page() {
                     </div>
                   </div>
                   <div className="mb-4">
-                    <p className="text-sm text-blue-600 font-medium mb-2">Special Notes:</p>
+                    <p className="text-sm text-jade-600 font-medium mb-2">Special Notes:</p>
                     <p className="text-gray-600">{country.notes}</p>
                   </div>
                   <div>
@@ -442,13 +443,13 @@ export default function ChinaVisa2025Page() {
       </section>
 
       {/* Book Tours Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-red-600 text-white">
+      <section className="py-16 bg-jade-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Plan Your China Adventure
             </h2>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-jade-200">
               Once you get your visa, book amazing tours and experiences in China!
             </p>
             
@@ -464,19 +465,19 @@ export default function ChinaVisa2025Page() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/attractions/great-wall-china" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <MapPin className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <MapPin className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/attractions/great-wall-china" className="text-primary-600 font-semibold hover:underline">Great Wall</Link> Tours</h3>
-                <p className="text-sm text-blue-100">Skip-the-line access</p>
+                <p className="text-sm text-jade-200">Skip-the-line access</p>
               </Link>
               <Link href="/attractions/forbidden-city" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Users className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Users className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> Highlights</h3>
-                <p className="text-sm text-blue-100">Expert local guides</p>
+                <p className="text-sm text-jade-200">Expert local guides</p>
               </Link>
               <Link href="/cities/shanghai" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Plane className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Plane className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2">Multi-City Tours</h3>
-                <p className="text-sm text-blue-100">Beijing to <Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link></p>
+                <p className="text-sm text-jade-200">Beijing to <Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link></p>
               </Link>
             </div>
           </div>

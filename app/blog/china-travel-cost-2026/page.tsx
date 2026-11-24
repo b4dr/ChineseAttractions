@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { DollarSign, Wallet, CheckCircle, ArrowRight, MapPin, TrendingDown, Hotel, Utensils, Train, Ticket } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
@@ -79,7 +80,7 @@ const attractionPrices = [
 ]
 
 const savingTips = [
-  'Eat where office workers eat — a full local lunch is ¥20-40 vs ¥150+ at tourist restaurants',
+  'Eat where office workers eat — a full local lunch is ¥20-40 vs ¥13 at tourist restaurants',
   'Book trains on 12306 directly instead of agents — save ¥20-100 per ticket in fees',
   'Visit in shoulder season (March, November) — hotel prices drop 30-50% and attractions empty out',
   'Use metro day passes (¥18-20 in most cities) instead of taxis',
@@ -89,29 +90,29 @@ const savingTips = [
 
 export default function ChinaTravelCost() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-red-600 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['bund']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <Wallet className="w-8 h-8 mr-3 text-blue-200" />
-              <span className="text-blue-200 font-semibold text-lg">Updated September 2026</span>
+              <Wallet className="w-8 h-8 mr-3 text-jade-200" />
+              <span className="text-jade-200 font-semibold text-lg">Updated September 2026</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               China Travel Cost
-              <span className="block text-blue-200">2026 Budget Breakdown</span>
+              <span className="block text-jade-200">2026 Budget Breakdown</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-jade-200">
               Real prices, not guesses. What a China trip actually costs per day at every budget level.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="#budgets" className="btn-primary bg-white text-blue-600 hover:bg-blue-50">
+              <Link href="#budgets" className="btn-primary bg-white text-jade-700 hover:bg-jade-50">
                 Daily Budgets
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="#prices" className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
+              <Link href="#prices" className="bg-yellow-500 text-jade-200 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
                 Attraction Prices
               </Link>
             </div>
@@ -123,7 +124,7 @@ export default function ChinaTravelCost() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-xl">
+            <div className="bg-green-50 border-l-2 border-green-500 p-6 rounded-r-xl">
               <div className="flex items-start">
                 <DollarSign className="w-6 h-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
                 <div>
@@ -151,17 +152,17 @@ export default function ChinaTravelCost() {
               {budgetTiers.map((tier, index) => (
                 <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.tier}</h3>
-                  <p className="text-blue-600 font-mono font-bold text-lg mb-6">{tier.daily}/day</p>
+                  <p className="text-jade-600 font-mono font-bold text-lg mb-6">{tier.daily}/day</p>
                   <div className="space-y-4 mb-6">
                     <div>
                       <div className="flex items-center text-sm font-semibold text-gray-900 mb-1">
-                        <Hotel className="w-4 h-4 mr-2 text-blue-600" /> Stay
+                        <Hotel className="w-4 h-4 mr-2 text-jade-600" /> Stay
                       </div>
                       <p className="text-sm text-gray-600">{tier.accommodation}</p>
                     </div>
                     <div>
                       <div className="flex items-center text-sm font-semibold text-gray-900 mb-1">
-                        <Utensils className="w-4 h-4 mr-2 text-red-600" /> Food
+                        <Utensils className="w-4 h-4 mr-2 text-jade-600" /> Food
                       </div>
                       <p className="text-sm text-gray-600">{tier.food}</p>
                     </div>
@@ -173,12 +174,12 @@ export default function ChinaTravelCost() {
                     </div>
                     <div>
                       <div className="flex items-center text-sm font-semibold text-gray-900 mb-1">
-                        <Ticket className="w-4 h-4 mr-2 text-purple-600" /> Activities
+                        <Ticket className="w-4 h-4 mr-2 text-jade-600" /> Activities
                       </div>
                       <p className="text-sm text-gray-600">{tier.activities}</p>
                     </div>
                   </div>
-                  <p className="text-sm font-semibold text-blue-800 bg-blue-50 p-3 rounded-lg">{tier.note}</p>
+                  <p className="text-sm font-semibold text-jade-600 bg-jade-50 p-3 rounded-lg">{tier.note}</p>
                 </div>
               ))}
             </div>
@@ -197,10 +198,10 @@ export default function ChinaTravelCost() {
             </div>
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
               {attractionPrices.map((item, index) => (
-                <div key={index} className={`p-5 ${index !== attractionPrices.length - 1 ? 'border-b border-gray-100' : ''} hover:bg-blue-50/50 transition-colors`}>
+                <div key={index} className={`p-5 ${index !== attractionPrices.length - 1 ? 'border-b border-gray-100' : ''} hover:bg-jade-50/50 transition-colors`}>
                   <div className="grid md:grid-cols-3 gap-4 items-center">
                     <div className="font-bold text-gray-900">{item.attraction}</div>
-                    <div className="text-blue-600 font-mono font-semibold">{item.price}</div>
+                    <div className="text-jade-600 font-mono font-semibold">{item.price}</div>
                     <div className="text-gray-600 text-sm">{item.note}</div>
                   </div>
                 </div>
@@ -232,13 +233,13 @@ export default function ChinaTravelCost() {
       </section>
 
       {/* Book Tours Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-red-600 text-white">
+      <section className="py-16 bg-jade-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Spend Smart on Experiences
             </h2>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-jade-200">
               Tours with free cancellation — lock in prices now, decide later
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
@@ -252,19 +253,19 @@ export default function ChinaTravelCost() {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/attractions/great-wall-china" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <MapPin className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <MapPin className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/attractions/great-wall-china" className="text-primary-600 font-semibold hover:underline">Great Wall</Link> Tours</h3>
-                <p className="text-sm text-blue-100">From budget to private</p>
+                <p className="text-sm text-jade-200">From budget to private</p>
               </Link>
               <Link href="/blog/china-itinerary-2-weeks-2026" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <CheckCircle className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <CheckCircle className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2">2-Week Itinerary</h3>
-                <p className="text-sm text-blue-100">Optimized route</p>
+                <p className="text-sm text-jade-200">Optimized route</p>
               </Link>
               <Link href="/blog/china-payment-apps-guide-2026" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Wallet className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Wallet className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2">Payment Guide</h3>
-                <p className="text-sm text-blue-100">Avoid the 3% fee trap</p>
+                <p className="text-sm text-jade-200">Avoid the 3% fee trap</p>
               </Link>
             </div>
           </div>

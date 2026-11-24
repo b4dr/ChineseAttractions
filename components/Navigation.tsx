@@ -73,7 +73,7 @@ export default function Navigation() {
             className="flex items-center space-x-2 group"
             onClick={closeMenu}
           >
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 to-gold-500 rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform duration-200">
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-jade-700 rounded-md flex items-center justify-center transform group-hover:scale-105 transition-transform duration-200">
               <span className="text-white font-bold text-lg md:text-xl">中</span>
             </div>
             <div className="hidden sm:block">
@@ -155,10 +155,10 @@ export default function Navigation() {
               href={AFFILIATE_LINKS.getYourGuide.chinaSearch}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="hidden lg:inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-chinese-900 font-bold px-3 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-xs"
+              className="hidden lg:inline-flex items-center space-x-2 bg-jade-600 hover:bg-jade-700 text-paper-50 font-bold px-3 py-2 rounded-lg transition-all duration-300 text-xs"
               onClick={() => trackAffiliateClick('getYourGuide', 'header')}
             >
-              <span>🎫</span>
+              
               <span>Tours</span>
             </a>
             
@@ -167,7 +167,7 @@ export default function Navigation() {
               href={AFFILIATE_LINKS.tripCom.affiliateUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="hidden lg:inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-3 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-xs"
+              className="hidden lg:inline-flex items-center space-x-2 bg-ink-800 hover:bg-ink-700 text-white font-bold px-3 py-2 rounded-lg transition-all duration-300 text-xs"
               onClick={() => trackAffiliateClick('tripCom', 'header')}
             >
               <Plane className="w-3 h-3" />
@@ -179,7 +179,7 @@ export default function Navigation() {
               href={AFFILIATE_LINKS.axaInsurance.affiliateUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="hidden xl:inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold px-3 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-xs"
+              className="hidden xl:inline-flex items-center space-x-2 bg-gradient-to-r bg-jade-600 hover:bg-jade-700 text-white font-bold px-3 py-2 rounded-lg transition-all duration-300 text-xs"
               onClick={() => trackAffiliateClick('axaInsurance', 'header')}
             >
               <Shield className="w-3 h-3" />

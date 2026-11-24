@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 
 export const metadata: Metadata = {
   title: 'Guilin Attractions & Tours | Complete Travel Guide to China\'s Natural Paradise',
@@ -97,8 +98,7 @@ export default function GuilinPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-600 via-green-700 to-teal-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <section className="relative text-white overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['guilin2']})` }}>
         <div className="relative container-custom section-padding">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
@@ -108,7 +108,7 @@ export default function GuilinPage() {
             
             <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
               Discover Guilin's
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient text-jade-300">
                 Breathtaking Karst Landscapes
               </span>
             </h1>
@@ -232,7 +232,7 @@ export default function GuilinPage() {
           <div className="max-w-5xl mx-auto">
             {/* Custom GetYourGuide Widget for Guilin */}
             <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
-              <div className="p-6 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center">
+              <div className="p-6 bg-jade-700 text-white text-center">
                 <h3 className="text-2xl font-bold mb-2">Explore Guilin's Natural Wonders</h3>
                 <p className="text-emerald-100">From Li River cruises to karst caves - experience China's most scenic destination</p>
               </div>
@@ -254,7 +254,7 @@ export default function GuilinPage() {
                 <span className="text-sm text-gray-500">
                   Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/guilin-l224/" className="text-primary-600 hover:underline font-medium">GetYourGuide</a> | 
                   <span className="text-emerald-600 font-medium">Free Cancellation</span> | 
-                  <span className="text-blue-600 font-medium">Instant Confirmation</span>
+                  <span className="text-jade-600 font-medium">Instant Confirmation</span>
                 </span>
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function GuilinPage() {
       </section>
 
       {/* Travel Tips */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="heading-lg mb-4">
@@ -308,7 +308,7 @@ export default function GuilinPage() {
             </h2>
             
             <div className="space-y-8">
-              <div className="border-l-4 border-emerald-500 pl-6">
+              <div className="border-l-2 border-emerald-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   How many days do you need to see Guilin?
                 </h3>
@@ -319,7 +319,7 @@ export default function GuilinPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-emerald-500 pl-6">
+              <div className="border-l-2 border-emerald-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   What is the best time to visit Guilin?
                 </h3>
@@ -330,7 +330,7 @@ export default function GuilinPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-emerald-500 pl-6">
+              <div className="border-l-2 border-emerald-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Do I need to book Li River cruise tickets in advance?
                 </h3>
@@ -341,7 +341,7 @@ export default function GuilinPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-emerald-500 pl-6">
+              <div className="border-l-2 border-emerald-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   What should I bring for a Li River cruise?
                 </h3>
@@ -352,7 +352,7 @@ export default function GuilinPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-emerald-500 pl-6">
+              <div className="border-l-2 border-emerald-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   How do I get from Guilin to Yangshuo?
                 </h3>
@@ -368,7 +368,7 @@ export default function GuilinPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-gradient-to-br from-emerald-600 to-teal-800 text-white">
+      <section className="section-padding bg-jade-700 text-white">
         <div className="container-custom text-center">
           <h2 className="heading-lg text-white mb-6">
             Ready to Explore Guilin?

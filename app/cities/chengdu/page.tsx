@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 
 export const metadata: Metadata = {
   title: 'Chengdu Attractions & Tours | Complete Travel Guide to China\'s Panda Capital',
@@ -99,8 +100,7 @@ export default function ChengduPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-700 to-pink-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <section className="relative text-white overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['chengdu']})` }}>
         <div className="relative container-custom section-padding">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
@@ -110,7 +110,7 @@ export default function ChengduPage() {
             
             <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
               Discover Chengdu's
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient text-jade-300">
                 Pandas & Culinary Delights
               </span>
             </h1>
@@ -254,9 +254,9 @@ export default function ChengduPage() {
           <div className="max-w-5xl mx-auto">
             {/* Custom GetYourGuide Widget for Chengdu */}
             <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
-              <div className="p-6 bg-gradient-to-r from-orange-600 to-red-600 text-white text-center">
+              <div className="p-6 bg-jade-700 text-white text-center">
                 <h3 className="text-2xl font-bold mb-2">Explore Chengdu's Pandas & Culture</h3>
-                <p className="text-orange-100">From <Link href="/attractions/giant-panda-base" className="text-primary-600 font-semibold hover:underline">Giant Panda Base</Link> to Sichuan cuisine - experience China's most livable city</p>
+                <p className="text-jade-600">From <Link href="/attractions/giant-panda-base" className="text-primary-600 font-semibold hover:underline">Giant Panda Base</Link> to Sichuan cuisine - experience China's most livable city</p>
               </div>
               <div 
                 data-gyg-href="https://widget.getyourguide.com/default/activities.frame" 
@@ -276,7 +276,7 @@ export default function ChengduPage() {
                 <span className="text-sm text-gray-500">
                   Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/chengdu-l394/" className="text-primary-600 hover:underline font-medium">GetYourGuide</a> | 
                   <span className="text-emerald-600 font-medium">Free Cancellation</span> | 
-                  <span className="text-blue-600 font-medium">Instant Confirmation</span>
+                  <span className="text-jade-600 font-medium">Instant Confirmation</span>
                 </span>
               </div>
             </div>
@@ -285,7 +285,7 @@ export default function ChengduPage() {
       </section>
 
       {/* Travel Tips */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="heading-lg mb-4">
@@ -330,7 +330,7 @@ export default function ChengduPage() {
             </h2>
             
             <div className="space-y-8">
-              <div className="border-l-4 border-orange-500 pl-6">
+              <div className="border-l-2 border-orange-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   How many days do you need to see Chengdu?
                 </h3>
@@ -341,7 +341,7 @@ export default function ChengduPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-orange-500 pl-6">
+              <div className="border-l-2 border-orange-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   What is the best time to visit the Giant Panda Base?
                 </h3>
@@ -352,7 +352,7 @@ export default function ChengduPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-orange-500 pl-6">
+              <div className="border-l-2 border-orange-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Is Chengdu food really that spicy?
                 </h3>
@@ -363,7 +363,7 @@ export default function ChengduPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-orange-500 pl-6">
+              <div className="border-l-2 border-orange-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   How do I get from Chengdu to Mount Emei and Leshan Buddha?
                 </h3>
@@ -375,7 +375,7 @@ export default function ChengduPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-orange-500 pl-6">
+              <div className="border-l-2 border-orange-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Do I need to book Sichuan Opera tickets in advance?
                 </h3>
@@ -391,7 +391,7 @@ export default function ChengduPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-gradient-to-br from-orange-600 to-red-800 text-white">
+      <section className="section-padding bg-jade-700 text-white">
         <div className="container-custom text-center">
           <h2 className="heading-lg text-white mb-6">
             Ready to Explore Chengdu?
@@ -401,7 +401,7 @@ export default function ChengduPage() {
             to experience the best of China's panda capital and culinary paradise.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#tours" className="btn-secondary bg-white text-orange-600 hover:bg-gray-50 text-lg px-8 py-4">
+            <a href="#tours" className="btn-secondary bg-white text-jade-700 hover:bg-gray-50 text-lg px-8 py-4">
               Book Chengdu Tours Now
             </a>
             <Link href="/cities" className="btn-outline border-white text-white hover:bg-white/10 text-lg px-8 py-4">

@@ -162,7 +162,7 @@ const festivals = [
     significance: 'Commemorates poet Qu Yuan, promotes health and protection',
     traditions: ['Dragon boat races', 'Zongzi (rice dumplings)', 'Realgar wine'],
     travelImpact: 'Great time to visit, special events and races',
-    color: 'bg-blue-500'
+    color: 'bg-jade-500'
   },
   {
     name: 'National Day Golden Week',
@@ -223,7 +223,7 @@ const philosophies = [
     name: 'Confucianism',
     principles: ['Respect for elders', 'Social harmony', 'Education importance', 'Moral cultivation'],
     impact: 'Influences family relationships, work ethics, and social interactions',
-    color: 'bg-blue-100 text-blue-800'
+    color: 'bg-jade-100 text-jade-600'
   },
   {
     name: 'Taoism',
@@ -235,7 +235,7 @@ const philosophies = [
     name: 'Buddhism',
     principles: ['Compassion', 'Mindfulness', 'Non-attachment', 'Inner wisdom'],
     impact: 'Influences art, architecture, and spiritual practices',
-    color: 'bg-purple-100 text-purple-800'
+    color: 'bg-purple-100 text-jade-600'
   }
 ];
 
@@ -243,7 +243,7 @@ export default function CulturalGuidePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">
@@ -255,7 +255,7 @@ export default function CulturalGuidePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
               <div className="flex items-center">
-                <Heart className="w-4 h-4 mr-1 text-red-500" />
+                <Heart className="w-4 h-4 mr-1 text-jade-600" />
                 5000+ Years of Culture
               </div>
               <div className="flex items-center">
@@ -283,7 +283,7 @@ export default function CulturalGuidePage() {
           
           <div className="space-y-12">
             {culturalAspects.map(aspect => (
-              <div key={aspect.id} className="bg-white rounded-2xl shadow-sm p-8 border-l-4 border-primary-500">
+              <div key={aspect.id} className="bg-white rounded-2xl shadow-sm p-8 border-l-2 border-primary-500">
                 <div className="flex items-center mb-6">
                   <div className={`w-12 h-12 ${aspect.color} rounded-xl flex items-center justify-center mr-4`}>
                     <aspect.icon className="w-6 h-6 text-white" />
@@ -291,7 +291,7 @@ export default function CulturalGuidePage() {
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900">{aspect.title}</h3>
                     <span className={`text-sm px-2 py-1 rounded-full ${
-                      aspect.importance === 'high' ? 'bg-red-100 text-red-700' : 'bg-yellow-100 text-yellow-700'
+                      aspect.importance === 'high' ? 'bg-red-100 text-jade-600' : 'bg-yellow-100 text-yellow-700'
                     }`}>
                       {aspect.importance === 'high' ? 'Essential' : 'Important'}
                     </span>
@@ -314,7 +314,7 @@ export default function CulturalGuidePage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-red-700 mb-4 flex items-center">
+                    <h4 className="font-semibold text-jade-600 mb-4 flex items-center">
                       ❌ Don'ts
                     </h4>
                     <ul className="space-y-2">
@@ -344,9 +344,9 @@ export default function CulturalGuidePage() {
                 )}
                 
                 {aspect.content.tips && (
-                  <div className="mt-6 bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-blue-900 mb-2">💡 Pro Tips:</h4>
-                    <ul className="space-y-1 text-sm text-blue-800">
+                  <div className="mt-6 bg-jade-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-jade-600 mb-2">💡 Pro Tips:</h4>
+                    <ul className="space-y-1 text-sm text-jade-600">
                       {aspect.content.tips.map((tip, index) => (
                         <li key={index}>• {tip}</li>
                       ))}
@@ -486,7 +486,7 @@ export default function CulturalGuidePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-500 to-gold-500">
+      <section className="section-padding bg-jade-700">
         <div className="container-custom">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

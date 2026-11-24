@@ -105,7 +105,7 @@ const seasons = [
     name: 'Winter',
     months: 'December - February',
     icon: Snowflake,
-    color: 'bg-blue-500',
+    color: 'bg-jade-500',
     rating: 2,
     temperature: '-5-10°C (23-50°F)',
     pros: [
@@ -186,7 +186,7 @@ export default function BestTimeToVisitPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">
@@ -217,7 +217,7 @@ export default function BestTimeToVisitPage() {
       {/* Quick Answer */}
       <section className="section-padding">
         <div className="container-custom">
-          <div className="bg-gradient-to-r from-chinese-500 to-gold-500 rounded-2xl p-8 text-white text-center mb-12">
+          <div className="bg-jade-700 rounded-2xl p-8 text-white text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               🌟 Quick Answer: Spring (April-May) & Autumn (September-October)
             </h2>
@@ -279,7 +279,7 @@ export default function BestTimeToVisitPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-red-700 mb-3">❌ Cons</h4>
+                    <h4 className="font-semibold text-jade-600 mb-3">❌ Cons</h4>
                     <ul className="space-y-1 text-sm text-gray-600">
                       {season.cons.map((con, index) => (
                         <li key={index}>• {con}</li>
@@ -338,7 +338,7 @@ export default function BestTimeToVisitPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {regionalGuide.map((region, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary-500">
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border-l-2 border-primary-500">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{region.region}</h3>
                 
                 <div className="space-y-3 text-sm">
@@ -362,9 +362,9 @@ export default function BestTimeToVisitPage() {
                     <span className="text-gray-600">{region.highlights.join(', ')}</span>
                   </div>
                   
-                  <div className="bg-blue-50 p-3 rounded-lg mt-4">
-                    <span className="font-medium text-blue-800">💡 Pro Tip: </span>
-                    <span className="text-blue-700">{region.tips}</span>
+                  <div className="bg-jade-50 p-3 rounded-lg mt-4">
+                    <span className="font-medium text-jade-600">💡 Pro Tip: </span>
+                    <span className="text-jade-600">{region.tips}</span>
                   </div>
                 </div>
               </div>
@@ -396,7 +396,7 @@ export default function BestTimeToVisitPage() {
                       data.temp > 30 ? 'bg-red-500' :
                       data.temp > 20 ? 'bg-orange-400' :
                       data.temp > 10 ? 'bg-yellow-400' :
-                      'bg-blue-400'
+                      'bg-jade-400'
                     } flex items-end justify-center`}>
                       <span className="text-xs text-white font-medium pb-1">{data.temp}°</span>
                     </div>
@@ -448,7 +448,7 @@ export default function BestTimeToVisitPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-500 to-gold-500">
+      <section className="section-padding bg-jade-700">
         <div className="container-custom">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

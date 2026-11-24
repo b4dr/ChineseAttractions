@@ -1,22 +1,23 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Plane, CheckCircle, Clock, ArrowRight, Star, DollarSign, Calendar, MapPin, ExternalLink, TrendingDown, Globe, Users, Award, Sparkles, Hotel, Train, Percent, AlertCircle, Lightbulb } from 'lucide-react';
+import { Plane, CheckCircle, Clock, ArrowRight, Star, DollarSign, Calendar, MapPin, ExternalLink, TrendingDown, Globe, Users, Award, Sparkles, Hotel, Train, Percent, AlertCircle, Lightbulb } from 'lucide-react'
+import { IMAGES } from '@/lib/images';
 import { AFFILIATE_LINKS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: 'Cheap Flights to China 2025: Best Deals & Booking Tips | Chinese Attractions',
-  description: 'Find the cheapest flights to China in 2025! Compare airlines, discover the best booking times, and get exclusive deals on Trip.com. Flights from €399 round trip.',
+  title: 'Cheap Flights to China 2026: Best Deals & Booking Tips | Chinese Attractions',
+  description: 'Find the cheapest flights to China in 2026! Compare airlines, discover the best booking times, and get exclusive deals on Trip.com. Flights from €399 round trip.',
   keywords: 'cheap flights china 2025, flights to beijing, flights to shanghai, trip.com china, best time book china flights, china airline deals, budget travel china',
   openGraph: {
-    title: 'Cheap Flights to China 2025: Ultimate Booking Guide',
+    title: 'Cheap Flights to China 2026: Ultimate Booking Guide',
     description: 'Find flights to China from €399! Best airlines, booking tips, and exclusive deals.',
     type: 'article',
     images: ['/images/blog/cheap-flights-china-2025.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cheap Flights to China 2025',
+    title: 'Cheap Flights to China 2026',
     description: 'Flights from €399 - Best deals and booking secrets',
   },
   alternates: {
@@ -105,33 +106,32 @@ const sampleDeals = [
 
 export default function CheapFlightsChinaGuide() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 text-white py-20 overflow-hidden">
+      <section className="relative text-white py-20 overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['flights']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="absolute inset-0 bg-[url('/pattern-chinese.svg')] opacity-5"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <span className="bg-yellow-400 text-orange-900 px-4 py-2 rounded-full text-sm font-bold flex items-center">
+              <span className="bg-yellow-400 text-jade-200 px-4 py-2 rounded-full text-sm font-bold flex items-center">
                 <Plane className="w-4 h-4 mr-2" />
-                2025 FLIGHT DEALS
+                2026 FLIGHT DEALS
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Cheap Flights to China 2025
+              Cheap Flights to China 2026
             </h1>
             
-            <p className="text-xl md:text-2xl text-orange-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-jade-200 mb-8 max-w-3xl mx-auto">
               Your complete guide to finding the best flight deals to China. 
               Save hundreds with our insider tips and exclusive Trip.com deals!
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
               <div className="text-5xl font-bold text-yellow-300 mb-2">From €399</div>
-              <div className="text-orange-100">Round trip flights to <Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> & <Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link></div>
+              <div className="text-jade-200">Round trip flights to <Link href="/cities/beijing" className="text-primary-600 font-semibold hover:underline">Beijing</Link> & <Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link></div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -139,7 +139,7 @@ export default function CheapFlightsChinaGuide() {
                 href={AFFILIATE_LINKS.tripCom.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="bg-yellow-400 hover:bg-yellow-300 text-orange-900 font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+                className="bg-yellow-400 hover:bg-yellow-300 text-jade-200 font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
               >
                 <Plane className="w-5 h-5 mr-2" />
                 Search Flights on Trip.com
@@ -153,10 +153,10 @@ export default function CheapFlightsChinaGuide() {
               </Link>
             </div>
             
-            <div className="flex items-center justify-center space-x-8 text-orange-100">
+            <div className="flex items-center justify-center space-x-8 text-jade-200">
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
-                <span>500+ Airlines</span>
+                <span>10 Airlines</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
@@ -172,7 +172,7 @@ export default function CheapFlightsChinaGuide() {
       </section>
 
       {/* Live Deals Banner */}
-      <section className="bg-gradient-to-r from-green-500 to-emerald-600 py-4">
+      <section className="bg-jade-700 py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center space-x-4 text-white">
             <Sparkles className="w-6 h-6 animate-pulse" />
@@ -200,7 +200,7 @@ export default function CheapFlightsChinaGuide() {
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span>Updated: January 2025</span>
+                <span>Updated: January 2026</span>
               </div>
               <div className="flex items-center">
                 <Clock className="w-4 h-4 mr-2" />
@@ -232,21 +232,21 @@ export default function CheapFlightsChinaGuide() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {sampleDeals.map((deal, index) => (
-                <div key={index} className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200 hover:shadow-lg transition-all">
+                <div key={index} className="bg-paper-100 rounded-xl p-6 border border-orange-200 hover:shadow-lg transition-all">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-2">
-                      <MapPin className="w-4 h-4 text-orange-600" />
+                      <MapPin className="w-4 h-4 text-jade-600" />
                       <span className="font-semibold text-gray-900">{deal.from}</span>
                     </div>
-                    <Plane className="w-5 h-5 text-orange-500" />
+                    <Plane className="w-5 h-5 text-jade-600" />
                     <div className="flex items-center space-x-2">
-                      <MapPin className="w-4 h-4 text-red-600" />
+                      <MapPin className="w-4 h-4 text-jade-600" />
                       <span className="font-semibold text-gray-900">{deal.to}</span>
                     </div>
                   </div>
                   
                   <div className="text-center mb-4">
-                    <div className="text-3xl font-bold text-orange-600">{deal.price}</div>
+                    <div className="text-3xl font-bold text-jade-600">{deal.price}</div>
                     <div className="text-sm text-gray-500">Round trip</div>
                   </div>
                   
@@ -282,7 +282,7 @@ export default function CheapFlightsChinaGuide() {
                 href={AFFILIATE_LINKS.tripCom.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center bg-jade-700 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <Plane className="w-5 h-5 mr-2" />
                 Search All Flights on Trip.com
@@ -312,7 +312,7 @@ export default function CheapFlightsChinaGuide() {
                 return (
                   <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all">
                     <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
-                      <IconComponent className="w-6 h-6 text-orange-600" />
+                      <IconComponent className="w-6 h-6 text-jade-600" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">{tip.title}</h3>
                     <p className="text-gray-600">{tip.description}</p>
@@ -351,7 +351,7 @@ export default function CheapFlightsChinaGuide() {
                   const priceColors = {
                     LOW: 'bg-green-100 text-green-700',
                     MEDIUM: 'bg-yellow-100 text-yellow-700',
-                    HIGH: 'bg-red-100 text-red-700',
+                    HIGH: 'bg-red-100 text-jade-600',
                   };
                   return (
                     <div key={index} className="grid grid-cols-4 p-4 text-center items-center hover:bg-gray-50 transition-colors">
@@ -360,7 +360,7 @@ export default function CheapFlightsChinaGuide() {
                         {item.price}
                       </span>
                       <span className="text-sm text-gray-600">{item.reason}</span>
-                      <span className={`font-bold ${item.savings.includes('-') ? 'text-red-600' : 'text-green-600'}`}>
+                      <span className={`font-bold ${item.savings.includes('-') ? 'text-jade-600' : 'text-green-600'}`}>
                         {item.savings}
                       </span>
                     </div>
@@ -409,11 +409,11 @@ export default function CheapFlightsChinaGuide() {
                     </span>
                   )}
                   <h3 className="text-xl font-bold text-gray-900 mb-1">{airport.city}</h3>
-                  <p className="text-orange-600 font-mono font-bold mb-2">{airport.code}</p>
+                  <p className="text-jade-600 font-mono font-bold mb-2">{airport.code}</p>
                   <p className="text-gray-600 text-sm mb-4">{airport.name}</p>
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <span className="text-sm text-gray-500">Avg. Price:</span>
-                    <span className="font-bold text-lg text-orange-600">{airport.avgPrice}</span>
+                    <span className="font-bold text-lg text-jade-600">{airport.avgPrice}</span>
                   </div>
                 </div>
               ))}
@@ -423,15 +423,15 @@ export default function CheapFlightsChinaGuide() {
       </section>
 
       {/* Trip.com Recommendation */}
-      <section className="py-16 bg-gradient-to-r from-orange-500 via-red-500 to-pink-600">
+      <section className="py-16 bg-jade-700">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <div className="p-8 md:p-12">
                   <div className="flex items-center space-x-2 mb-4">
-                    <Award className="w-8 h-8 text-orange-500" />
-                    <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">
+                    <Award className="w-8 h-8 text-jade-200" />
+                    <span className="bg-orange-100 text-jade-200 px-3 py-1 rounded-full text-sm font-bold">
                       OUR TOP RECOMMENDATION
                     </span>
                   </div>
@@ -474,32 +474,32 @@ export default function CheapFlightsChinaGuide() {
                   </a>
                 </div>
                 
-                <div className="bg-gradient-to-br from-orange-500 to-red-600 p-8 md:p-12 text-white flex flex-col justify-center">
+                <div className="bg-jade-700 p-8 md:p-12 text-white flex flex-col justify-center">
                   <div className="text-center">
                     <div className="text-6xl font-bold mb-2">€399</div>
-                    <div className="text-xl text-orange-200 mb-6">Round trip from Europe</div>
+                    <div className="text-xl text-jade-200 mb-6">Round trip from Europe</div>
                     
                     <div className="space-y-4">
                       <div className="bg-white/10 rounded-lg p-4">
                         <div className="flex items-center justify-center space-x-2">
                           <Plane className="w-5 h-5" />
-                          <span className="text-xl font-bold">500+</span>
+                          <span className="text-xl font-bold">10</span>
                         </div>
-                        <div className="text-orange-200 text-sm">Airlines Compared</div>
+                        <div className="text-jade-200 text-sm">Airlines Compared</div>
                       </div>
                       <div className="bg-white/10 rounded-lg p-4">
                         <div className="flex items-center justify-center space-x-2">
                           <Hotel className="w-5 h-5" />
                           <span className="text-xl font-bold">€25</span>
                         </div>
-                        <div className="text-orange-200 text-sm">Hotels from per night</div>
+                        <div className="text-jade-200 text-sm">Hotels from per night</div>
                       </div>
                       <div className="bg-white/10 rounded-lg p-4">
                         <div className="flex items-center justify-center space-x-2">
                           <Percent className="w-5 h-5" />
                           <span className="text-xl font-bold">30%</span>
                         </div>
-                        <div className="text-orange-200 text-sm">Average Savings</div>
+                        <div className="text-jade-200 text-sm">Average Savings</div>
                       </div>
                     </div>
                     
@@ -508,7 +508,7 @@ export default function CheapFlightsChinaGuide() {
                         <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
                       ))}
                     </div>
-                    <p className="text-orange-200 text-sm mt-2">Rated 4.7/5 by 10M+ travelers</p>
+                    <p className="text-jade-200 text-sm mt-2">Rated 4.7/5 by 10M+ travelers</p>
                   </div>
                 </div>
               </div>
@@ -544,7 +544,7 @@ export default function CheapFlightsChinaGuide() {
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-500">Direct Routes:</span>
-                      <span className={`font-medium ${airline.directRoutes ? 'text-green-600' : 'text-orange-600'}`}>
+                      <span className={`font-medium ${airline.directRoutes ? 'text-green-600' : 'text-jade-600'}`}>
                         {airline.directRoutes ? 'Yes' : 'Via Hub'}
                       </span>
                     </div>
@@ -560,7 +560,7 @@ export default function CheapFlightsChinaGuide() {
                       <span className="text-sm text-gray-600">{airline.pros}</span>
                     </div>
                     <div className="flex items-start space-x-2">
-                      <AlertCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                      <AlertCircle className="w-4 h-4 text-jade-600 mt-0.5 flex-shrink-0" />
                       <span className="text-sm text-gray-600">{airline.cons}</span>
                     </div>
                   </div>
@@ -572,14 +572,14 @@ export default function CheapFlightsChinaGuide() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-gradient-to-r from-orange-500 to-red-600">
+      <section className="py-16 bg-jade-700">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <Plane className="w-16 h-16 mx-auto mb-6 text-yellow-300" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Book Your China Adventure?
             </h2>
-            <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-jade-200 mb-8 max-w-2xl mx-auto">
               Find the best flight deals on Trip.com and start planning your 
               unforgettable journey to China today!
             </p>
@@ -587,14 +587,14 @@ export default function CheapFlightsChinaGuide() {
               href={AFFILIATE_LINKS.tripCom.affiliateUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-orange-900 font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+              className="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-jade-200 font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
             >
               <Plane className="w-6 h-6 mr-3" />
               Search Flights from €399
               <ArrowRight className="w-6 h-6 ml-3" />
             </a>
-            <p className="mt-6 text-orange-200 text-sm">
-              ✓ Compare 500+ airlines • ✓ Best price guarantee • ✓ Free cancellation options
+            <p className="mt-6 text-jade-200 text-sm">
+              ✓ Compare 10 airlines • ✓ Best price guarantee • ✓ Free cancellation options
             </p>
           </div>
         </div>
@@ -610,17 +610,17 @@ export default function CheapFlightsChinaGuide() {
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/blog/china-travel-insurance-guide-2025" className="group bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-3xl mb-4">🛡️</div>
-                <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Travel Insurance Guide 2025</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-jade-600 transition-colors">Travel Insurance Guide 2026</h3>
                 <p className="text-gray-600 text-sm mt-2">Protect your trip from €2/day</p>
               </Link>
               <Link href="/blog/china-visa-requirements-2025" className="group bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-3xl mb-4">📋</div>
-                <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">China Visa Requirements 2025</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-jade-600 transition-colors">China Visa Requirements 2026</h3>
                 <p className="text-gray-600 text-sm mt-2">Complete application guide</p>
               </Link>
               <Link href="/attractions" className="group bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-3xl mb-4">🏯</div>
-                <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Top China Attractions</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-jade-600 transition-colors">Top China Attractions</h3>
                 <p className="text-gray-600 text-sm mt-2">Must-see destinations</p>
               </Link>
             </div>

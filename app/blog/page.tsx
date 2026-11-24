@@ -1,22 +1,23 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Calendar, User, Clock, ArrowRight, MapPin, Camera, Heart, Star, ExternalLink, Lightbulb, Users, ChefHat, BookOpen, Compass, Award, TrendingUp, Eye, Share2, Bookmark, Filter, Search, Globe, Mountain, Building2, Utensils, TreePine, Sparkles } from 'lucide-react';
+import { Calendar, User, Clock, ArrowRight, MapPin, Camera, Heart, Star, ExternalLink, Lightbulb, Users, ChefHat, BookOpen, Compass, Award, TrendingUp, Eye, Share2, Bookmark, Filter, Search, Globe, Mountain, Building2, Utensils, TreePine, Sparkles } from 'lucide-react'
+import { IMAGES, pageImg } from '@/lib/images';
 import GetYourGuideWidget from '@/components/GetYourGuideWidget';
 
 export const metadata: Metadata = {
-  title: 'China Travel Blog 2025 | Expert Guides & Insider Stories | Chinese Attractions',
+  title: 'China Travel Blog 2026 | Expert Guides & Insider Stories | Chinese Attractions',
   description: 'Discover China through our premium travel magazine. Expert guides, insider stories, cultural deep-dives, and exclusive experiences across China\'s most incredible destinations.',
   keywords: 'china travel blog 2025, china travel magazine, beijing insider guide, shanghai travel stories, xi\'an cultural guide, china travel experts, chinese attractions blog, china itinerary planning, best china destinations, china travel inspiration',
   openGraph: {
-    title: 'China Travel Blog 2025 | Expert Guides & Insider Stories',
+    title: 'China Travel Blog 2026 | Expert Guides & Insider Stories',
     description: 'Your premium travel magazine for exploring China with expert insights and insider stories',
     type: 'website',
     images: ['/blog-og-image.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'China Travel Blog 2025 | Expert Guides & Insider Stories',
+    title: 'China Travel Blog 2026 | Expert Guides & Insider Stories',
     description: 'Your premium travel magazine for exploring China',
     images: ['/blog-og-image.jpg'],
   },
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
 const featuredArticles = [
   {
     id: 0,
-    title: 'Cheap Flights to China 2025: Best Deals & Booking Tips',
+    title: 'Cheap Flights to China 2026: Best Deals & Booking Tips',
     excerpt: 'Find the cheapest flights to China from €399! Compare airlines, discover the best booking times, and get exclusive deals. Save hundreds with our insider tips!',
     image: '/images/blog/cheap-flights-china-2025.jpg',
     author: 'Travel Deals Team',
@@ -40,7 +41,7 @@ const featuredArticles = [
     slug: '/blog/cheap-flights-china-2025',
     tags: ['Flights', 'Budget Travel', 'Trip.com', 'Deals'],
     featured: true,
-    views: '15.2K',
+    views: '',
     rating: 4.8,
     bookingLink: true,
     urgent: true,
@@ -48,7 +49,7 @@ const featuredArticles = [
   },
   {
     id: 1,
-    title: 'China Travel Insurance Guide 2025: Essential Protection',
+    title: 'China Travel Insurance Guide 2026: Essential Protection',
     excerpt: 'Don\'t travel to China without insurance! Complete guide to coverage, medical costs, and the best policies. Get protected with AXA from just €2/day.',
     image: '/images/blog/china-travel-insurance-2025.jpg',
     author: 'Insurance Expert Team',
@@ -59,7 +60,7 @@ const featuredArticles = [
     slug: '/blog/china-travel-insurance-guide-2025',
     tags: ['Insurance', 'AXA', 'Medical Coverage', 'Protection'],
     featured: true,
-    views: '12.8K',
+    views: '',
     rating: 4.9,
     bookingLink: true,
     urgent: true,
@@ -67,7 +68,7 @@ const featuredArticles = [
   },
   {
     id: 2,
-    title: 'Chinese New Year 2025: Ultimate Travel Guide & Celebrations',
+    title: 'Chinese New Year 2026: Ultimate Travel Guide & Celebrations',
     excerpt: 'Experience the magic of Spring Festival in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours for February 10-17, 2025.',
     image: '/images/blog/chinese-new-year-2025.jpg',
     author: 'Li Ming',
@@ -78,7 +79,7 @@ const featuredArticles = [
     slug: '/blog/chinese-new-year-2025-travel-guide',
     tags: ['Chinese New Year', 'Spring Festival', 'Traditions', 'Year of Snake'],
     featured: true,
-    views: '2.5K',
+    views: '',
     rating: 5.0,
     bookingLink: true,
     urgent: true,
@@ -86,7 +87,7 @@ const featuredArticles = [
   },
   {
     id: 3,
-    title: 'China Visa Requirements 2025: Complete Application Guide',
+    title: 'China Visa Requirements 2026: Complete Application Guide',
     excerpt: 'Everything you need to know to get your China visa approved quickly! Requirements, fees, processing time, and step-by-step application process updated for 2025.',
     image: '/images/blog/china-visa-2025.jpg',
     author: 'Visa Expert Team',
@@ -97,7 +98,7 @@ const featuredArticles = [
     slug: '/blog/china-visa-requirements-2025',
     tags: ['China Visa', 'Travel Requirements', 'Application Guide', '2025'],
     featured: true,
-    views: '8.5K',
+    views: '',
     rating: 4.9,
     bookingLink: true,
     urgent: true,
@@ -116,7 +117,7 @@ const featuredArticles = [
     slug: '/attractions/great-wall-china',
     tags: ['Great Wall', 'UNESCO', 'History', 'Photography'],
     featured: true,
-    views: '125K',
+    views: '',
     rating: 4.9,
     bookingLink: true,
   },
@@ -133,7 +134,7 @@ const featuredArticles = [
     slug: '/attractions/forbidden-city',
     tags: ['Beijing', 'Imperial Palace', 'Architecture', 'Culture'],
     featured: true,
-    views: '98K',
+    views: '',
     rating: 4.8,
     bookingLink: true,
   },
@@ -150,7 +151,7 @@ const featuredArticles = [
     slug: '/attractions/terracotta-army',
     tags: ['Xi\'an', 'Archaeology', 'Emperor Qin', 'UNESCO'],
     featured: true,
-    views: '87K',
+    views: '',
     rating: 4.9,
     bookingLink: true,
   },
@@ -160,7 +161,7 @@ const featuredArticles = [
 const travelGuides = [
   {
     id: 4,
-    title: 'Essential China Travel Tips: Insider Secrets for 2025',
+    title: 'Essential China Travel Tips: Insider Secrets for 2026',
     excerpt: 'Master the art of traveling in China with our comprehensive guide covering visas, cultural etiquette, transportation, and money-saving tips.',
     image: '/images/blog/china-travel-tips.jpg',
     author: 'Sarah Chen',
@@ -170,7 +171,7 @@ const travelGuides = [
     category: 'Travel Planning',
     slug: '/blog/travel-tips',
     tags: ['Travel Tips', 'Planning', 'Culture', 'Budget'],
-    views: '156K',
+    views: '',
     rating: 4.7,
   },
   {
@@ -185,7 +186,7 @@ const travelGuides = [
     category: 'Travel Planning',
     slug: '/blog/best-time-to-visit',
     tags: ['Weather', 'Seasons', 'Planning', 'Climate'],
-    views: '134K',
+    views: '',
     rating: 4.6,
   },
   {
@@ -200,7 +201,7 @@ const travelGuides = [
     category: 'Cultural Insights',
     slug: '/blog/cultural-guide',
     tags: ['Culture', 'Traditions', 'Etiquette', 'Customs'],
-    views: '112K',
+    views: '',
     rating: 4.8,
   },
   {
@@ -215,7 +216,7 @@ const travelGuides = [
     category: 'Food & Culture',
     slug: '/blog/food-dining',
     tags: ['Food', 'Cuisine', 'Restaurants', 'Culture'],
-    views: '189K',
+    views: '',
     rating: 4.9,
   },
   {
@@ -230,7 +231,7 @@ const travelGuides = [
     category: 'Essential Guides',
     slug: '/blog/china-payment-apps-guide-2026',
     tags: ['Alipay', 'WeChat Pay', 'Money', 'Essential'],
-    views: '3.2K',
+    views: '',
     rating: 4.9,
     practical: true
   },
@@ -246,7 +247,7 @@ const travelGuides = [
     category: 'Essential Guides',
     slug: '/blog/china-esim-vpn-guide-2026',
     tags: ['eSIM', 'VPN', 'Internet', 'Great Firewall'],
-    views: '2.8K',
+    views: '',
     rating: 4.8,
     practical: true
   },
@@ -262,7 +263,7 @@ const travelGuides = [
     category: 'Travel Planning',
     slug: '/blog/china-high-speed-rail-guide-2026',
     tags: ['Trains', 'Booking', 'Transport', '12306'],
-    views: '2.1K',
+    views: '',
     rating: 4.9,
     practical: true
   },
@@ -278,7 +279,7 @@ const travelGuides = [
     category: 'Travel Planning',
     slug: '/blog/china-itinerary-2-weeks-2026',
     tags: ['Itinerary', 'Planning', 'Golden Triangle', '2 Weeks'],
-    views: '4.5K',
+    views: '',
     rating: 5.0,
     featured: true,
     practical: true
@@ -295,7 +296,7 @@ const travelGuides = [
     category: 'Travel Planning',
     slug: '/blog/china-travel-cost-2026',
     tags: ['Budget', 'Costs', 'Planning', 'Money'],
-    views: '1.9K',
+    views: '',
     rating: 4.7,
     practical: true
   },
@@ -311,7 +312,7 @@ const travelGuides = [
     category: 'Essential Guides',
     slug: '/blog/china-safety-tips-2026',
     tags: ['Safety', 'Scams', 'Health', 'Emergency'],
-    views: '2.4K',
+    views: '',
     rating: 4.8,
     practical: true
   },
@@ -330,7 +331,7 @@ const citySpotlights = [
     category: 'City Guides',
     slug: '/cities/beijing',
     tags: ['Beijing', 'Imperial', 'Modern', 'Culture'],
-    views: '203K',
+    views: '',
   },
   {
     id: 9,
@@ -343,7 +344,7 @@ const citySpotlights = [
     category: 'City Guides',
     slug: '/cities/shanghai',
     tags: ['Shanghai', 'Modern', 'Business', 'Culture'],
-    views: '178K',
+    views: '',
   },
   {
     id: 10,
@@ -356,7 +357,7 @@ const citySpotlights = [
     category: 'City Guides',
     slug: '/cities/chengdu',
     tags: ['Chengdu', 'Pandas', 'Food', 'Culture'],
-    views: '145K',
+    views: '',
   },
 ];
 
@@ -377,7 +378,7 @@ const citySpotlights = [
   category: '[Category matching existing ones]',
   slug: '[/blog/url-slug or /attractions/slug or /cities/slug]',
   tags: ['Tag1', 'Tag2', 'Tag3', 'Tag4'],
-  views: '[XXK]', // Realistic view count
+  views: '', // Realistic view count
   rating: X.X, // Optional rating out of 5
   featured: true, // Optional for featured articles
   bookingLink: true, // Optional for attraction articles
@@ -403,28 +404,28 @@ const categories = [
   { 
     name: 'Travel Planning', 
     count: 15, 
-    color: 'bg-gradient-to-br from-blue-500 to-blue-600', 
+    color: 'bg-jade-700', 
     icon: Compass,
     description: 'Essential planning tips'
   },
   { 
     name: 'City Guides', 
     count: 18, 
-    color: 'bg-gradient-to-br from-emerald-500 to-emerald-600', 
+    color: 'bg-jade-700', 
     icon: Building2,
     description: 'Complete city explorations'
   },
   { 
     name: 'Food & Culture', 
     count: 22, 
-    color: 'bg-gradient-to-br from-orange-500 to-orange-600', 
+    color: 'bg-jade-700', 
     icon: Utensils,
     description: 'Culinary adventures'
   },
   { 
     name: 'Archaeological Wonders', 
     count: 6, 
-    color: 'bg-gradient-to-br from-purple-500 to-purple-600', 
+    color: 'bg-jade-700', 
     icon: Mountain,
     description: 'Ancient discoveries'
   },
@@ -432,30 +433,27 @@ const categories = [
 
 // Stats for the hero section
 const blogStats = [
-  { label: 'Expert Articles', value: '150+', icon: BookOpen },
-  { label: 'Cities Covered', value: '25+', icon: MapPin },
-  { label: 'Monthly Readers', value: '500K+', icon: Users },
-  { label: 'Expert Rating', value: '4.9/5', icon: Star },
+  { label: 'Travel Guides', value: '13', icon: BookOpen },
+  { label: 'Cities Covered', value: '8', icon: MapPin },
+  { label: 'Attractions', value: '10', icon: Users },
+  { label: 'Up to date', value: '2026', icon: Star },
 ];
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <div className="min-h-screen bg-ink-800">
       {/* Premium Hero Section */}
-      <section className="relative bg-gradient-to-br from-chinese-500 via-chinese-600 to-gold-500 text-white py-24 overflow-hidden">
+      <section className="relative text-white py-24 overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['cny']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="absolute inset-0 bg-[url('/pattern-chinese.svg')] opacity-10"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="flex items-center justify-center mb-6">
-                <Sparkles className="w-8 h-8 text-gold-200 mr-3" />
-                <span className="text-gold-200 font-medium text-lg">Premium Travel Magazine</span>
-              </div>
+                              </div>
               
               <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in-up">
-                China Travel <span className="text-gradient bg-gradient-to-r from-gold-200 to-yellow-200 bg-clip-text text-transparent">Stories</span>
+                China Travel <span className="text-gradient text-jade-300">Stories</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-100 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -497,10 +495,8 @@ export default function BlogPage() {
               <article className="group">
                 <Link href={featuredArticles[0].slug} className="block">
                   <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-chinese-100 to-gold-100">
-                      <div className="aspect-[4/3] flex items-center justify-center">
-                        <Camera className="w-16 h-16 text-chinese-400" />
-                      </div>
+                    <div className="relative overflow-hidden rounded-3xl bg-ink-800">
+                      <div className="aspect-[4/3] bg-cover bg-center" style={{ backgroundImage: `url(${pageImg(featuredArticles[0].slug.split('/').pop() || '')})` }} />
                       <div className="absolute top-6 left-6">
                         <span className="bg-chinese-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                           {featuredArticles[0].category}
@@ -582,10 +578,8 @@ export default function BlogPage() {
               {featuredArticles.slice(1, 3).map((article) => (
                 <article key={article.id} className="group">
                   <Link href={article.slug} className="block">
-                    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-chinese-100 to-gold-100 mb-6">
-                      <div className="aspect-video flex items-center justify-center">
-                        <Camera className="w-12 h-12 text-chinese-400" />
-                      </div>
+                    <div className="relative overflow-hidden rounded-2xl bg-paper-100 mb-6">
+                      <div className="aspect-video bg-cover bg-center" style={{ backgroundImage: `url(${pageImg(article.slug.split('/').pop() || '')})` }} />
                       <div className="absolute top-4 left-4">
                         <span className="bg-white/90 backdrop-blur-sm text-chinese-600 px-3 py-1 rounded-full text-sm font-semibold">
                           {article.category}
@@ -656,7 +650,7 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link 
               href="/blog/travel-tips"
-              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border-l-4 border-chinese-500"
+              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border border-paper-200 hover:border-jade-300"
             >
               <div className="w-12 h-12 bg-chinese-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-chinese-200 transition-colors">
                 <Lightbulb className="w-6 h-6 text-chinese-600" />
@@ -671,7 +665,7 @@ export default function BlogPage() {
             
             <Link 
               href="/blog/best-time-to-visit"
-              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border-l-4 border-gold-500"
+              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border border-paper-200 hover:border-jade-300"
             >
               <div className="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-gold-200 transition-colors">
                 <Calendar className="w-6 h-6 text-gold-600" />
@@ -686,7 +680,7 @@ export default function BlogPage() {
             
             <Link 
               href="/blog/cultural-guide"
-              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border-l-4 border-emerald-500"
+              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border border-paper-200 hover:border-jade-300"
             >
               <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-200 transition-colors">
                 <Users className="w-6 h-6 text-emerald-600" />
@@ -701,14 +695,14 @@ export default function BlogPage() {
             
             <Link 
               href="/blog/food-dining"
-              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border-l-4 border-purple-500"
+              className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 border border-paper-200 hover:border-jade-300"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
-                <ChefHat className="w-6 h-6 text-purple-600" />
+                <ChefHat className="w-6 h-6 text-jade-600" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Food & Dining</h3>
               <p className="text-gray-600 text-sm mb-3">Regional cuisines and dining experiences</p>
-              <div className="flex items-center text-purple-600 font-medium text-sm">
+              <div className="flex items-center text-jade-600 font-medium text-sm">
                 Read Guide
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
@@ -746,7 +740,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter & Affiliate CTA */}
-      <section className="section-padding bg-gradient-to-br from-chinese-500 to-gold-500">
+      <section className="section-padding bg-jade-700">
         <div className="container-custom">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 
 export const metadata: Metadata = {
   title: 'Hangzhou Attractions & Tours | Complete Travel Guide to China\'s Paradise City',
@@ -98,8 +99,7 @@ export default function HangzhouPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-cyan-700 to-teal-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <section className="relative text-white overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['west-lake']})` }}>
         <div className="relative container-custom section-padding">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
@@ -109,7 +109,7 @@ export default function HangzhouPage() {
             
             <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
               Discover Hangzhou's
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient text-jade-300">
                 Legendary West Lake Beauty
               </span>
             </h1>
@@ -257,9 +257,9 @@ export default function HangzhouPage() {
           <div className="max-w-5xl mx-auto">
             {/* Custom GetYourGuide Widget for Hangzhou */}
             <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
-              <div className="p-6 bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center">
+              <div className="p-6 bg-jade-700 text-white text-center">
                 <h3 className="text-2xl font-bold mb-2">Explore Hangzhou's Paradise Beauty</h3>
-                <p className="text-blue-100">From West Lake cruises to ancient temples - experience China's most poetic city</p>
+                <p className="text-jade-600">From West Lake cruises to ancient temples - experience China's most poetic city</p>
               </div>
               <div 
                 data-gyg-href="https://widget.getyourguide.com/default/activities.frame" 
@@ -279,7 +279,7 @@ export default function HangzhouPage() {
                 <span className="text-sm text-gray-500">
                   Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/hangzhou-l2632/" className="text-primary-600 hover:underline font-medium">GetYourGuide</a> | 
                   <span className="text-emerald-600 font-medium">Free Cancellation</span> | 
-                  <span className="text-blue-600 font-medium">Instant Confirmation</span>
+                  <span className="text-jade-600 font-medium">Instant Confirmation</span>
                 </span>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function HangzhouPage() {
       </section>
 
       {/* Travel Tips */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="heading-lg mb-4">
@@ -308,7 +308,7 @@ export default function HangzhouPage() {
                   className="bg-white rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300 animate-fade-in-up"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-jade-500 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -333,7 +333,7 @@ export default function HangzhouPage() {
             </h2>
             
             <div className="space-y-8">
-              <div className="border-l-4 border-blue-500 pl-6">
+              <div className="border-l-2 border-jade-400 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   How many days do you need to see Hangzhou?
                 </h3>
@@ -344,7 +344,7 @@ export default function HangzhouPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-500 pl-6">
+              <div className="border-l-2 border-jade-400 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   What is the best way to explore West Lake?
                 </h3>
@@ -355,7 +355,7 @@ export default function HangzhouPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-500 pl-6">
+              <div className="border-l-2 border-jade-400 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   When is the best time to visit Longjing tea plantations?
                 </h3>
@@ -366,7 +366,7 @@ export default function HangzhouPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-500 pl-6">
+              <div className="border-l-2 border-jade-400 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Do I need advance booking for Lingyin Temple?
                 </h3>
@@ -377,7 +377,7 @@ export default function HangzhouPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-500 pl-6">
+              <div className="border-l-2 border-jade-400 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   How do I get from Hangzhou to other major cities?
                 </h3>
@@ -393,7 +393,7 @@ export default function HangzhouPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-gradient-to-br from-blue-600 to-cyan-800 text-white">
+      <section className="section-padding bg-jade-700 text-white">
         <div className="container-custom text-center">
           <h2 className="heading-lg text-white mb-6">
             Ready to Explore Hangzhou?
@@ -403,7 +403,7 @@ export default function HangzhouPage() {
             to experience the best of China's paradise city and legendary West Lake beauty.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#tours" className="btn-secondary bg-white text-blue-600 hover:bg-gray-50 text-lg px-8 py-4">
+            <a href="#tours" className="btn-secondary bg-white text-jade-700 hover:bg-gray-50 text-lg px-8 py-4">
               Book Hangzhou Tours Now
             </a>
             <Link href="/cities" className="btn-outline border-white text-white hover:bg-white/10 text-lg px-8 py-4">

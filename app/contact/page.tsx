@@ -17,7 +17,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">
@@ -164,7 +164,7 @@ export default function ContactPage() {
                 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-purple-600" />
+                    <Clock className="w-6 h-6 text-jade-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
@@ -176,7 +176,7 @@ export default function ContactPage() {
               </div>
 
               {/* Quick Response Times */}
-              <div className="mt-8 p-6 bg-gradient-to-br from-chinese-50 to-gold-50 rounded-xl">
+              <div className="mt-8 p-6 bg-paper-100 rounded-xl">
                 <h3 className="font-semibold text-gray-900 mb-3 flex items-center">
                   <MessageCircle className="w-5 h-5 mr-2 text-primary-600" />
                   Response Times

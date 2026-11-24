@@ -17,7 +17,7 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">
@@ -52,8 +52,8 @@ export default function TermsPage() {
               <p className="text-sm text-gray-600">Most bookings can be cancelled free of charge</p>
             </div>
             
-            <div className="text-center p-6 bg-blue-50 rounded-xl">
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 bg-jade-50 rounded-xl">
+              <div className="w-12 h-12 bg-jade-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Info className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Instant Confirmation</h3>

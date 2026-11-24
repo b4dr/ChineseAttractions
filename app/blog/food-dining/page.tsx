@@ -33,7 +33,7 @@ const regionalCuisines = [
     name: 'Cantonese Cuisine',
     region: 'Southern China',
     icon: Fish,
-    color: 'bg-blue-500',
+    color: 'bg-jade-500',
     characteristics: ['Fresh ingredients', 'Light flavors', 'Steaming', 'Dim sum'],
     signature: ['Dim Sum', 'Roast Duck', 'Sweet & Sour Pork', 'Wonton Noodles'],
     cities: ['Guangzhou', 'Hong Kong', 'Shenzhen'],
@@ -231,7 +231,7 @@ export default function FoodDiningPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">
@@ -243,7 +243,7 @@ export default function FoodDiningPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
               <div className="flex items-center">
-                <ChefHat className="w-4 h-4 mr-1 text-red-500" />
+                <ChefHat className="w-4 h-4 mr-1 text-jade-600" />
                 8 Major Cuisines
               </div>
               <div className="flex items-center">
@@ -271,7 +271,7 @@ export default function FoodDiningPage() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {regionalCuisines.map(cuisine => (
-              <div key={cuisine.name} className="bg-white rounded-2xl shadow-sm p-8 border-l-4 border-primary-500">
+              <div key={cuisine.name} className="bg-white rounded-2xl shadow-sm p-8 border-l-2 border-primary-500">
                 <div className="flex items-center mb-6">
                   <div className={`w-12 h-12 ${cuisine.color} rounded-xl flex items-center justify-center mr-4`}>
                     <cuisine.icon className="w-6 h-6 text-white" />
@@ -352,7 +352,7 @@ export default function FoodDiningPage() {
                         {[...Array(5)].map((_, i) => (
                           <Flame 
                             key={i} 
-                            className={`w-3 h-3 ${i < dish.spice ? 'text-red-500' : 'text-gray-300'}`} 
+                            className={`w-3 h-3 ${i < dish.spice ? 'text-jade-600' : 'text-gray-300'}`} 
                           />
                         ))}
                       </div>
@@ -363,9 +363,9 @@ export default function FoodDiningPage() {
                 <div className="text-sm text-primary-600 mb-2">Origin: {dish.origin}</div>
                 <p className="text-gray-600 text-sm mb-4">{dish.description}</p>
                 
-                <div className="bg-blue-50 p-3 rounded-lg mb-4">
-                  <div className="font-medium text-blue-800 text-sm mb-1">💡 Pro Tip:</div>
-                  <div className="text-blue-700 text-sm">{dish.tips}</div>
+                <div className="bg-jade-50 p-3 rounded-lg mb-4">
+                  <div className="font-medium text-jade-600 text-sm mb-1">💡 Pro Tip:</div>
+                  <div className="text-jade-600 text-sm">{dish.tips}</div>
                 </div>
                 
                 <div className="flex flex-wrap gap-1">
@@ -468,9 +468,9 @@ export default function FoodDiningPage() {
                   </ul>
                 </div>
                 
-                <div className="bg-blue-50 p-3 rounded-lg mb-4">
-                  <span className="font-medium text-blue-800">Perfect For: </span>
-                  <span className="text-blue-700 text-sm">{tour.bestFor}</span>
+                <div className="bg-jade-50 p-3 rounded-lg mb-4">
+                  <span className="font-medium text-jade-600">Perfect For: </span>
+                  <span className="text-jade-600 text-sm">{tour.bestFor}</span>
                 </div>
                 
                 <a 
@@ -506,7 +506,7 @@ export default function FoodDiningPage() {
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                     diet.difficulty === 'Easy' ? 'bg-green-100 text-green-700' :
                     diet.difficulty === 'Moderate' ? 'bg-yellow-100 text-yellow-700' :
-                    'bg-red-100 text-red-700'
+                    'bg-red-100 text-jade-600'
                   }`}>
                     {diet.difficulty}
                   </span>
@@ -543,7 +543,7 @@ export default function FoodDiningPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-500 to-gold-500">
+      <section className="section-padding bg-jade-700">
         <div className="container-custom">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

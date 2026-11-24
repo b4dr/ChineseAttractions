@@ -20,7 +20,7 @@ export default function TravelInsuranceBanner({ variant = 'full', className = ''
 
   if (variant === 'compact') {
     return (
-      <div className={`bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-4 ${className}`}>
+      <div className={`bg-jade-700 rounded-xl p-4 ${className}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function TravelInsuranceBanner({ variant = 'full', className = ''
 
   if (variant === 'sidebar') {
     return (
-      <div className={`bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl p-5 text-white ${className}`}>
+      <div className={`bg-jade-700 rounded-xl p-5 text-white ${className}`}>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
             <Shield className="w-6 h-6" />
@@ -89,7 +89,7 @@ export default function TravelInsuranceBanner({ variant = 'full', className = ''
 
   // Full variant
   return (
-    <section className={`bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 py-12 ${className}`}>
+    <section className={`bg-jade-700 py-12 ${className}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -165,7 +165,7 @@ export default function TravelInsuranceBanner({ variant = 'full', className = ''
                 
                 <div className="flex items-center space-x-3 text-white">
                   <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-purple-300" />
+                    <Clock className="w-5 h-5 text-jade-600" />
                   </div>
                   <div>
                     <div className="font-semibold">Free Cancellation</div>

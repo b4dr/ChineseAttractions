@@ -26,7 +26,7 @@ const attractionDetails = {
   duration: '8 hours',
   price: 'From $45',
   category: 'Historical Sites',
-  gradient: 'from-red-500 via-orange-500 to-yellow-500',
+  gradient: 'from-jade-700 to-ink-800',
   highlights: [
     'UNESCO World Heritage Site',
     'Cable Car Included',
@@ -95,7 +95,6 @@ export default function GreatWallMutianyuPage() {
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
       <section className={`relative bg-gradient-to-br ${attractionDetails.gradient} text-white overflow-hidden`}>
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
         <div className="relative container-custom section-padding">
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
@@ -200,7 +199,7 @@ export default function GreatWallMutianyuPage() {
             })}
           </div>
           
-          <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
+          <div className="bg-jade-700 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Tour Highlights</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {attractionDetails.highlights.map((highlight, index) => (
@@ -269,9 +268,9 @@ export default function GreatWallMutianyuPage() {
           
           <div className="max-w-4xl mx-auto">
             <div className="gyg-widget-container shadow-xl rounded-xl overflow-hidden bg-white">
-              <div className="p-6 bg-gradient-to-r from-red-500 to-orange-500 text-white text-center">
+              <div className="p-6 bg-jade-700 text-white text-center">
                 <h3 className="text-2xl font-bold mb-2">Great Wall of China Tours</h3>
-                <p className="text-red-100">Choose from multiple Great Wall experiences and book instantly</p>
+                <p className="text-jade-600">Choose from multiple Great Wall experiences and book instantly</p>
               </div>
               <div 
                 data-gyg-href="https://widget.getyourguide.com/default/activities.frame" 
@@ -287,7 +286,7 @@ export default function GreatWallMutianyuPage() {
                 <span className="text-sm text-gray-500">
                   Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/beijing-l30/great-wall-of-china-tc1/" className="text-primary-600 hover:underline font-medium">GetYourGuide</a> | 
                   <span className="text-emerald-600 font-medium">Free Cancellation</span> | 
-                  <span className="text-blue-600 font-medium">Instant Confirmation</span>
+                  <span className="text-jade-600 font-medium">Instant Confirmation</span>
                 </span>
               </div>
             </div>
@@ -320,7 +319,7 @@ export default function GreatWallMutianyuPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Link href="/attractions/forbidden-city" className="group">
-              <div className="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-jade-700 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-3xl font-bold font-serif mb-2">紫禁城</h3>
                   <p className="text-lg"><Link href="/attractions/forbidden-city" className="text-primary-600 font-semibold hover:underline">Forbidden City</Link></p>
@@ -329,7 +328,7 @@ export default function GreatWallMutianyuPage() {
             </Link>
             
             <Link href="/attractions/temple-of-heaven" className="group">
-              <div className="bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-jade-700 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-3xl font-bold font-serif mb-2">天坛</h3>
                   <p className="text-lg"><Link href="/attractions/temple-of-heaven" className="text-primary-600 font-semibold hover:underline">Temple of Heaven</Link></p>
@@ -338,7 +337,7 @@ export default function GreatWallMutianyuPage() {
             </Link>
             
             <Link href="/attractions/summer-palace" className="group">
-              <div className="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-jade-700 rounded-2xl p-6 h-48 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <div className="text-center text-white">
                   <h3 className="text-3xl font-bold font-serif mb-2">颐和园</h3>
                   <p className="text-lg"><Link href="/attractions/summer-palace" className="text-primary-600 font-semibold hover:underline">Summer Palace</Link></p>

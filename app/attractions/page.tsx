@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, ArrowRight, Camera, Mountain, Building, Sparkles, Calendar, Globe, Award } from 'lucide-react'
+import { IMAGES, pageImg } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 
 export const metadata: Metadata = {
@@ -52,7 +53,7 @@ const topAttractions = [
     reviews: 125000,
     duration: 'Full Day',
     category: 'UNESCO World Heritage',
-    gradient: 'from-red-600 via-orange-500 to-yellow-500',
+    gradient: 'from-jade-700 to-ink-800',
     highlights: [
       'UNESCO World Heritage Site since 1987',
       'Mutianyu section with cable car access',
@@ -87,7 +88,7 @@ const topAttractions = [
     reviews: 89500,
     duration: '4-6 hours',
     category: 'Imperial Palace',
-    gradient: 'from-purple-600 via-red-500 to-yellow-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop',
     description: 'Enter the world\'s largest palace complex where 24 emperors ruled China for nearly 500 years. The Forbidden City houses over 9,000 rooms of imperial treasures and represents the pinnacle of Chinese architecture.',
     highlights: [
@@ -124,7 +125,7 @@ const topAttractions = [
     reviews: 67800,
     duration: '3-4 hours',
     category: 'Archaeological Wonder',
-    gradient: 'from-amber-600 via-orange-500 to-red-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop',
     description: 'Witness one of the greatest archaeological discoveries of the 20th century. Over 8,000 life-sized terracotta warriors guard China\'s first emperor in this UNESCO World Heritage masterpiece.',
     highlights: [
@@ -161,7 +162,7 @@ const topAttractions = [
     reviews: 45200,
     duration: '4-5 hours',
     category: 'Natural Wonder',
-    gradient: 'from-green-600 via-teal-500 to-blue-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
     description: 'Sail through China\'s most stunning karst landscape on the Li River. This scenic cruise from Guilin to Yangshuo features dramatic limestone peaks and scenery depicted on the 20 RMB banknote.',
     highlights: [
@@ -198,7 +199,7 @@ const topAttractions = [
     reviews: 34500,
     duration: '2-3 hours',
     category: 'Sacred Temple',
-    gradient: 'from-blue-600 via-indigo-500 to-purple-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
     description: 'Visit Beijing\'s most sacred temple where emperors prayed for good harvests. This UNESCO site showcases perfect Ming Dynasty architecture with the famous Echo Wall and Circular Mound Altar.',
     highlights: [
@@ -235,7 +236,7 @@ const topAttractions = [
     reviews: 78900,
     duration: '2-4 hours',
     category: 'Historic Waterfront',
-    gradient: 'from-cyan-600 via-blue-500 to-indigo-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&h=600&fit=crop',
     description: 'Stroll along Shanghai\'s iconic waterfront promenade. The Bund showcases colonial-era architecture alongside stunning views of the futuristic Pudong skyline across the Huangpu River.',
     highlights: [
@@ -272,7 +273,7 @@ const topAttractions = [
     reviews: 23400,
     duration: '6-8 hours',
     category: 'Avatar Landscape',
-    gradient: 'from-emerald-600 via-green-500 to-teal-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
     description: 'Explore the otherworldly landscape that inspired Avatar\'s floating mountains. Zhangjiajie features thousands of towering sandstone pillars and the world\'s longest glass bridge.',
     highlights: [
@@ -309,7 +310,7 @@ const topAttractions = [
     reviews: 56700,
     duration: '3-4 hours',
     category: 'Imperial Garden',
-    gradient: 'from-pink-600 via-rose-500 to-red-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
     description: 'Stroll through the magnificent Summer Palace, a masterpiece of Chinese landscape garden design. This UNESCO site features beautiful pavilions around the serene Kunming Lake.',
     highlights: [
@@ -346,7 +347,7 @@ const topAttractions = [
     reviews: 67800,
     duration: '3-4 hours',
     category: 'Wildlife Conservation',
-    gradient: 'from-green-600 via-emerald-500 to-teal-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
     description: 'Meet China\'s beloved giant pandas at the world-renowned Chengdu Research Base. Observe these adorable creatures in naturalistic habitats and learn about conservation efforts.',
     highlights: [
@@ -383,7 +384,7 @@ const topAttractions = [
     reviews: 45600,
     duration: '4-6 hours',
     category: 'Scenic Lake',
-    gradient: 'from-teal-600 via-cyan-500 to-blue-500',
+    gradient: 'from-jade-700 to-ink-800',
     image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
     description: 'Experience the poetic beauty of West Lake, one of China\'s most celebrated natural attractions. This UNESCO site has inspired poets and artists for over 1,000 years.',
     highlights: [
@@ -417,20 +418,17 @@ const topAttractions = [
 
 export default function AttractionsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-chinese-500 to-gold-500 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['great-wall']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center mb-6">
-              <Sparkles className="w-8 h-8 text-gold-200 mr-3" />
-              <span className="text-gold-200 font-medium text-lg">Ultimate China Travel Guide</span>
-            </div>
+            
             
             <h1 className="heading-xl text-white mb-8 animate-fade-in-up">
               Top 10 Must-Visit
-              <span className="block text-gradient bg-gradient-to-r from-gold-200 to-yellow-200 bg-clip-text text-transparent">
+              <span className="block text-gradient text-jade-300">
                 Attractions in China
               </span>
             </h1>
@@ -469,7 +467,7 @@ export default function AttractionsPage() {
       </section>
 
       {/* SEO Article Introduction */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <section className="py-16 bg-paper-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
@@ -495,7 +493,7 @@ export default function AttractionsPage() {
       </section>
 
       {/* Top 10 Attractions Grid - City Style */}
-      <section id="attractions" className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section id="attractions" className="py-16 bg-paper-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">China's Top 10 Must-Visit Attractions</h2>
@@ -513,14 +511,7 @@ export default function AttractionsPage() {
                 className="group block animate-fade-in-up"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className={`relative overflow-hidden rounded-xl aspect-square bg-gradient-to-br ${attraction.gradient} flex flex-col items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
-                  {/* Decorative Pattern */}
-                  <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-2 left-2 w-4 h-4 border border-white/30 rounded-full"></div>
-                    <div className="absolute top-3 right-3 w-3 h-3 border border-white/20 rounded-full"></div>
-                    <div className="absolute bottom-2 left-3 w-2 h-2 border border-white/25 rounded-full"></div>
-                    <div className="absolute bottom-2 right-2 w-5 h-5 border border-white/15 rounded-full"></div>
-                  </div>
+                <div className={`relative overflow-hidden rounded-xl aspect-square photo-card`} style={{ backgroundImage: `url(${pageImg(attraction.slug)})` }}>
                   
                   {/* Attraction Number */}
                   <div className="absolute top-3 left-3 bg-white/20 backdrop-blur-sm rounded-full w-8 h-8 flex items-center justify-center">
@@ -528,7 +519,7 @@ export default function AttractionsPage() {
                   </div>
                   
                   {/* Attraction Names */}
-                  <div className="text-center z-10 px-2">
+                  <div className="z-10 px-4 pb-4 relative">
                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1 font-serif tracking-wide">
                       {attraction.chineseName}
                     </h3>
@@ -565,7 +556,7 @@ export default function AttractionsPage() {
                   {/* Content Side */}
                   <div className={index % 2 === 0 ? 'order-1' : 'order-2'}>
                     <div className="flex items-center mb-4">
-                      <span className={`bg-gradient-to-r ${attraction.gradient} text-white text-2xl font-bold w-12 h-12 rounded-full flex items-center justify-center mr-4`}>
+                      <span className={`bg-jade-700 text-white text-2xl font-bold w-12 h-12 rounded-full flex items-center justify-center mr-4`}>
                         {index + 1}
                       </span>
                       <div>
@@ -596,9 +587,9 @@ export default function AttractionsPage() {
                         {attraction.seoArticle.content}
                       </p>
                       
-                      <div className="bg-blue-50 rounded-lg p-6 mb-6">
+                      <div className="bg-jade-50 rounded-lg p-6 mb-6">
                         <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-                          <Calendar className="w-5 h-5 mr-2 text-blue-600" />
+                          <Calendar className="w-5 h-5 mr-2 text-jade-600" />
                           Best Time to Visit
                         </h4>
                         <p className="text-gray-700">{attraction.seoArticle.bestTime}</p>
@@ -609,7 +600,7 @@ export default function AttractionsPage() {
                         <ul className="space-y-2">
                           {attraction.highlights.map((highlight, idx) => (
                             <li key={idx} className="flex items-center text-gray-700">
-                              <div className={`w-2 h-2 bg-gradient-to-r ${attraction.gradient} rounded-full mr-3 flex-shrink-0`}></div>
+                              <div className={`w-2 h-2 bg-jade-700 rounded-full mr-3 flex-shrink-0`}></div>
                               {highlight}
                             </li>
                           ))}
@@ -635,7 +626,7 @@ export default function AttractionsPage() {
                     <div className="flex items-center space-x-4">
                       <Link 
                         href={`/attractions/${attraction.slug}`}
-                        className={`btn-primary bg-gradient-to-r ${attraction.gradient} hover:opacity-90 inline-flex items-center`}
+                        className={`btn-primary bg-jade-700 hover:opacity-90 inline-flex items-center`}
                       >
                         Detailed Guide
                         <ArrowRight className="w-4 h-4 ml-2" />
@@ -647,7 +638,7 @@ export default function AttractionsPage() {
                   </div>
                   
                   {/* Widget Side */}
-                  <div className={`${index % 2 === 0 ? 'order-2' : 'order-1'} bg-gradient-to-br ${attraction.gradient.replace('from-', 'from-').replace('via-', 'via-').replace('to-', 'to-')}/10 rounded-2xl p-8`}>
+                  <div className={`${index % 2 === 0 ? 'order-2' : 'order-1'} bg-paper-100 rounded-2xl p-8`}>
                     <GetYourGuideWidget 
                       locationId={attraction.locationId}
                       widgetType="activities"
@@ -665,13 +656,13 @@ export default function AttractionsPage() {
       </section>
 
       {/* Planning Your Visit Section */}
-      <section className="py-16 bg-gradient-to-br from-chinese-50 via-gold-50 to-yellow-50">
+      <section className="py-16 bg-paper-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Planning Your China Adventure</h2>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-chinese-50 to-gold-50 rounded-xl p-6">
+              <div className="bg-paper-100 rounded-xl p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Best Time to Visit</h3>
                 <p className="text-gray-700 mb-4">
                   Spring (April-May) and autumn (September-November) offer the most comfortable weather for sightseeing. 
@@ -685,7 +676,7 @@ export default function AttractionsPage() {
                 </ul>
               </div>
               
-              <div className="bg-gradient-to-br from-gold-50 to-yellow-50 rounded-xl p-6">
+              <div className="bg-paper-100 rounded-xl p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Travel Tips</h3>
                 <p className="text-gray-700 mb-4">
                   Most attractions require advance booking, especially during peak seasons. Consider purchasing skip-the-line 

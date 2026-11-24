@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 
 export const metadata: Metadata = {
@@ -185,8 +186,7 @@ export default function BeijingPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <section className="relative text-white overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['beijing']})` }}>
         <div className="relative container-custom section-padding">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
@@ -196,7 +196,7 @@ export default function BeijingPage() {
             
             <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
               Discover Beijing's
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient text-jade-300">
                 Ancient Wonders & Modern Marvels
               </span>
             </h1>
@@ -226,7 +226,7 @@ export default function BeijingPage() {
                 <div className="text-sm">Years of History</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gold-400">21M+</div>
+                <div className="text-2xl font-bold text-gold-400">210+</div>
                 <div className="text-sm">Annual Visitors</div>
               </div>
             </div>
@@ -323,7 +323,7 @@ export default function BeijingPage() {
 
 
       {/* Travel Tips */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="heading-lg mb-4">
@@ -368,7 +368,7 @@ export default function BeijingPage() {
             </h2>
             
             <div className="space-y-8">
-              <div className="border-l-4 border-primary-500 pl-6">
+              <div className="border-l-2 border-primary-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   How many days do you need to see Beijing?
                 </h3>
@@ -379,7 +379,7 @@ export default function BeijingPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-primary-500 pl-6">
+              <div className="border-l-2 border-primary-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   What is the best time to visit Beijing?
                 </h3>
@@ -390,7 +390,7 @@ export default function BeijingPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-primary-500 pl-6">
+              <div className="border-l-2 border-primary-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Do I need to book Beijing attraction tickets in advance?
                 </h3>
@@ -401,7 +401,7 @@ export default function BeijingPage() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-primary-500 pl-6">
+              <div className="border-l-2 border-primary-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Is Beijing safe for tourists?
                 </h3>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Shield, Sword, Calendar, ArrowRight, Sparkles } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import { Metadata } from 'next'
 
@@ -117,9 +118,9 @@ const practicalInfo = [
 
 export default function TerracottaArmyPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-chinese-500 to-gold-500 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['terracotta']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -130,7 +131,7 @@ export default function TerracottaArmyPage() {
             
             <h1 className="heading-xl text-white mb-8 animate-fade-in-up">
               {attractionData.name}
-              <span className="block text-gradient bg-gradient-to-r from-gold-200 to-yellow-200 bg-clip-text text-transparent text-2xl mt-2">
+              <span className="block text-gradient text-jade-300 text-2xl mt-2">
                 {attractionData.chineseName}
               </span>
             </h1>
@@ -167,8 +168,8 @@ export default function TerracottaArmyPage() {
               {sections.map((section, index) => {
                 const IconComponent = section.icon
                 return (
-                  <div key={index} className="text-center p-6 bg-gradient-to-br from-chinese-50 to-gold-50 rounded-xl">
-                    <div className="w-16 h-16 bg-gradient-to-br from-chinese-500 to-gold-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div key={index} className="text-center p-6 bg-paper-100 rounded-xl">
+                    <div className="w-16 h-16 bg-jade-700 rounded-full flex items-center justify-center mx-auto mb-4">
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">{section.title}</h3>
@@ -234,7 +235,7 @@ export default function TerracottaArmyPage() {
                       const IconComponent = info.icon
                       return (
                         <div key={index} className="flex items-start">
-                          <div className="w-12 h-12 bg-gradient-to-br from-chinese-500 to-gold-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                          <div className="w-12 h-12 bg-jade-700 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                             <IconComponent className="w-6 h-6 text-white" />
                           </div>
                           <div>
@@ -267,7 +268,7 @@ export default function TerracottaArmyPage() {
                     tourIds={attractionData.tourIds}
                   />
                   
-                  <div className="mt-6 p-4 bg-gradient-to-br from-chinese-50 to-gold-50 rounded-lg">
+                  <div className="mt-6 p-4 bg-paper-100 rounded-lg">
                     <h4 className="font-semibold text-gray-900 mb-2">Why Book with GetYourGuide?</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
                       <li>✓ Skip-the-line entrance tickets</li>

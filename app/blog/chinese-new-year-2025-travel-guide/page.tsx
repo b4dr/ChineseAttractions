@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { Calendar, MapPin, Star, Users, Camera, Gift, Sparkles, ArrowRight, Clock, Heart } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Chinese New Year 2025 Travel Guide - Best Destinations & Celebrations | Chinese Attractions',
-  description: 'Experience Chinese New Year 2025 in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours. Book your Spring Festival adventure now!',
+  title: 'Chinese New Year 2026 Travel Guide - Best Destinations & Celebrations | Chinese Attractions',
+  description: 'Experience Chinese New Year 2026 in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours. Book your Spring Festival adventure now!',
   keywords: [
     'Chinese New Year 2025',
     'Spring Festival China',
@@ -22,16 +23,16 @@ export const metadata: Metadata = {
     'China holiday travel 2025'
   ],
   openGraph: {
-    title: 'Chinese New Year 2025 Travel Guide - Best Destinations & Celebrations',
-    description: 'Experience Chinese New Year 2025 in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours.',
+    title: 'Chinese New Year 2026 Travel Guide - Best Destinations & Celebrations',
+    description: 'Experience Chinese New Year 2026 in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours.',
     images: ['/chinese-new-year-2025-og.jpg'],
     url: '/blog/chinese-new-year-2025-travel-guide',
     type: 'article'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chinese New Year 2025 Travel Guide - Best Destinations & Celebrations',
-    description: 'Experience Chinese New Year 2025 in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours.',
+    title: 'Chinese New Year 2026 Travel Guide - Best Destinations & Celebrations',
+    description: 'Experience Chinese New Year 2026 in China! Discover the best destinations, traditional celebrations, temple fairs, and exclusive tours.',
     images: ['/chinese-new-year-2025-og.jpg']
   },
   alternates: {
@@ -128,29 +129,29 @@ const travelTips = [
 
 export default function ChineseNewYear2025Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-yellow-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-600 to-yellow-500 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['cny']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
               <Sparkles className="w-8 h-8 mr-3 text-yellow-300" />
-              <span className="text-yellow-300 font-semibold text-lg">Spring Festival 2025</span>
+              <span className="text-yellow-300 font-semibold text-lg">Spring Festival 2026</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Chinese New Year 2025
+              Chinese New Year 2026
               <span className="block text-yellow-300">Travel Guide</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-red-100">
-              Experience the magic of Spring Festival in China • February 10-17, 2025
+            <p className="text-xl md:text-2xl mb-8 text-jade-200">
+              Experience the magic of Spring Festival in China • February 10-17, 2026
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="#destinations" className="btn-primary bg-white text-red-600 hover:bg-red-50">
+              <Link href="#destinations" className="btn-primary bg-white text-jade-700 hover:bg-red-50">
                 Explore Destinations
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="#book-tours" className="bg-yellow-500 text-red-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
+              <Link href="#book-tours" className="bg-yellow-500 text-jade-200 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
                 Book Tours Now
               </Link>
             </div>
@@ -167,16 +168,16 @@ export default function ChineseNewYear2025Page() {
                 Welcome the Year of the Snake 🐍
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Chinese New Year 2025 falls on <strong>February 10th</strong>, marking the beginning of the Year of the Snake. 
+                Chinese New Year 2026 falls on <strong>February 10th</strong>, marking the beginning of the Year of the Snake. 
                 This is the most important holiday in Chinese culture, offering travelers a unique opportunity to witness 
                 centuries-old traditions, spectacular celebrations, and authentic cultural experiences that happen nowhere else in the world.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-red-50 to-yellow-50 p-8 rounded-2xl">
-                <Calendar className="w-12 h-12 text-red-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Key Dates 2025</h3>
+              <div className="bg-paper-100 p-8 rounded-2xl">
+                <Calendar className="w-12 h-12 text-jade-600 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Key Dates 2026</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li><strong>February 10:</strong> Chinese New Year's Day</li>
                   <li><strong>February 10-17:</strong> Spring Festival Holiday</li>
@@ -185,7 +186,7 @@ export default function ChineseNewYear2025Page() {
                 </ul>
               </div>
               
-              <div className="bg-gradient-to-br from-yellow-50 to-red-50 p-8 rounded-2xl">
+              <div className="bg-paper-100 p-8 rounded-2xl">
                 <Star className="w-12 h-12 text-yellow-600 mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Year of the Snake</h3>
                 <p className="text-gray-700">
@@ -205,7 +206,7 @@ export default function ChineseNewYear2025Page() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Best Destinations for Chinese New Year 2025
+                Best Destinations for Chinese New Year 2026
               </h2>
               <p className="text-xl text-gray-600">
                 Discover where to experience the most authentic and spectacular Spring Festival celebrations
@@ -215,7 +216,7 @@ export default function ChineseNewYear2025Page() {
             <div className="grid lg:grid-cols-3 gap-8">
               {destinations.map((destination, index) => (
                 <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="h-48 bg-gradient-to-br from-red-400 to-yellow-400 relative">
+                  <div className="h-48 bg-jade-700 relative">
                     <div className="absolute inset-0 bg-black/20"></div>
                     <div className="absolute bottom-4 left-4 text-white">
                       <h3 className="text-2xl font-bold">{destination.name}</h3>
@@ -223,7 +224,7 @@ export default function ChineseNewYear2025Page() {
                   </div>
                   
                   <div className="p-6">
-                    <h4 className="text-lg font-bold text-red-600 mb-2">{destination.highlight}</h4>
+                    <h4 className="text-lg font-bold text-jade-600 mb-2">{destination.highlight}</h4>
                     <p className="text-gray-600 mb-4">{destination.description}</p>
                     
                     <div className="mb-6">
@@ -269,12 +270,12 @@ export default function ChineseNewYear2025Page() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {traditions.map((tradition, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-jade-700 rounded-full flex items-center justify-center mx-auto mb-4">
                     <tradition.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{tradition.title}</h3>
                   <p className="text-gray-600 mb-3">{tradition.description}</p>
-                  <p className="text-sm text-red-600 font-medium">{tradition.significance}</p>
+                  <p className="text-sm text-jade-600 font-medium">{tradition.significance}</p>
                 </div>
               ))}
             </div>
@@ -283,7 +284,7 @@ export default function ChineseNewYear2025Page() {
       </section>
 
       {/* Travel Tips */}
-      <section className="py-16 bg-gradient-to-br from-red-50 to-yellow-50">
+      <section className="py-16 bg-paper-100">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -299,7 +300,7 @@ export default function ChineseNewYear2025Page() {
               {travelTips.map((tip, index) => (
                 <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-yellow-500 rounded-lg flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-jade-700 rounded-lg flex items-center justify-center mr-4">
                       <tip.icon className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">{tip.title}</h3>
@@ -320,13 +321,13 @@ export default function ChineseNewYear2025Page() {
       </section>
 
       {/* Booking Section */}
-      <section id="book-tours" className="py-16 bg-gradient-to-br from-red-600 to-yellow-500 text-white">
+      <section id="book-tours" className="py-16 bg-jade-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Book Your Chinese New Year Adventure
             </h2>
-            <p className="text-xl mb-8 text-red-100">
+            <p className="text-xl mb-8 text-jade-200">
               Don't miss out on this once-in-a-lifetime cultural experience. Tours fill up fast during Spring Festival!
             </p>
             
@@ -344,17 +345,17 @@ export default function ChineseNewYear2025Page() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Calendar className="w-8 h-8 mx-auto mb-3 text-yellow-300" />
                 <h3 className="font-bold mb-2">Free Cancellation</h3>
-                <p className="text-sm text-red-100">Cancel up to 24 hours before</p>
+                <p className="text-sm text-jade-200">Cancel up to 24 hours before</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Users className="w-8 h-8 mx-auto mb-3 text-yellow-300" />
                 <h3 className="font-bold mb-2">Expert Guides</h3>
-                <p className="text-sm text-red-100">Local cultural specialists</p>
+                <p className="text-sm text-jade-200">Local cultural specialists</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Star className="w-8 h-8 mx-auto mb-3 text-yellow-300" />
                 <h3 className="font-bold mb-2">Skip the Lines</h3>
-                <p className="text-sm text-red-100">Priority access to attractions</p>
+                <p className="text-sm text-jade-200">Priority access to attractions</p>
               </div>
             </div>
           </div>
@@ -368,20 +369,20 @@ export default function ChineseNewYear2025Page() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Related Travel Guides</h2>
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <Link href="/blog/best-time-to-visit" className="bg-gradient-to-br from-red-50 to-yellow-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <Calendar className="w-8 h-8 text-red-600 mb-3 mx-auto" />
+              <Link href="/blog/best-time-to-visit" className="bg-paper-100 p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <Calendar className="w-8 h-8 text-jade-600 mb-3 mx-auto" />
                 <h3 className="font-bold text-gray-900 mb-2">Best Time to Visit China</h3>
                 <p className="text-gray-600 text-sm">Complete seasonal travel guide</p>
               </Link>
               
-              <Link href="/blog/cultural-guide" className="bg-gradient-to-br from-yellow-50 to-red-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
+              <Link href="/blog/cultural-guide" className="bg-paper-100 p-6 rounded-xl hover:shadow-lg transition-shadow">
                 <Heart className="w-8 h-8 text-yellow-600 mb-3 mx-auto" />
                 <h3 className="font-bold text-gray-900 mb-2">Chinese Culture Guide</h3>
                 <p className="text-gray-600 text-sm">Traditions, customs, and etiquette</p>
               </Link>
               
-              <Link href="/attractions" className="bg-gradient-to-br from-red-50 to-yellow-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <MapPin className="w-8 h-8 text-red-600 mb-3 mx-auto" />
+              <Link href="/attractions" className="bg-paper-100 p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <MapPin className="w-8 h-8 text-jade-600 mb-3 mx-auto" />
                 <h3 className="font-bold text-gray-900 mb-2">Top Attractions</h3>
                 <p className="text-gray-600 text-sm">Must-visit destinations in China</p>
               </Link>

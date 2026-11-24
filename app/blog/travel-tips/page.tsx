@@ -141,7 +141,7 @@ const tipCategories: TipCategory[] = [
     id: 'technology',
     title: 'Technology & Apps',
     icon: Smartphone,
-    color: 'bg-blue-500',
+    color: 'bg-jade-500',
     tips: [
       {
         title: 'VPN is Essential',
@@ -198,7 +198,7 @@ export default function TravelTipsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">
@@ -272,7 +272,7 @@ export default function TravelTipsPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                   {category.tips.map((tip, index) => (
                     <div key={index} className="relative">
-                      <div className={`p-6 rounded-xl border-l-4 ${
+                      <div className={`p-6 rounded-xl border-l-2 ${
                         tip.priority === 'high' ? 'border-red-500 bg-red-50' :
                         tip.priority === 'medium' ? 'border-yellow-500 bg-yellow-50' :
                         'border-green-500 bg-green-50'
@@ -281,7 +281,7 @@ export default function TravelTipsPage() {
                           <h4 className="font-semibold text-gray-900">{tip.title}</h4>
                           <div className="flex items-center">
                             {tip.priority === 'high' && (
-                              <AlertTriangle className="w-4 h-4 text-red-500" />
+                              <AlertTriangle className="w-4 h-4 text-jade-600" />
                             )}
                             {tip.affiliate && (
                               <Star className="w-4 h-4 text-gold-500 ml-1" />
@@ -340,7 +340,7 @@ export default function TravelTipsPage() {
             
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                <Smartphone className="w-5 h-5 mr-2 text-blue-600" />
+                <Smartphone className="w-5 h-5 mr-2 text-jade-600" />
                 Technology
               </h3>
               <ul className="space-y-2 text-sm text-gray-600">
@@ -384,7 +384,7 @@ export default function TravelTipsPage() {
       </section>
 
       {/* CTA Section with Affiliate */}
-      <section className="section-padding bg-gradient-to-br from-chinese-500 to-gold-500">
+      <section className="section-padding bg-jade-700">
         <div className="container-custom">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

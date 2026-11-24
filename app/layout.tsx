@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Lora, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import './mobile-optimizations.css'
 import Navigation from '@/components/Navigation'
@@ -8,7 +8,7 @@ import { Analytics } from '@/components/Analytics'
 import StickyAffiliateBar from '@/components/StickyAffiliateBar'
 import SalesBanner from '@/components/SalesBanner'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const lora = Lora({ subsets: ['latin'], variable: '--font-body' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
@@ -86,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${lora.variable} ${playfair.variable}`}>
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -100,7 +100,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className="min-h-screen bg-gray-50 font-sans antialiased">
+      <body className="min-h-screen bg-paper-50 font-sans antialiased">
         <SalesBanner />
         <div className="flex flex-col min-h-screen pt-10">
           <Navigation />

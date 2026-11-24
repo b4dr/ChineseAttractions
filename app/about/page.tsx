@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-chinese-50 to-gold-50">
+      <section className="section-padding bg-paper-100">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6">
@@ -49,19 +49,19 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-chinese-500 to-gold-500 rounded-2xl p-8 text-white">
+              <div className="bg-jade-700 rounded-2xl p-8 text-white">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">500+</div>
+                    <div className="text-3xl font-bold mb-2">10</div>
                     <div className="text-sm opacity-90">Attractions</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">50+</div>
+                    <div className="text-3xl font-bold mb-2">8</div>
                     <div className="text-sm opacity-90">Cities</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">1M+</div>
-                    <div className="text-sm opacity-90">Happy Travelers</div>
+                    <div className="text-3xl font-bold mb-2">10+</div>
+                    <div className="text-sm opacity-90">Attractions Covered</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold mb-2">5★</div>
@@ -152,7 +152,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-24 h-24 bg-jade-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Quality Assurance</h3>
@@ -160,7 +160,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-24 h-24 bg-jade-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Customer Support</h3>
@@ -171,7 +171,7 @@ export default function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-gradient-to-br from-chinese-500 to-gold-500">
+      <section className="section-padding bg-jade-700">
         <div className="container-custom">
           <div className="text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

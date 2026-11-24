@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Wifi, Smartphone, Shield, CheckCircle, AlertCircle, ArrowRight, MapPin, Globe, Signal, Lock } from 'lucide-react'
+import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
@@ -87,29 +88,29 @@ const vpnTips = [
 
 export default function ChinaEsimVpnGuide() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-red-600 text-white py-20">
+      <section className="relative text-white py-20 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['esim']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <Wifi className="w-8 h-8 mr-3 text-blue-200" />
-              <span className="text-blue-200 font-semibold text-lg">Updated September 2026</span>
+              <Wifi className="w-8 h-8 mr-3 text-jade-200" />
+              <span className="text-jade-200 font-semibold text-lg">Updated September 2026</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               China eSIM & VPN
-              <span className="block text-blue-200">2026 Tourist Guide</span>
+              <span className="block text-jade-200">2026 Tourist Guide</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-jade-200">
               Google, WhatsApp, and Instagram are blocked. Here is exactly how to stay connected — set up before you fly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="#options" className="btn-primary bg-white text-blue-600 hover:bg-blue-50">
+              <Link href="#options" className="btn-primary bg-white text-jade-700 hover:bg-jade-50">
                 Compare Options
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="#blocked" className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
+              <Link href="#blocked" className="bg-yellow-500 text-jade-200 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors border-2 border-yellow-400">
                 What Is Blocked
               </Link>
             </div>
@@ -121,9 +122,9 @@ export default function ChinaEsimVpnGuide() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl mb-8">
+            <div className="bg-red-50 border-l-2 border-red-500 p-6 rounded-r-xl mb-8">
               <div className="flex items-start">
-                <AlertCircle className="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" />
+                <AlertCircle className="w-6 h-6 text-jade-600 mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">Do This Before You Board</h3>
                   <p className="text-gray-700">
@@ -154,7 +155,7 @@ export default function ChinaEsimVpnGuide() {
                   <div className="grid md:grid-cols-3 gap-4 items-center">
                     <div className="font-bold text-gray-900">{item.service}</div>
                     <div>
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${item.status === 'Blocked' ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}`}>
+                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${item.status === 'Blocked' ? 'bg-red-100 text-jade-600' : 'bg-green-100 text-green-700'}`}>
                         {item.status}
                       </span>
                     </div>
@@ -181,9 +182,9 @@ export default function ChinaEsimVpnGuide() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               {esimOptions.map((option, index) => (
-                <div key={index} className="bg-gradient-to-br from-blue-50 to-red-50 rounded-2xl p-8">
+                <div key={index} className="bg-paper-100 rounded-2xl p-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{option.provider}</h3>
-                  <p className="text-blue-600 font-mono font-bold mb-4">{option.price}</p>
+                  <p className="text-jade-600 font-mono font-bold mb-4">{option.price}</p>
                   <div className="space-y-3 mb-4">
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
@@ -194,7 +195,7 @@ export default function ChinaEsimVpnGuide() {
                       <p className="text-sm text-gray-700">{option.cons}</p>
                     </div>
                   </div>
-                  <p className="text-sm font-semibold text-blue-800 bg-white/70 p-3 rounded-lg">{option.verdict}</p>
+                  <p className="text-sm font-semibold text-jade-600 bg-white/70 p-3 rounded-lg">{option.verdict}</p>
                 </div>
               ))}
             </div>
@@ -214,14 +215,14 @@ export default function ChinaEsimVpnGuide() {
             <div className="space-y-4">
               {vpnTips.map((tip, index) => (
                 <div key={index} className="flex items-start bg-white rounded-xl p-5 shadow-sm">
-                  <Lock className="w-5 h-5 text-blue-600 mr-4 mt-0.5 flex-shrink-0" />
+                  <Lock className="w-5 h-5 text-jade-600 mr-4 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700">{tip}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl">
+            <div className="mt-8 bg-jade-50 border-l-2 border-jade-400 p-6 rounded-r-xl">
               <div className="flex items-start">
-                <Signal className="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                <Signal className="w-6 h-6 text-jade-600 mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">The Easiest 2026 Setup</h3>
                   <p className="text-gray-700">
@@ -235,13 +236,13 @@ export default function ChinaEsimVpnGuide() {
       </section>
 
       {/* Book Tours Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-red-600 text-white">
+      <section className="py-16 bg-jade-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Connected? Now Book the Fun Part
             </h2>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-jade-200">
               Top-rated tours and experiences across China
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
@@ -255,19 +256,19 @@ export default function ChinaEsimVpnGuide() {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/attractions/great-wall-china" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <MapPin className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <MapPin className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/attractions/great-wall-china" className="text-primary-600 font-semibold hover:underline">Great Wall</Link> Tours</h3>
-                <p className="text-sm text-blue-100">Skip-the-line access</p>
+                <p className="text-sm text-jade-200">Skip-the-line access</p>
               </Link>
               <Link href="/blog/china-payment-apps-guide-2026" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Smartphone className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Smartphone className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2">Payment Guide</h3>
-                <p className="text-sm text-blue-100">Alipay & WeChat setup</p>
+                <p className="text-sm text-jade-200">Alipay & WeChat setup</p>
               </Link>
               <Link href="/cities/shanghai" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors">
-                <Globe className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <Globe className="w-8 h-8 mx-auto mb-3 text-jade-200" />
                 <h3 className="font-bold mb-2"><Link href="/cities/shanghai" className="text-primary-600 font-semibold hover:underline">Shanghai</Link> Guide</h3>
-                <p className="text-sm text-blue-100">Where East meets West</p>
+                <p className="text-sm text-jade-200">Where East meets West</p>
               </Link>
             </div>
           </div>

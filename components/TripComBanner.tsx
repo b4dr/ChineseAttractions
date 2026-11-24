@@ -20,7 +20,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
 
   if (variant === 'compact') {
     return (
-      <div className={`bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-4 ${className}`}>
+      <div className={`bg-jade-700 rounded-xl p-4 ${className}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -28,7 +28,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
             </div>
             <div>
               <p className="text-white font-semibold text-sm">Fly to China from €399</p>
-              <p className="text-orange-100 text-xs">Best prices on Trip.com</p>
+              <p className="text-jade-600 text-xs">Best prices on Trip.com</p>
             </div>
           </div>
           <a
@@ -36,7 +36,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
             target="_blank"
             rel="noopener noreferrer sponsored"
             onClick={handleClick}
-            className="bg-white text-orange-600 px-4 py-2 rounded-lg font-semibold text-sm hover:bg-orange-50 transition-colors flex items-center"
+            className="bg-white text-jade-600 px-4 py-2 rounded-lg font-semibold text-sm hover:bg-orange-50 transition-colors flex items-center"
           >
             Book Now
             <ArrowRight className="w-4 h-4 ml-1" />
@@ -48,7 +48,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
 
   if (variant === 'sidebar') {
     return (
-      <div className={`bg-gradient-to-br from-orange-500 to-red-600 rounded-xl p-5 text-white ${className}`}>
+      <div className={`bg-jade-700 rounded-xl p-5 text-white ${className}`}>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
             <Plane className="w-6 h-6" />
@@ -63,7 +63,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
         
         <ul className="space-y-2 mb-4">
           {AFFILIATE_LINKS.tripCom.features.map((feature, index) => (
-            <li key={index} className="flex items-center text-sm text-orange-100">
+            <li key={index} className="flex items-center text-sm text-jade-600">
               <CheckCircle className="w-4 h-4 mr-2 text-green-400 flex-shrink-0" />
               {feature}
             </li>
@@ -75,12 +75,12 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
           target="_blank"
           rel="noopener noreferrer sponsored"
           onClick={handleClick}
-          className="block w-full bg-white text-orange-600 py-3 rounded-lg font-bold text-center hover:bg-orange-50 transition-colors"
+          className="block w-full bg-white text-jade-600 py-3 rounded-lg font-bold text-center hover:bg-orange-50 transition-colors"
         >
           ✈️ Search Flights
         </a>
         
-        <p className="text-xs text-orange-200 text-center mt-3">
+        <p className="text-xs text-jade-600 text-center mt-3">
           Compare 500+ airlines instantly
         </p>
       </div>
@@ -89,7 +89,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
 
   if (variant === 'hero') {
     return (
-      <div className={`bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-2xl p-6 md:p-8 ${className}`}>
+      <div className={`bg-jade-700 rounded-2xl p-6 md:p-8 ${className}`}>
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-white text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start space-x-2 mb-3">
@@ -101,7 +101,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
             <h3 className="text-2xl md:text-3xl font-bold mb-2">
               Flights to China from €399
             </h3>
-            <p className="text-orange-100">
+            <p className="text-jade-600">
               Book flights, hotels & complete packages on Trip.com
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
               target="_blank"
               rel="noopener noreferrer sponsored"
               onClick={handleClick}
-              className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center"
+              className="bg-white text-jade-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center"
             >
               <Plane className="w-5 h-5 mr-2" />
               Search Flights
@@ -126,7 +126,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
 
   // Full variant
   return (
-    <section className={`bg-gradient-to-r from-orange-500 via-red-500 to-pink-600 py-12 ${className}`}>
+    <section className={`bg-jade-700 py-12 ${className}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -134,7 +134,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
             <div className="text-white">
               <div className="flex items-center space-x-2 mb-4">
                 <Plane className="w-8 h-8 text-yellow-300" />
-                <span className="bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold">
+                <span className="bg-yellow-400 text-jade-600 px-3 py-1 rounded-full text-sm font-bold">
                   BEST PRICES
                 </span>
               </div>
@@ -143,7 +143,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
                 Book Your China Adventure with Trip.com
               </h2>
               
-              <p className="text-lg text-orange-100 mb-6">
+              <p className="text-lg text-jade-600 mb-6">
                 Find the best deals on flights, hotels, and travel packages to China. 
                 Compare prices from 500+ airlines and thousands of hotels!
               </p>
@@ -151,19 +151,19 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center space-x-2">
                   <Plane className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm text-orange-100">Flights from €399</span>
+                  <span className="text-sm text-jade-600">Flights from €399</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Hotel className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm text-orange-100">Hotels from €25/night</span>
+                  <span className="text-sm text-jade-600">Hotels from €25/night</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Train className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm text-orange-100">Train tickets included</span>
+                  <span className="text-sm text-jade-600">Train tickets included</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Percent className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm text-orange-100">Exclusive discounts</span>
+                  <span className="text-sm text-jade-600">Exclusive discounts</span>
                 </div>
               </div>
               
@@ -173,7 +173,7 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   onClick={handleClick}
-                  className="bg-yellow-400 hover:bg-yellow-300 text-orange-900 font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+                  className="bg-yellow-400 hover:bg-yellow-300 text-jade-600 font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
                 >
                   <Plane className="w-5 h-5 mr-2" />
                   Search Flights & Hotels
@@ -193,12 +193,12 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
                     </div>
                     <div>
                       <div className="text-white font-bold">Flights to Beijing</div>
-                      <div className="text-orange-200 text-sm">Direct flights available</div>
+                      <div className="text-jade-600 text-sm">Direct flights available</div>
                     </div>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-yellow-300">€399</div>
-                    <div className="text-orange-200 text-xs">round trip</div>
+                    <div className="text-jade-600 text-xs">round trip</div>
                   </div>
                 </div>
               </div>
@@ -212,12 +212,12 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
                     </div>
                     <div>
                       <div className="text-white font-bold">5-Star Hotels</div>
-                      <div className="text-orange-200 text-sm">Shanghai, Beijing, Xi'an</div>
+                      <div className="text-jade-600 text-sm">Shanghai, Beijing, Xi'an</div>
                     </div>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-yellow-300">€45</div>
-                    <div className="text-orange-200 text-xs">per night</div>
+                    <div className="text-jade-600 text-xs">per night</div>
                   </div>
                 </div>
               </div>
@@ -231,18 +231,18 @@ export default function TripComBanner({ variant = 'full', className = '' }: Trip
                     </div>
                     <div>
                       <div className="text-white font-bold">7-Day Package</div>
-                      <div className="text-orange-200 text-sm">Flight + Hotel + Tours</div>
+                      <div className="text-jade-600 text-sm">Flight + Hotel + Tours</div>
                     </div>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-yellow-300">€899</div>
-                    <div className="text-orange-200 text-xs">all inclusive</div>
+                    <div className="text-jade-600 text-xs">all inclusive</div>
                   </div>
                 </div>
               </div>
               
               <div className="text-center">
-                <p className="text-sm text-orange-200">
+                <p className="text-sm text-jade-600">
                   ⭐ Rated 4.7/5 by 10M+ travelers
                 </p>
               </div>

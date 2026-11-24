@@ -15,7 +15,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
 
   if (variant === 'compact') {
     return (
-      <div className={`bg-gradient-to-r from-teal-600 to-cyan-600 rounded-xl p-4 ${className}`}>
+      <div className={`bg-jade-700 rounded-xl p-4 ${className}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -23,7 +23,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
             </div>
             <div>
               <p className="text-white font-semibold text-sm">Internet in China, instantly</p>
-              <p className="text-teal-100 text-xs">eSIM data from $3.99 - no SIM swap</p>
+              <p className="text-jade-600 text-xs">eSIM data from $3.99 - no SIM swap</p>
             </div>
           </div>
           <a
@@ -31,7 +31,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
             target="_blank"
             rel="noopener noreferrer sponsored"
             onClick={() => trackAffiliateClick('saily', 'esim_banner_compact')}
-            className="bg-white text-teal-700 px-4 py-2 rounded-lg font-semibold text-sm hover:bg-teal-50 transition-colors flex items-center"
+            className="bg-white text-jade-600 px-4 py-2 rounded-lg font-semibold text-sm hover:bg-teal-50 transition-colors flex items-center"
           >
             Get eSIM
             <ArrowRight className="w-4 h-4 ml-1" />
@@ -42,7 +42,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
   }
 
   return (
-    <section className={`relative bg-gradient-to-r from-teal-700 via-cyan-600 to-teal-600 py-10 ${className}`}>
+    <section className={`relative bg-jade-700 py-10 ${className}`}>
       <button
         onClick={() => setIsDismissed(true)}
         className="absolute top-4 right-4 text-white/60 hover:text-white transition-colors"
@@ -56,7 +56,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
               📱 Get Internet in China - Instantly
             </h2>
-            <p className="text-teal-100">
+            <p className="text-jade-600">
               eSIM data works the moment you land. No SIM swap, no roaming bill shock.
             </p>
           </div>
@@ -65,19 +65,19 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
             <div className="bg-white rounded-2xl shadow-xl p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="font-bold text-xl text-gray-900">Saily eSIM</span>
-                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-bold">FROM $3.99</span>
+                <span className="bg-teal-100 text-jade-600 px-3 py-1 rounded-full text-xs font-bold">FROM $3.99</span>
               </div>
               <ul className="space-y-2 mb-5">
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 mr-2 text-teal-600" />
+                  <CheckCircle className="w-4 h-4 mr-2 text-jade-600" />
                   Works in mainland China
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 mr-2 text-teal-600" />
+                  <CheckCircle className="w-4 h-4 mr-2 text-jade-600" />
                   Activate before you fly
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 mr-2 text-teal-600" />
+                  <CheckCircle className="w-4 h-4 mr-2 text-jade-600" />
                   Keep your WhatsApp number
                 </li>
               </ul>
@@ -86,7 +86,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 onClick={() => trackAffiliateClick('saily', 'esim_banner_full')}
-                className="block w-full bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-3 rounded-lg text-center transition-all"
+                className="block w-full bg-jade-700 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-3 rounded-lg text-center transition-all"
               >
                 Get Saily eSIM
                 <ArrowRight className="w-4 h-4 inline ml-2" />
@@ -96,7 +96,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
             <div className="bg-white/10 backdrop-blur rounded-2xl border border-white/20 p-6 flex flex-col justify-between">
               <div>
                 <p className="font-bold text-lg text-white mb-2">Prefer to compare?</p>
-                <p className="text-sm text-teal-100 mb-4">
+                <p className="text-sm text-jade-600 mb-4">
                   eSIMX has regional China + Asia plans with instant QR delivery.
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function EsimBanner({ variant = 'full', className = '' }: EsimBan
                 >
                   Compare eSIMX Plans
                 </a>
-                <p className="text-xs text-teal-100/80 text-center">
+                <p className="text-xs text-jade-600/80 text-center">
                   💎 Traveling soon?{' '}
                   <a
                     href={AFFILIATE_LINKS.hilton.affiliateUrl}

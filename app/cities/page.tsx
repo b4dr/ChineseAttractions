@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Users, ArrowRight } from 'lucide-react'
+import { IMAGES, pageImg } from '@/lib/images'
 
 export const metadata: Metadata = {
   title: 'Top Chinese Cities to Visit | Complete Travel Guide to China\'s Best Destinations',
@@ -31,11 +32,11 @@ const cities = [
     chineseName: '北京',
     slug: 'beijing',
     description: 'China\'s capital city featuring the Great Wall, Forbidden City, and rich imperial history',
-    gradient: 'from-red-500 via-orange-500 to-yellow-500',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 45,
     rating: 4.8,
-    visitors: '21M+',
+    visitors: '210+',
     highlights: ['Great Wall of China', 'Forbidden City', 'Temple of Heaven', 'Summer Palace'],
     bestFor: ['History Lovers', 'Culture Enthusiasts', 'First-time Visitors'],
     region: 'Northern China'
@@ -45,7 +46,7 @@ const cities = [
     chineseName: '上海',
     slug: 'shanghai',
     description: 'Modern metropolis with stunning skyline, historic Bund, and vibrant culture',
-    gradient: 'from-blue-500 via-purple-500 to-pink-500',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 38,
     rating: 4.7,
@@ -59,7 +60,7 @@ const cities = [
     chineseName: '西安',
     slug: 'xian',
     description: 'Ancient capital home to the famous Terracotta Army and Silk Road history',
-    gradient: 'from-amber-600 via-orange-600 to-red-600',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 22,
     rating: 4.9,
@@ -73,7 +74,7 @@ const cities = [
     chineseName: '桂林',
     slug: 'guilin',
     description: 'Breathtaking karst landscapes, Li River cruises, and natural beauty',
-    gradient: 'from-emerald-500 via-teal-500 to-cyan-500',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 18,
     rating: 4.6,
@@ -87,7 +88,7 @@ const cities = [
     chineseName: '成都',
     slug: 'chengdu',
     description: 'Panda capital of the world with spicy cuisine and laid-back lifestyle',
-    gradient: 'from-green-500 via-lime-500 to-yellow-500',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 25,
     rating: 4.5,
@@ -101,7 +102,7 @@ const cities = [
     chineseName: '杭州',
     slug: 'hangzhou',
     description: 'Paradise on earth with West Lake, tea culture, and classical gardens',
-    gradient: 'from-indigo-500 via-blue-500 to-cyan-500',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 16,
     rating: 4.4,
@@ -115,7 +116,7 @@ const cities = [
     chineseName: '苏州',
     slug: 'suzhou',
     description: 'Venice of the East with UNESCO classical gardens and ancient canals',
-    gradient: 'from-violet-500 via-purple-500 to-fuchsia-500',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 20,
     rating: 4.6,
@@ -129,7 +130,7 @@ const cities = [
     chineseName: '南京',
     slug: 'nanjing',
     description: 'Ancient capital with Ming tombs, historical monuments, and rich heritage',
-    gradient: 'from-slate-600 via-gray-600 to-zinc-600',
+    gradient: 'from-jade-700 to-ink-800',
     textColor: 'text-white',
     attractions: 24,
     rating: 4.5,
@@ -144,13 +145,12 @@ export default function CitiesPage() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <section className="relative text-white overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['bund']})` }}>
         <div className="relative container-custom section-padding">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-xl text-white mb-6 animate-fade-in-up">
               Explore China's
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block text-gradient text-jade-300">
                 Most Amazing Cities
               </span>
             </h1>
@@ -162,11 +162,11 @@ export default function CitiesPage() {
             
             <div className="flex items-center justify-center space-x-8 mt-12 text-gray-200">
               <div className="text-center">
-                <div className="text-2xl font-bold text-gold-400">50+</div>
+                <div className="text-2xl font-bold text-gold-400">8</div>
                 <div className="text-sm">Cities Covered</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gold-400">500+</div>
+                <div className="text-2xl font-bold text-gold-400">10</div>
                 <div className="text-sm">Total Attractions</div>
               </div>
               <div className="text-center">
@@ -196,15 +196,7 @@ export default function CitiesPage() {
                 key={city.slug} 
                 className="bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden group h-full flex flex-col"
               >
-                <div className={`relative overflow-hidden bg-gradient-to-br ${city.gradient} h-48 sm:h-56 md:h-64 flex flex-col items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
-                  {/* Decorative Pattern */}
-                  <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-4 left-4 w-8 h-8 border-2 border-white/30 rounded-full"></div>
-                    <div className="absolute top-8 right-8 w-6 h-6 border-2 border-white/20 rounded-full"></div>
-                    <div className="absolute bottom-6 left-8 w-4 h-4 border-2 border-white/25 rounded-full"></div>
-                    <div className="absolute bottom-4 right-4 w-10 h-10 border-2 border-white/15 rounded-full"></div>
-                  </div>
-                  
+                <div className={`relative overflow-hidden photo-card flex items-end justify-center pb-6`} style={{ backgroundImage: `url(${pageImg(city.slug)})` }}>
                   {/* City Names */}
                   <div className="text-center z-10">
                     <h2 className={`text-4xl sm:text-5xl md:text-6xl font-bold ${city.textColor} mb-2 font-serif tracking-wide`}>

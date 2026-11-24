@@ -46,7 +46,7 @@ export default function AffiliateSection({
               target="_blank"
               rel="noopener noreferrer sponsored"
               onClick={() => trackAffiliateClick('tripCom', 'affiliate_section_compact')}
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-4 rounded-lg transition-all flex items-center justify-center space-x-2"
+              className="bg-jade-700 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-4 rounded-lg transition-all flex items-center justify-center space-x-2"
             >
               <Plane className="w-4 h-4" />
               <span>Book Flights</span>
@@ -58,7 +58,7 @@ export default function AffiliateSection({
               target="_blank"
               rel="noopener noreferrer sponsored"
               onClick={() => trackAffiliateClick('axaInsurance', 'affiliate_section_compact')}
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all flex items-center justify-center space-x-2"
+              className="bg-jade-700 hover:bg-jade-600 text-white font-bold py-3 px-4 rounded-lg transition-all flex items-center justify-center space-x-2"
             >
               <Shield className="w-4 h-4" />
               <span>Get Insurance</span>
@@ -128,7 +128,7 @@ export default function AffiliateSection({
             {/* Flights Card */}
             {showFlights && (
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all group">
-                <div className="bg-gradient-to-r from-orange-500 to-red-500 p-4">
+                <div className="bg-jade-700 p-4">
                   <div className="flex items-center justify-between text-white">
                     <div className="flex items-center space-x-2">
                       <Plane className="w-6 h-6" />
@@ -157,7 +157,7 @@ export default function AffiliateSection({
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     onClick={() => trackAffiliateClick('tripCom', 'affiliate_section_cards')}
-                    className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 rounded-lg text-center transition-all group-hover:scale-105"
+                    className="block w-full bg-jade-700 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 rounded-lg text-center transition-all group-hover:scale-105"
                   >
                     Search Flights
                     <ArrowRight className="w-4 h-4 inline ml-2" />
@@ -169,7 +169,7 @@ export default function AffiliateSection({
             {/* Insurance Card */}
             {showInsurance && (
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all group">
-                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4">
+                <div className="bg-jade-700 p-4">
                   <div className="flex items-center justify-between text-white">
                     <div className="flex items-center space-x-2">
                       <Shield className="w-6 h-6" />
@@ -198,7 +198,7 @@ export default function AffiliateSection({
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     onClick={() => trackAffiliateClick('axaInsurance', 'affiliate_section_cards')}
-                    className="block w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3 rounded-lg text-center transition-all group-hover:scale-105"
+                    className="block w-full bg-jade-700 hover:bg-jade-600 text-white font-bold py-3 rounded-lg text-center transition-all group-hover:scale-105"
                   >
                     Get Insured
                     <ArrowRight className="w-4 h-4 inline ml-2" />
@@ -209,7 +209,7 @@ export default function AffiliateSection({
           </div>
 
           {/* eSIM strip - stay connected in China */}
-          <div className="mt-6 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="mt-6 bg-jade-700 rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center space-x-3 text-white">
               <span className="text-3xl">📱</span>
               <div>
@@ -223,7 +223,7 @@ export default function AffiliateSection({
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 onClick={() => trackAffiliateClick('saily', 'affiliate_section_esim_strip')}
-                className="bg-white text-teal-700 font-bold py-2.5 px-5 rounded-lg text-center hover:bg-teal-50 transition-all"
+                className="bg-white text-jade-600 font-bold py-2.5 px-5 rounded-lg text-center hover:bg-teal-50 transition-all"
               >
                 Saily — from $3.99
               </a>

@@ -1,22 +1,23 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Shield, CheckCircle, AlertTriangle, Phone, Clock, ArrowRight, Star, DollarSign, Heart, Plane, Building2, Briefcase, FileText, Globe, Users, Award, TrendingUp, Calendar, MapPin, ExternalLink } from 'lucide-react';
+import { Shield, CheckCircle, AlertTriangle, Phone, Clock, ArrowRight, Star, DollarSign, Heart, Plane, Building2, Briefcase, FileText, Globe, Users, Award, TrendingUp, Calendar, MapPin, ExternalLink } from 'lucide-react'
+import { IMAGES } from '@/lib/images';
 import { AFFILIATE_LINKS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: 'China Travel Insurance Guide 2025: Best Coverage for Your Trip | Chinese Attractions',
-  description: 'Complete guide to travel insurance for China in 2025. Compare the best policies, understand coverage requirements, medical costs, and get protected with AXA travel insurance from €2/day.',
+  title: 'China Travel Insurance Guide 2026: Best Coverage for Your Trip | Chinese Attractions',
+  description: 'Complete guide to travel insurance for China in 2026. Compare the best policies, understand coverage requirements, medical costs, and get protected with AXA travel insurance from €2/day.',
   keywords: 'china travel insurance 2025, best travel insurance china, axa travel insurance, medical insurance china, trip cancellation insurance, china visa insurance requirements, travel protection china',
   openGraph: {
-    title: 'China Travel Insurance Guide 2025: Essential Protection for Your Trip',
+    title: 'China Travel Insurance Guide 2026: Essential Protection for Your Trip',
     description: 'Don\'t travel to China without proper insurance! Complete guide to coverage, costs, and the best policies for 2025.',
     type: 'article',
     images: ['/images/blog/china-travel-insurance-2025.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'China Travel Insurance Guide 2025',
+    title: 'China Travel Insurance Guide 2026',
     description: 'Essential protection for your China adventure - from €2/day',
   },
   alternates: {
@@ -120,26 +121,25 @@ const faqItems = [
 
 export default function ChinaTravelInsuranceGuide() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <div className="min-h-screen bg-paper-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20 overflow-hidden">
+      <section className="relative text-white py-20 overflow-hidden bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to top, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.38) 55%, rgba(12,10,9,0.30) 100%), url(${IMAGES['insurance']})` }}>
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="absolute inset-0 bg-[url('/pattern-chinese.svg')] opacity-5"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <span className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full text-sm font-bold flex items-center">
+              <span className="bg-yellow-400 text-jade-200 px-4 py-2 rounded-full text-sm font-bold flex items-center">
                 <Shield className="w-4 h-4 mr-2" />
-                ESSENTIAL 2025 GUIDE
+                ESSENTIAL 2026 GUIDE
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              China Travel Insurance Guide 2025
+              China Travel Insurance Guide 2026
             </h1>
             
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-jade-200 mb-8 max-w-3xl mx-auto">
               Don't risk your dream trip! Everything you need to know about protecting yourself 
               with the right travel insurance for China.
             </p>
@@ -149,7 +149,7 @@ export default function ChinaTravelInsuranceGuide() {
                 href={AFFILIATE_LINKS.axaInsurance.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+                className="bg-yellow-400 hover:bg-yellow-300 text-jade-200 font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
               >
                 <Shield className="w-5 h-5 mr-2" />
                 Get Insured from €2/day
@@ -163,7 +163,7 @@ export default function ChinaTravelInsuranceGuide() {
               </Link>
             </div>
             
-            <div className="flex items-center justify-center space-x-8 text-blue-100">
+            <div className="flex items-center justify-center space-x-8 text-jade-200">
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
                 <span>Instant Coverage</span>
@@ -184,8 +184,8 @@ export default function ChinaTravelInsuranceGuide() {
       {/* Warning Banner */}
       <section className="bg-red-50 border-y border-red-200 py-6">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center space-x-4 text-red-800">
-            <AlertTriangle className="w-8 h-8 text-red-600 flex-shrink-0" />
+          <div className="flex items-center justify-center space-x-4 text-jade-600">
+            <AlertTriangle className="w-8 h-8 text-jade-600 flex-shrink-0" />
             <div className="text-center">
               <p className="font-bold text-lg">⚠️ Important: Medical costs in China can exceed €50,000 for serious emergencies</p>
               <p className="text-sm">Without insurance, you could face devastating financial consequences. Protect yourself before you travel!</p>
@@ -205,7 +205,7 @@ export default function ChinaTravelInsuranceGuide() {
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span>Updated: January 2025</span>
+                <span>Updated: January 2026</span>
               </div>
               <div className="flex items-center">
                 <Clock className="w-4 h-4 mr-2" />
@@ -216,7 +216,7 @@ export default function ChinaTravelInsuranceGuide() {
               <span className="text-yellow-500 flex">
                 {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
               </span>
-              <span className="text-sm text-gray-600">4.9/5 (2.3K reviews)</span>
+              <span className="text-sm text-gray-600">2026 Verified guide</span>
             </div>
           </div>
         </div>
@@ -239,8 +239,8 @@ export default function ChinaTravelInsuranceGuide() {
               {whyInsurance.map((item, index) => {
                 const IconComponent = item.icon;
                 return (
-                  <div key={index} className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
-                    <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
+                  <div key={index} className="bg-paper-100 rounded-xl p-6 border border-jade-400">
+                    <div className="w-12 h-12 bg-jade-600 rounded-xl flex items-center justify-center mb-4">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -282,14 +282,14 @@ export default function ChinaTravelInsuranceGuide() {
                         <div className="text-sm text-gray-500">{item.note}</div>
                       </div>
                       <div className="text-right">
-                        <div className="font-bold text-red-600 text-lg">{item.cost}</div>
+                        <div className="font-bold text-jade-600 text-lg">{item.cost}</div>
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
               <div className="bg-red-50 p-4 border-t border-red-200">
-                <p className="text-center text-red-800 font-semibold">
+                <p className="text-center text-jade-600 font-semibold">
                   💡 With AXA Travel Insurance, all these costs are covered from just €2/day!
                 </p>
               </div>
@@ -301,7 +301,7 @@ export default function ChinaTravelInsuranceGuide() {
                 href={AFFILIATE_LINKS.axaInsurance.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center bg-jade-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <Shield className="w-5 h-5 mr-2" />
                 Protect Yourself Now - Get a Quote
@@ -329,15 +329,15 @@ export default function ChinaTravelInsuranceGuide() {
               {coverageTypes.map((coverage, index) => {
                 const IconComponent = coverage.icon;
                 const colorClasses = {
-                  red: 'bg-red-100 text-red-600 border-red-200',
-                  orange: 'bg-orange-100 text-orange-600 border-orange-200',
-                  blue: 'bg-blue-100 text-blue-600 border-blue-200',
+                  red: 'bg-red-100 text-jade-600 border-red-200',
+                  orange: 'bg-orange-100 text-jade-600 border-orange-200',
+                  blue: 'bg-jade-100 text-jade-600 border-jade-400',
                   green: 'bg-green-100 text-green-600 border-green-200',
                 };
                 const badgeColors = {
                   red: 'bg-red-600',
                   orange: 'bg-orange-600',
-                  blue: 'bg-blue-600',
+                  blue: 'bg-jade-600',
                   green: 'bg-green-600',
                 };
                 return (
@@ -369,7 +369,7 @@ export default function ChinaTravelInsuranceGuide() {
       </section>
 
       {/* AXA Recommendation */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700">
+      <section className="py-16 bg-jade-700">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
@@ -412,7 +412,7 @@ export default function ChinaTravelInsuranceGuide() {
                     href={AFFILIATE_LINKS.axaInsurance.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg w-full justify-center"
+                    className="inline-flex items-center bg-jade-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg w-full justify-center"
                   >
                     <Shield className="w-5 h-5 mr-2" />
                     Get Your Free Quote
@@ -420,23 +420,23 @@ export default function ChinaTravelInsuranceGuide() {
                   </a>
                 </div>
                 
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-700 p-8 md:p-12 text-white flex flex-col justify-center">
+                <div className="bg-jade-700 p-8 md:p-12 text-white flex flex-col justify-center">
                   <div className="text-center">
                     <div className="text-6xl font-bold mb-2">€2</div>
-                    <div className="text-xl text-blue-200 mb-6">per day starting price</div>
+                    <div className="text-xl text-jade-200 mb-6">per day starting price</div>
                     
                     <div className="space-y-4">
                       <div className="bg-white/10 rounded-lg p-4">
                         <div className="text-2xl font-bold">€500,000+</div>
-                        <div className="text-blue-200 text-sm">Medical Coverage</div>
+                        <div className="text-jade-200 text-sm">Medical Coverage</div>
                       </div>
                       <div className="bg-white/10 rounded-lg p-4">
                         <div className="text-2xl font-bold">24/7</div>
-                        <div className="text-blue-200 text-sm">Emergency Assistance</div>
+                        <div className="text-jade-200 text-sm">Emergency Assistance</div>
                       </div>
                       <div className="bg-white/10 rounded-lg p-4">
                         <div className="text-2xl font-bold">100M+</div>
-                        <div className="text-blue-200 text-sm">Travelers Trust AXA</div>
+                        <div className="text-jade-200 text-sm">Travelers Trust AXA</div>
                       </div>
                     </div>
                     
@@ -445,7 +445,7 @@ export default function ChinaTravelInsuranceGuide() {
                         <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
                       ))}
                     </div>
-                    <p className="text-blue-200 text-sm mt-2">Rated 4.8/5 by travelers</p>
+                    <p className="text-jade-200 text-sm mt-2">Rated 4.8/5 by travelers</p>
                   </div>
                 </div>
               </div>
@@ -472,7 +472,7 @@ export default function ChinaTravelInsuranceGuide() {
                 <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
                   <div className="p-6">
                     <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-start">
-                      <span className="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0 text-sm font-bold">
+                      <span className="bg-jade-100 text-jade-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0 text-sm font-bold">
                         {index + 1}
                       </span>
                       {item.question}
@@ -487,14 +487,14 @@ export default function ChinaTravelInsuranceGuide() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-700">
+      <section className="py-16 bg-jade-700">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <Shield className="w-16 h-16 mx-auto mb-6 text-yellow-400" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Don't Wait Until It's Too Late!
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-jade-200 mb-8 max-w-2xl mx-auto">
               Protect your China adventure today. Get comprehensive travel insurance 
               from just €2/day and travel with complete peace of mind.
             </p>
@@ -502,13 +502,13 @@ export default function ChinaTravelInsuranceGuide() {
               href={AFFILIATE_LINKS.axaInsurance.affiliateUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+              className="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-jade-200 font-bold px-10 py-5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
             >
               <Shield className="w-6 h-6 mr-3" />
               Get Your Insurance Quote Now
               <ArrowRight className="w-6 h-6 ml-3" />
             </a>
-            <p className="mt-6 text-blue-200 text-sm">
+            <p className="mt-6 text-jade-200 text-sm">
               ✓ Instant coverage • ✓ Free cancellation • ✓ 24/7 support
             </p>
           </div>
@@ -525,17 +525,17 @@ export default function ChinaTravelInsuranceGuide() {
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/blog/china-visa-requirements-2025" className="group bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-3xl mb-4">📋</div>
-                <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">China Visa Requirements 2025</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-jade-600 transition-colors">China Visa Requirements 2026</h3>
                 <p className="text-gray-600 text-sm mt-2">Complete application guide</p>
               </Link>
               <Link href="/blog/cheap-flights-china-2025" className="group bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-3xl mb-4">✈️</div>
-                <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Cheap Flights to China 2025</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-jade-600 transition-colors">Cheap Flights to China 2026</h3>
                 <p className="text-gray-600 text-sm mt-2">Find the best deals</p>
               </Link>
               <Link href="/blog/travel-tips" className="group bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-3xl mb-4">💡</div>
-                <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Essential Travel Tips</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-jade-600 transition-colors">Essential Travel Tips</h3>
                 <p className="text-gray-600 text-sm mt-2">Insider secrets for China</p>
               </Link>
             </div>
