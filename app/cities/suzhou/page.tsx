@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
 import { IMAGES } from '@/lib/images'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Suzhou Attractions & Tours | Complete Travel Guide to China\'s Garden City',
@@ -144,6 +145,9 @@ export default function SuzhouPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Ready for Suzhou?" sub="Classical gardens · Water towns · Free cancellation" cta="Book Suzhou tours" />
+
+      
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">

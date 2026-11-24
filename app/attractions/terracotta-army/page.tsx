@@ -3,6 +3,7 @@ import { MapPin, Star, Clock, Users, Camera, Shield, Sword, Calendar, ArrowRight
 import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Terracotta Army - Complete Travel Guide 2024 | Chinese Attractions',
@@ -159,6 +160,9 @@ export default function TerracottaArmyPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/xian-l303/?partner_id=UENNPLZ" heading="Meet the 8,000 warriors" sub="Skip-the-line entry · Archaeologist guides · Free cancellation" cta="Book Xi'an tours" />
+
+      
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">

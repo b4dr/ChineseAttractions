@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Calendar, User, Clock, ArrowRight, MapPin, Camera, Heart, Star, ExternalLink, Lightbulb, Users, ChefHat, BookOpen, Compass, Award, TrendingUp, Eye, Share2, Bookmark, Filter, Search, Globe, Mountain, Building2, Utensils, TreePine, Sparkles } from 'lucide-react'
 import { IMAGES, pageImg } from '@/lib/images';
 import GetYourGuideWidget from '@/components/GetYourGuideWidget';
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China Travel Blog 2026 | Expert Guides & Insider Stories | Chinese Attractions',
@@ -478,6 +479,9 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Reading done — go see it" sub="Skip-the-line tickets · Expert guides · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* Featured Articles - Magazine Style */}
       <section className="py-20 bg-white">

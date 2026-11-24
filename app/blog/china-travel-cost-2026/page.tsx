@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China Travel Cost 2026: Real Budget Breakdown Per Day | Chinese Attractions',
@@ -119,6 +120,9 @@ export default function ChinaTravelCost() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="tripcom" heading="Lock in your China bookings" sub="Flights · Hotels · Train tickets · Best prices" cta="Compare on Trip.com" />
+
+      
 
       {/* Quick Answer */}
       <section className="py-16 bg-white">

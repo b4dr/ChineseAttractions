@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
 import { IMAGES } from '@/lib/images'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Shanghai Attractions & Tours | Complete Travel Guide to China\'s Modern Metropolis',
@@ -145,6 +146,9 @@ export default function ShanghaiPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/shanghai-l194/?partner_id=UENNPLZ" heading="Ready for Shanghai?" sub="The Bund · Yu Garden · Free cancellation" cta="Book Shanghai tours" />
+
+      
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">

@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China Payment Apps Guide 2026: Alipay & WeChat Pay for Tourists | Chinese Attractions',
@@ -141,6 +142,9 @@ export default function ChinaPaymentAppsGuide() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="saily" heading="Get connected first — apps follow" sub="Instant eSIM data · Set up before you land" cta="Get Saily eSIM" />
+
+      
 
       {/* Why This Matters */}
       <section className="py-16 bg-white">

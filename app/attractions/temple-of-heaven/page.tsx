@@ -3,6 +3,7 @@ import { MapPin, Star, Clock, Users, Camera, TreePine, Building2, Calendar, Arro
 import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Temple of Heaven - Complete Travel Guide 2024 | Chinese Attractions',
@@ -159,6 +160,9 @@ export default function TempleOfHeavenPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/beijing-l189/?partner_id=UENNPLZ" heading="Visit the Temple of Heaven" sub="Morning tai chi · Expert guides · Free cancellation" cta="Book Beijing tours" />
+
+      
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">

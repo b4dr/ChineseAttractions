@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { MapPin, Star, Clock, Users, ArrowRight, Camera, Mountain, Building, Sparkles, Calendar, Globe, Award } from 'lucide-react'
 import { IMAGES, pageImg } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Top 10 Must-Visit Attractions in China 2024 | Ultimate Travel Guide',
@@ -465,6 +466,9 @@ export default function AttractionsPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Ready to see them in person?" sub="Skip-the-line tickets · Expert guides · Free cancellation" cta="Book China tours" />
+
+      
 
       {/* SEO Article Introduction */}
       <section className="py-16 bg-paper-100">

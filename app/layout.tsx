@@ -48,20 +48,12 @@ export const metadata: Metadata = {
     title: 'Chinese Attractions | Discover Amazing Places in China',
     description: 'Discover the most amazing tourist attractions in China. From the Great Wall to the Forbidden City, find and book unforgettable experiences.',
     siteName: 'Chinese Attractions',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Chinese Attractions - Discover Amazing Places in China',
-      },
-    ],
+    // og image served by app/opengraph-image.jpg convention
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Chinese Attractions | Discover Amazing Places in China',
     description: 'Discover the most amazing tourist attractions in China. From the Great Wall to the Forbidden City, find and book unforgettable experiences.',
-    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -93,12 +85,9 @@ export default function RootLayout({
         <meta name="linkavista" content="link-2130-3950" />
         <title>Chinese Attractions - Discover China&apos;s Wonders</title>
         <meta name="description" content="Explore the best attractions and destinations in China for 2025. Plan your trip with our expert travel guides and book tours with GetYourGuide." />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        {/* Icons, apple-touch-icon, manifest and OG image are auto-injected
+            by app/ file conventions (icon.svg, favicon.ico, apple-icon.png,
+            manifest.ts, opengraph-image.jpg) — public/ is gitignored. */}
       </head>
       <body className="min-h-screen bg-paper-50 font-sans antialiased">
         <SalesBanner />

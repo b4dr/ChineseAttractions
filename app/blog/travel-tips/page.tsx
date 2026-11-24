@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Lightbulb, Shield, Wallet, Smartphone, MapPin, Clock, Users, Star, ExternalLink, CheckCircle, AlertTriangle, Info } from 'lucide-react';
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 type TravelTip = {
   title: string;
@@ -225,6 +226,9 @@ export default function TravelTipsPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Tips saved? Now book smart" sub="Top-rated tours · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* Quick Tips */}
       <section className="section-padding">

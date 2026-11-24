@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Sun, Cloud, Snowflake, Umbrella, Thermometer, Users, Calendar, Star, ExternalLink, TrendingUp, MapPin } from 'lucide-react';
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Best Time to Visit China 2024 | Weather Guide & Travel Seasons | Chinese Attractions',
@@ -213,6 +214,9 @@ export default function BestTimeToVisitPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Picked your season? Book ahead" sub="Top-rated tours · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* Quick Answer */}
       <section className="section-padding">

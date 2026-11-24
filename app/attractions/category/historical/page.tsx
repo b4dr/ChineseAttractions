@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, ArrowRight, Building, Calendar, Shield } from 'lucide-react'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Historical Sites & Ancient Attractions in China | Book Tours | ChineseAttractions.com',
@@ -230,6 +231,9 @@ export default function HistoricalSitesPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Book the experiences behind the history" sub="Expert-guided visits · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* About Section */}
       <section className="section-padding bg-white">

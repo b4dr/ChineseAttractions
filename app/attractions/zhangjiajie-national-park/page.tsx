@@ -3,6 +3,7 @@ import { MapPin, Star, Clock, Users, Camera, Mountain, TreePine, Calendar, Arrow
 import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Zhangjiajie National Park - Complete Travel Guide 2024 | Chinese Attractions',
@@ -159,6 +160,9 @@ export default function ZhangjiajieNationalParkPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="See the Avatar mountains" sub="Glass bridge · Cable cars · Free cancellation" cta="Book Zhangjiajie tours" />
+
+      
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">

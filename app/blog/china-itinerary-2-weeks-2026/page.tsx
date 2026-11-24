@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Perfect 2-Week China Itinerary 2026: Beijing, Xi\'an, Shanghai & More | Chinese Attractions',
@@ -115,6 +116,9 @@ export default function ChinaItinerary2Weeks() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Turn this itinerary into bookings" sub="Skip-the-line tickets · Expert guides · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* Route Overview */}
       <section className="py-16 bg-white">

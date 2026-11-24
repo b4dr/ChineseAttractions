@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China High-Speed Rail Guide 2026: Booking, Stations & Tips | Chinese Attractions',
@@ -138,6 +139,9 @@ export default function ChinaHighSpeedRailGuide() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="tripcom" heading="Book China train tickets easily" sub="English interface · Seat selection · Instant confirmation" cta="Book on Trip.com" />
+
+      
 
       {/* Why Train Over Plane */}
       <section className="py-16 bg-white">

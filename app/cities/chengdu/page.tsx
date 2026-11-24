@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
 import { IMAGES } from '@/lib/images'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Chengdu Attractions & Tours | Complete Travel Guide to China\'s Panda Capital',
@@ -147,6 +148,9 @@ export default function ChengduPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Ready for Chengdu?" sub="Pandas · Hotpot · Free cancellation" cta="Book Chengdu tours" />
+
+      
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">

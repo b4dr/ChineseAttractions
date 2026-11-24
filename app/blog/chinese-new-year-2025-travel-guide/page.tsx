@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Chinese New Year 2026 Travel Guide - Best Destinations & Celebrations | Chinese Attractions',
@@ -158,6 +159,9 @@ export default function ChineseNewYear2025Page() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Experience CNY with locals" sub="Temple fairs · Family dinners · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* Introduction */}
       <section className="py-16 bg-white">

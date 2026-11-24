@@ -3,6 +3,7 @@ import { MapPin, Star, Clock, Users, Camera, Waves, Mountain, Calendar, ArrowRig
 import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Li River Cruise - Complete Travel Guide 2024 | Chinese Attractions',
@@ -159,6 +160,9 @@ export default function LiRiverCruisePage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Cruise the Li River" sub="Karst scenery · Guilin to Yangshuo · Free cancellation" cta="Book Li River cruises" />
+
+      
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">

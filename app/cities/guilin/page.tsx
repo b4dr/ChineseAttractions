@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
 import { IMAGES } from '@/lib/images'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Guilin Attractions & Tours | Complete Travel Guide to China\'s Natural Paradise',
@@ -145,6 +146,9 @@ export default function GuilinPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Ready for Guilin?" sub="Li River · Rice terraces · Free cancellation" cta="Book Guilin tours" />
+
+      
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">

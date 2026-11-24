@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Plane, CheckCircle, Clock, ArrowRight, Star, DollarSign, Calendar, MapPin, ExternalLink, TrendingDown, Globe, Users, Award, Sparkles, Hotel, Train, Percent, AlertCircle, Lightbulb } from 'lucide-react'
 import { IMAGES } from '@/lib/images';
 import { AFFILIATE_LINKS } from '@/lib/affiliates';
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Cheap Flights to China 2026: Best Deals & Booking Tips | Chinese Attractions',
@@ -170,6 +171,9 @@ export default function CheapFlightsChinaGuide() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="tripcom" heading="Find your flight to China" sub="Best fares · Hotels · Train tickets — all in one place" cta="Search on Trip.com" />
+
+      
 
       {/* Live Deals Banner */}
       <section className="bg-jade-700 py-4">

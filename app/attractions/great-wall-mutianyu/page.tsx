@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, ArrowRight, Calendar, Shield, Camera, Mountain, Car, Globe } from 'lucide-react'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Great Wall of China - Mutianyu Section Tour | Book Now | ChineseAttractions.com',
@@ -179,6 +180,9 @@ export default function GreatWallMutianyuPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/great-wall-of-china-l2787/?partner_id=UENNPLZ" heading="Walk Mutianyu — the wall at its best" sub="Cable car up · Toboggan down · Free cancellation" cta="Book Mutianyu tours" />
+
+      
 
       {/* Highlights Section */}
       <section className="section-padding bg-white">

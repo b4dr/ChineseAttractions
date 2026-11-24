@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Users, ArrowRight } from 'lucide-react'
 import { IMAGES, pageImg } from '@/lib/images'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Top Chinese Cities to Visit | Complete Travel Guide to China\'s Best Destinations',
@@ -177,6 +178,9 @@ export default function CitiesPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Picked a city? Book ahead" sub="Skip-the-line tickets · Expert guides · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* Cities Grid */}
       <section className="section-padding bg-white">

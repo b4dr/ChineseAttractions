@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Shield, CheckCircle, AlertTriangle, Phone, Clock, ArrowRight, Star, DollarSign, Heart, Plane, Building2, Briefcase, FileText, Globe, Users, Award, TrendingUp, Calendar, MapPin, ExternalLink } from 'lucide-react'
 import { IMAGES } from '@/lib/images';
 import { AFFILIATE_LINKS } from '@/lib/affiliates';
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China Travel Insurance Guide 2026: Best Coverage for Your Trip | Chinese Attractions',
@@ -180,6 +181,9 @@ export default function ChinaTravelInsuranceGuide() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="axa" heading="Insure the trip before you pack" sub="Medical cover · Cancellation protection · 24/7 assistance" cta="Get AXA cover" />
+
+      
 
       {/* Warning Banner */}
       <section className="bg-red-50 border-y border-red-200 py-6">

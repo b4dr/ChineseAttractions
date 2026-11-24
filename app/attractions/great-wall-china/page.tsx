@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Great Wall of China - Complete Travel Guide 2026 | Chinese Attractions',
@@ -159,6 +160,9 @@ export default function GreatWallPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/great-wall-of-china-l2787/?partner_id=UENNPLZ" heading="Walk the Great Wall — book your spot" sub="Skip-the-line tickets · Expert guides · Free cancellation" cta="Book Great Wall tours" />
+
+      
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">

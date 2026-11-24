@@ -3,6 +3,7 @@ import { MapPin, Star, Clock, Users, Camera, Crown, Building, Calendar, ArrowRig
 import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Forbidden City - Complete Travel Guide 2024 | Chinese Attractions',
@@ -159,6 +160,9 @@ export default function ForbiddenCityPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/beijing-l189/?partner_id=UENNPLZ" heading="Enter the Forbidden City" sub="Timed-entry tickets · Expert guides · Free cancellation" cta="Book Beijing tours" />
+
+      
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">

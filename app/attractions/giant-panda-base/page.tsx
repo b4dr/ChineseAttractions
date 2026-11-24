@@ -3,6 +3,7 @@ import { MapPin, Star, Clock, Users, Camera, Heart, TreePine, Calendar, ArrowRig
 import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Giant Panda Base - Complete Travel Guide 2024 | Chinese Attractions',
@@ -159,6 +160,9 @@ export default function GiantPandaBasePage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Meet the pandas up close" sub="Morning feeding time · Expert guides · Free cancellation" cta="Book Chengdu tours" />
+
+      
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">

@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Is China Safe for Tourists? 2026 Safety Guide & Scam Alerts | Chinese Attractions',
@@ -118,6 +119,9 @@ export default function ChinaSafetyTips() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="axa" heading="Travel smart — and insured" sub="Medical cover · 24/7 assistance · Trip protection" cta="Get AXA cover" />
+
+      
 
       {/* Reality Check */}
       <section className="py-16 bg-white">

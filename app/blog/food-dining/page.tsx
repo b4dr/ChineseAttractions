@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ChefHat, Utensils, Coffee, MapPin, Star, Clock, DollarSign, ExternalLink, Flame, Leaf, Fish, Wheat } from 'lucide-react';
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China Food & Dining Guide 2024 | Best Chinese Cuisine & Restaurants | Chinese Attractions',
@@ -258,6 +259,9 @@ export default function FoodDiningPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Eat your way through China" sub="Food tours · Cooking classes · Free cancellation" cta="Browse food tours" />
+
+      
 
       {/* Regional Cuisines */}
       <section className="section-padding">

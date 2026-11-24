@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
 import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Beijing Attractions & Tours | Complete Travel Guide to China\'s Capital',
@@ -233,6 +234,9 @@ export default function BeijingPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/beijing-l189/?partner_id=UENNPLZ" heading="Ready for Beijing?" sub="Forbidden City · Great Wall · Free cancellation" cta="Book Beijing tours" />
+
+      
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">

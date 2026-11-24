@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Star, Clock, Users, Camera, Calendar, ArrowRight, Sparkles } from 'lucide-react'
 import { IMAGES } from '@/lib/images'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'Xi\'an Attractions & Tours | Complete Travel Guide to China\'s Ancient Capital',
@@ -145,6 +146,9 @@ export default function XianPage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" url="https://www.getyourguide.com/xian-l303/?partner_id=UENNPLZ" heading="Ready for Xi'an?" sub="Terracotta Army · City wall · Free cancellation" cta="Book Xi'an tours" />
+
+      
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">

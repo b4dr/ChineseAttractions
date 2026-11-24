@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Heart, Users, Utensils, Gift, Sparkles, Calendar, BookOpen, Globe, ExternalLink, Star, Lightbulb, AlertCircle } from 'lucide-react';
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China Cultural Guide 2024 | Traditions, Etiquette & Customs | Chinese Attractions',
@@ -270,6 +271,9 @@ export default function CulturalGuidePage() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="gyg" heading="Go deeper with a local guide" sub="Cultural tours · Free cancellation" cta="Browse China tours" />
+
+      
 
       {/* Cultural Aspects */}
       <section className="section-padding">

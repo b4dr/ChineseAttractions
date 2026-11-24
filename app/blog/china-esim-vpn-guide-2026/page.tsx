@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import GetYourGuideWidget from '@/components/GetYourGuideWidget'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { Metadata } from 'next'
+import InlineBookCTA from '@/components/InlineBookCTA'
 
 export const metadata: Metadata = {
   title: 'China eSIM & VPN Guide 2026: Internet Access for Tourists | Chinese Attractions',
@@ -117,6 +118,9 @@ export default function ChinaEsimVpnGuide() {
           </div>
         </div>
       </section>
+      <InlineBookCTA partner="saily" heading="Get connected before you fly" sub="Instant eSIM data · Works alongside your VPN · 5-minute setup" cta="Get Saily eSIM" />
+
+      
 
       {/* Critical Warning */}
       <section className="py-16 bg-white">
