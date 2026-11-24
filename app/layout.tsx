@@ -5,7 +5,6 @@ import './mobile-optimizations.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { Analytics } from '@/components/Analytics'
-import StickyAffiliateBar from '@/components/StickyAffiliateBar'
 import SalesBanner from '@/components/SalesBanner'
 
 const lora = Lora({ subsets: ['latin'], variable: '--font-body' })
@@ -98,7 +97,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
-        <StickyAffiliateBar />
+
         <Analytics />
       </body>
     </html>
