@@ -5,7 +5,7 @@ import './mobile-optimizations.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { Analytics } from '@/components/Analytics'
-import SalesBanner from '@/components/SalesBanner'
+import StickyAffiliateBar from '@/components/StickyAffiliateBar'
 
 const lora = Lora({ subsets: ['latin'], variable: '--font-body' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -89,8 +89,7 @@ export default function RootLayout({
             manifest.ts, opengraph-image.jpg) — public/ is gitignored. */}
       </head>
       <body className="min-h-screen bg-paper-50 font-sans antialiased">
-        <SalesBanner />
-        <div className="flex flex-col min-h-screen pt-10">
+        <div className="flex flex-col min-h-screen">
           <Navigation />
           <main className="flex-grow">
             {children}
@@ -98,6 +97,7 @@ export default function RootLayout({
           <Footer />
         </div>
 
+        <StickyAffiliateBar />
         <Analytics />
       </body>
     </html>
