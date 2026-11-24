@@ -41,6 +41,16 @@ export const metadata: Metadata = {
   }
 }
 
+// Attractions whose card links elsewhere than /attractions/<slug> —
+// wrong/alias slugs keep their image key, links go to the canonical page.
+const ATTRACTION_HREF_OVERRIDES: Record<string, string> = {
+  'the-bund-shanghai': '/cities/shanghai',
+  'zhangjiajie-avatar-mountains': '/attractions/zhangjiajie-national-park',
+  'summer-palace-beijing': '/attractions/summer-palace',
+  'chengdu-panda-base': '/attractions/giant-panda-base',
+  'west-lake-hangzhou': '/cities/hangzhou',
+};
+
 // Top 10 China Attractions Data with Specific GetYourGuide Experience IDs
 const topAttractions = [
   {
@@ -629,7 +639,7 @@ export default function AttractionsPage() {
                     
                     <div className="flex items-center space-x-4">
                       <Link 
-                        href={`/attractions/${attraction.slug}`}
+                        href={ATTRACTION_HREF_OVERRIDES[attraction.slug] ?? `/attractions/${attraction.slug}`}
                         className={`btn-primary bg-jade-700 hover:opacity-90 inline-flex items-center`}
                       >
                         Detailed Guide

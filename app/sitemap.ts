@@ -51,9 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'summer-palace',
     'li-river-cruise',
     'zhangjiajie-national-park',
-    'giant-panda-base',
-    'potala-palace',
-    'yellow-mountain'
+    'giant-panda-base'
   ].map(slug => ({
     url: `${baseUrl}/attractions/${slug}`,
     lastModified: currentDate,
@@ -68,8 +66,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'xian',
     'guilin',
     'chengdu',
-    'lhasa',
     'hangzhou',
+    'nanjing',
     'suzhou'
   ].map(city => ({
     url: `${baseUrl}/cities/${city}`,
@@ -104,8 +102,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     'about',
     'contact',
-    'privacy-policy',
-    'terms-of-service'
+    'privacy',
+    'terms',
+    'affiliate-disclosure'
   ].map(page => ({
     url: `${baseUrl}/${page}`,
     lastModified: currentDate,

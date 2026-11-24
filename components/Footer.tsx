@@ -10,11 +10,11 @@ const footerLinks = {
     { name: 'Chengdu Highlights', href: '/cities/chengdu' },
   ],
   attractions: [
-    { name: 'Great Wall of China', href: '/attractions/great-wall' },
+    { name: 'Great Wall of China', href: '/attractions/great-wall-china' },
     { name: 'Forbidden City', href: '/attractions/forbidden-city' },
     { name: 'Terracotta Army', href: '/attractions/terracotta-army' },
-    { name: 'Li River Cruise', href: '/attractions/li-river' },
-    { name: 'Zhangjiajie National Park', href: '/attractions/zhangjiajie' },
+    { name: 'Li River Cruise', href: '/attractions/li-river-cruise' },
+    { name: 'Zhangjiajie National Park', href: '/attractions/zhangjiajie-national-park' },
   ],
   resources: [
     { name: 'Travel Blog', href: '/blog' },

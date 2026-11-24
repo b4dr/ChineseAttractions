@@ -31,6 +31,14 @@ Our carefully curated selection of historical sites includes UNESCO World Herita
 Whether you're fascinated by ancient military fortifications, religious architecture, or imperial grandeur, China's historical sites offer something for every history enthusiast. Our expert guides bring these ancient stones to life with fascinating stories, historical context, and cultural insights that you won't find in guidebooks.`
 }
 
+// Sites without a dedicated page — card links go to the closest real page.
+const SITE_HREF_OVERRIDES: Record<string, string> = {
+  'potala-palace': '/cities',
+  'longmen-grottoes': '/attractions',
+  'ming-tombs': '/cities/beijing',
+  'shaolin-temple': '/attractions',
+};
+
 const historicalSites = [
   {
     id: 1,
@@ -339,7 +347,7 @@ export default function HistoricalSitesPage() {
                   </div>
                   
                   <Link 
-                    href={`/attractions/${site.slug}`}
+                    href={SITE_HREF_OVERRIDES[site.slug] ?? `/attractions/${site.slug}`}
                     className="inline-flex items-center justify-center w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
                   >
                     View Details & Book
