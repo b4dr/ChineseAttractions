@@ -6,6 +6,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { Analytics } from '@/components/Analytics'
 import StickyAffiliateBar from '@/components/StickyAffiliateBar'
+import ExitIntentPopup from '@/components/ExitIntentPopup'
 
 const lora = Lora({ subsets: ['latin'], variable: '--font-body' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -98,6 +99,7 @@ export default function RootLayout({
         </div>
 
         <StickyAffiliateBar />
+        <ExitIntentPopup />
         <Analytics />
       </body>
     </html>
