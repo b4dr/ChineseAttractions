@@ -79,7 +79,7 @@ export default function ExitIntentPopup() {
 
   return (
     <div className="fixed inset-0 z-[70] flex items-end justify-center bg-ink-950/60 px-0 pb-0 backdrop-blur-sm lg:items-center lg:px-4">
-      <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-line bg-card shadow-2xl max-lg:rounded-b-none max-lg:border-x-0 max-lg:border-b-0 max-lg:pb-10">
+      <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-ink-200 bg-paper-50 shadow-2xl max-lg:rounded-b-none max-lg:border-x-0 max-lg:border-b-0 max-lg:pb-10">
         <div className="bg-ink-950 px-8 py-3.5 text-center">
           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-jade-300">
             Last thing before you fly
@@ -135,7 +135,7 @@ export default function ExitIntentPopup() {
             target="_blank"
             rel="noopener sponsored nofollow"
             onClick={() => track('exit-popup-alt')}
-            className="mt-2.5 inline-flex w-full items-center justify-center gap-2 rounded-full border border-line bg-card px-8 py-3 text-sm font-semibold text-ink-700 transition-colors hover:border-jade-600/40 hover:text-jade-700"
+            className="mt-2.5 inline-flex w-full items-center justify-center gap-2 rounded-full border border-ink-200 bg-white px-8 py-3 text-sm font-semibold text-ink-700 transition-colors hover:border-jade-600/40 hover:text-jade-700"
           >
             Compare with Saily plans
           </a>
