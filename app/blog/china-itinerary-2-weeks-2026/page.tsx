@@ -117,6 +117,7 @@ export default function ChinaItinerary2Weeks() {
         </div>
       </section>
       <InlineBookCTA partner="gyg" heading="Turn this itinerary into bookings" sub="Skip-the-line tickets · Expert guides · Free cancellation" cta="Browse China tours" />
+      <InlineBookCTA partner="zenHotels" heading="Book your hotels for this route" sub="Beijing · Xi'an · Chengdu · Shanghai — free cancellation on most rates" cta="Find hotels on ZenHotels" />
 
       
 

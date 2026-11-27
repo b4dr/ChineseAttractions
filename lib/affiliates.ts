@@ -34,6 +34,36 @@ export const AFFILIATE_LINKS = {
     ],
   },
   
+  // Kiwi.com - Flight Search (MaxBounty 8338 — 3.9% CPS)
+  kiWi: {
+    name: 'Kiwi.com',
+    affiliateUrl: 'https://afflat3e3.com/trk/lnk/0080372A-FAAC-44D9-83A2-88C8188A88D8/?o=8338&a=782595&l=7050',
+    category: 'flights',
+    description: 'Search cheap flights & virtual interlining',
+    cta: 'Search Flights',
+    icon: '✈️',
+    features: [
+      'Virtual interlining finds cheaper routes',
+      'Price alerts & flexible dates',
+      'Covers 800+ airlines',
+    ],
+  },
+
+  // ZenHotels - Hotel Booking (MaxBounty 31398 — 6% CPA)
+  zenHotels: {
+    name: 'ZenHotels',
+    affiliateUrl: 'https://afflat3e3.com/trk/lnk/0080372A-FAAC-44D9-83A2-88C8188A88D8/?o=31398&a=782595&l=36610',
+    category: 'hotels',
+    description: 'Hotel deals in Beijing, Shanghai & across China',
+    cta: 'Find Hotels',
+    icon: '🏨',
+    features: [
+      'Discounted hotel rates in China',
+      'Free cancellation on most rates',
+      'No booking fees',
+    ],
+  },
+
   // AXA Travel Insurance
   axaInsurance: {
     name: 'AXA Travel Insurance',

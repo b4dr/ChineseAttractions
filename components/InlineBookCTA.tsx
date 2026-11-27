@@ -3,13 +3,15 @@
 import { ArrowRight, BadgeCheck } from 'lucide-react'
 import { AFFILIATE_LINKS, trackAffiliateClick } from '@/lib/affiliates'
 
-type Partner = 'gyg' | 'tripcom' | 'axa' | 'saily'
+type Partner = 'gyg' | 'tripcom' | 'axa' | 'saily' | 'kiWi' | 'zenHotels'
 
 const PARTNERS: Record<Partner, { url: string; key: keyof typeof AFFILIATE_LINKS }> = {
   gyg: { url: AFFILIATE_LINKS.getYourGuide.chinaSearch, key: 'getYourGuide' },
   tripcom: { url: AFFILIATE_LINKS.tripCom.affiliateUrl, key: 'tripCom' },
   axa: { url: AFFILIATE_LINKS.axaInsurance.affiliateUrl, key: 'axaInsurance' },
   saily: { url: AFFILIATE_LINKS.saily.affiliateUrl, key: 'saily' },
+  kiWi: { url: AFFILIATE_LINKS.kiWi.affiliateUrl, key: 'kiWi' },
+  zenHotels: { url: AFFILIATE_LINKS.zenHotels.affiliateUrl, key: 'zenHotels' },
 }
 
 interface InlineBookCTAProps {

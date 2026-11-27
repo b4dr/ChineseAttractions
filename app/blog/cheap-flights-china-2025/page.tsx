@@ -172,6 +172,7 @@ export default function CheapFlightsChinaGuide() {
         </div>
       </section>
       <InlineBookCTA partner="tripcom" heading="Find your flight to China" sub="Best fares · Hotels · Train tickets — all in one place" cta="Search on Trip.com" />
+      <InlineBookCTA partner="kiWi" heading="Compare on Kiwi.com" sub="Virtual interlining often finds cheaper multi-stop routes to China" cta="Search on Kiwi.com" />
 
       
 
